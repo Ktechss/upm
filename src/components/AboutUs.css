@@ -1,0 +1,36 @@
+.about-us {
+    background-color: #ffffff; /* White background */
+    padding: 3rem 1.5rem;
+    text-align: center;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #000;
+  }
+  
+  .about-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .team-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }  
+  .about-description {
+    text-align: justify;
+  }
+  

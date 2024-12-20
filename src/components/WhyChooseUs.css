@@ -1,0 +1,60 @@
+.why-choose-us {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-left: 10rem;
+    gap:0;
+  }
+  
+  .content {
+    max-width: 60%;
+    color: #333;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .highlight {
+    color: #007bff;
+  }
+  
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .value-points {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 1rem;
+  }
+  
+  .points-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .points-list li {
+    flex: 1 1 45%;
+  }
+  
+  .image-container {
+    flex-shrink: 0;
+    
+  }
+  
+  .character-image {
+    width: 600px;
+    height: auto;
+  }
+  

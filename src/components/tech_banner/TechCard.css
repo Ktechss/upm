@@ -1,0 +1,39 @@
+.tech-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    height: 40px;
+    padding: 0.5rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: #000000;
+    box-shadow: 0px 5px 15px rgba(66, 66, 66, 0.882);
+  }
+  .tech-image {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .tech-name {
+    flex: 1;
+    margin: 0 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .close-icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    color: white;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .close-icon:hover {
+    opacity: 0.7;
+  }
+  
