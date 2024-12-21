@@ -4,6 +4,7 @@ import HomePage from './components/HomePage';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import AboutUs from './components/AboutUs';
+import MediaPage from './components/MediaPage/MediaPage';
 import './App.css';
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             </>
           }
         />
+        <Route path="/media" element={<MediaPage />} />
       </Routes>
     </Router>
   );

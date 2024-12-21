@@ -49,7 +49,7 @@ const Services = () => {
   return (
     <section className="services-section" id="services">
       <h2 className="services-title">
-        What We <span style={{ color: '#007bff' }}>Offer</span>?
+        Services We <span style={{ color: '#007bff' }}>Offer</span>
       </h2>
       <div className="services-container">
         {services.map((service, index) => (

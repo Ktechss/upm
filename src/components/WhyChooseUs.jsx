@@ -6,7 +6,7 @@ const WhyChooseUs = () => {
   return (
     <section className="why-choose-us" id='chooseus'>
       <div className="content">
-        <h2 className="title">WHY <span className="highlight">Choose</span> Us!</h2>
+        <h2 className="title">Why <span className="highlight">Choose</span> Us!</h2>
         <p className="description">
           We are dedicated to delivering exceptional, custom-tailored designs that reflect your brand's unique identity. Our team combines creativity, innovation, and attention to detail to produce high-quality logos, branding materials, and illustrations. We prioritize client satisfaction, ensuring a collaborative process from concept to completion.
           <br /><br />

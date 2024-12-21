@@ -1,173 +1,251 @@
 /* General Page Styling */
 body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(to bottom, rgba(0, 111, 190, 0.476), rgb(255, 255, 255)), url('../assets/cloud1.jpg');
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    color: #333;
-  }
-  
-  .home-page {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-  
-  /* Header Styling */
-  .header-container {
-    margin-top: 2vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #33333300;
-    color: #fff;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .upm_logo
-  {
-    width: 9vw;
-    height: 7vh;
-  }
-  
-  .navigation ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navigation ul li {
-    margin: 0 1rem;
-  }
-  
-  .navigation ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .navigation ul li a:hover {
-    color: #000000;
-  }
-  .nav-buttons{
-    background: transparent;
-    border: 0;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 500;
-    font-size:1.1rem;
-    transition: color 0.3s;
-  }
-  .nav-buttons:hover{
-    color: #000000;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, rgba(40, 40, 40, 0.214), rgb(255, 255, 255)), url('../assets/camera_lense.jpg');
+  background-position: center;
+  background-size: 100%; /* Start with a zoomed-in background */
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #333;
+  animation: zoomInBackground 1.5s ease-in-out; /* Add animation */
+}
 
-  .social-icons a {
-    margin: 0 0.5rem;
+/* Keyframes for zoom-in effect */
+@keyframes zoomInBackground {
+  0% {
+    background-size: 150%; /* Start with a zoomed-in background */
   }
-  
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-    transition: opacity 0.3s;
+  100% {
+    background-size: 100%; /* Zoom back in */
   }
-  
-  .social-icons img:hover {
-    opacity: 0.7;
-  }
-  
-  /* Landing Content Styling */
-  .landing-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 2rem;
-  }
-  
-  .headline {
-    margin-bottom: 2rem;
-  }
-  
-  .headline .line {
-    font-size: 6rem;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  .headline .line:first-child {
-    color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-    padding: 0.5rem 1rem;
-  }
-  
-  .headline .line:last-child {
-    color: black;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 0.5rem 1rem;
-  }
-  
-  .explore-button {
-    margin-top: 2rem;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #000000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .explore-button:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
-  }
+}
 
-  .landing_page_title {
-    width: 900px;
-    display: flex; /* Use flexbox to stretch child elements */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Header Styling */
+.header-container {
+  margin-top: 0vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #33333300;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.upm_logo {
+  width: 8vw;
+  height: 6vh;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  margin: 0 1rem;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navigation ul li a:hover {
+  color: #000000;
+}
+
+.nav-buttons {
+  background: transparent;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  letter-spacing: 0.1rem;
+}
+
+.nav-buttons:hover {
+  transform: scale(1.15); /* Slightly enlarges the button to 115% of its original size */
+  transition: transform 0.3s ease; /* Adds a smooth transition effect */
+}
+
+
+.social-icons a {
+  margin: 0 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+/* Landing Content Styling */
+.landing-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.headline {
+  margin-bottom: 2rem;
+}
+
+.headline .line {
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.headline .line:first-child {
+  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  padding: 0.5rem 1rem;
+}
+
+.headline .line:last-child {
+  color: black;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 0.5rem 1rem;
+}
+
+.explore-button {
+  margin-top: 2rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.explore-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.landing_page_title {
+  width: 900px;
+  display: flex; /* Use flexbox to stretch child elements */
+}
+
+.lpt {
+  flex: 1; /* Make the <p> tag take up the full width */
+  color: rgb(0, 0, 0);
+  margin: 0; /* Remove any default margin */
+  font-size: 1.25rem; /* Increased font size for better visibility */
+  line-height: 0.8;
+}
+
+/* Tech Card Styling */
+.tech-card-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px; /* Adjusted gap for spacing */
+}
+
+/* Add fade-in and fade-out animations */
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 1s forwards;
+}
+
+/* Keyframes for fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .lpt {
-    flex: 1; /* Make the <p> tag take up the full width */
-    color: rgb(0, 0, 0);
-    margin: 0; /* Remove any default margin */
-    font-size: 1.2rem; /* Increased font size for better visibility */
-    line-height: 0.8;
+  to {
+    opacity: 1;
   }
-  
-  
-  .tech-card-container{
-    margin-top: 100px;
-    display:flex;
-    flex-direction: row;
-    gap: -20px;
+}
+
+/* Keyframes for fade-out */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
   }
-  .tech-card:first-child{
-    z-index: 1;
-    transform: rotate(-5deg); /* Rotate by 5 degrees */
-    transition: transform 0.3s ease;
+  to {
+    opacity: 0;
   }
-  .tech-card:nth-child(2){
-    margin-top: 40px;
-    float: left;
-    transform: rotate(5deg); /* Rotate by 5 degrees */
-    transition: transform 0.3s ease;
+}
+
+/* Tech Card Transitions */
+.tech-card {
+  transition: opacity 1s ease, transform 0.3s ease;
+  opacity: 1;
+}
+
+/* Individual Tech Card Styles */
+.tech-card:first-child {
+  z-index: 1;
+  transform: rotate(-5deg); /* Rotate by 5 degrees */
+}
+
+.tech-card:nth-child(2) {
+  margin-top: 40px;
+  float: left;
+  transform: rotate(5deg); /* Rotate by 5 degrees */
+}
+
+.tech-card:nth-child(3) {
+  transform: rotate(-5deg); /* Rotate by 5 degrees */
+}
+/* Typewriter effect */
+.typewriter-effect {
+  display: inline-block;  /* Keeps the element on the same line */
+  overflow: hidden;       /* Hides the part of the text that isn't visible */
+  white-space: nowrap;    /* Prevents text from wrapping */
+  border-right: 4px solid transparent; /* Cursor */
+  animation: typing 2s steps(10) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+  from {
+    width: 0;
   }
-  .tech-card:nth-child(3){
-    transform: rotate(-5deg); /* Rotate by 5 degrees */
-    transition: transform 0.3s ease;
+  to {
+    width: 100%;
   }
+}
+
+/* Cursor blinking effect */
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
