@@ -4,7 +4,7 @@ import characterImage from '../assets/character_image.jpg';
 
 const WhyChooseUs = () => {
   return (
-    <section className="why-choose-us">
+    <section className="why-choose-us" id='chooseus'>
       <div className="content">
         <h2 className="title">WHY <span className="highlight">Choose</span> Us!</h2>
         <p className="description">

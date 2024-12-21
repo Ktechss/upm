@@ -32,6 +32,11 @@ body, html {
     font-size: 1.5rem;
     font-weight: bold;
   }
+  .upm_logo
+  {
+    width: 9vw;
+    height: 7vh;
+  }
   
   .navigation ul {
     display: flex;
@@ -54,7 +59,19 @@ body, html {
   .navigation ul li a:hover {
     color: #000000;
   }
-  
+  .nav-buttons{
+    background: transparent;
+    border: 0;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size:1.1rem;
+    transition: color 0.3s;
+  }
+  .nav-buttons:hover{
+    color: #000000;
+  }
+
   .social-icons a {
     margin: 0 0.5rem;
   }
@@ -118,6 +135,7 @@ body, html {
     background-color: #0056b3;
     transform: scale(1.05);
   }
+
   .landing_page_title {
     width: 900px;
     display: flex; /* Use flexbox to stretch child elements */

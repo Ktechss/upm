@@ -10,7 +10,6 @@
     margin-bottom: 2rem;
   }
 
-  
   .services-container {
     display: flex;
     justify-content: center;
@@ -21,7 +20,7 @@
   
   .service-card {
     width: 20rem;
-    height: 25rem;
+    height: 30rem;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

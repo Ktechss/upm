@@ -6,23 +6,32 @@ import instagram_icon from '../assets/instagram.svg';
 import photoshop from '../assets/photoshop.png';
 import premierpro from '../assets/premiere-pro.png';
 import affter_effect from '../assets/after-effects.png';
+import logo from '../assets/upm_logo/UPM_W4.png';
 import TechCard from './tech_banner/TechCard';
 
 const HomePage = () => {
   const handleCardClose = () => {
     console.log('Card closed!');
   };
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <div className="home-page">
       <header className="header-container">
-        <div className="logo">MyLogo</div>
+        <div className="logo">
+          <img src={logo} className='upm_logo'/>
+        </div>
         <nav className="navigation">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><button className='nav-buttons' onClick={() => scrollToSection('home')}>Home</button></li>
+            <li><button className='nav-buttons' onClick={() => scrollToSection('services')}>Services</button></li>
+            <li><button className='nav-buttons' onClick={() => scrollToSection('team')}>team</button></li>
+            <li><button className='nav-buttons' onClick={() => scrollToSection('contact')}>Contact</button></li>
           </ul>
         </nav>
         <div className="social-icons">
