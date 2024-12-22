@@ -1,0 +1,99 @@
+.footer {
+    background-color: #007bff;
+    padding: 2rem;
+    color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 1rem;
+  }
+  .contact-info{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    flex-grow: calc(1.15);
+    gap:1.1rem
+  }
+  
+  .contact-info .contact-item {
+    margin-bottom: 1rem;
+  }
+  
+  .contact-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .contact-item i {
+    margin-right: 1rem;
+  }
+  .company-location{
+    line-height: 1.5;
+  }
+  
+  .social-links-footer {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    align-self: flex-end;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+  }
+  
+  .legal {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
+    align-self: flex-end;
+  }
+  
+  .legal-links{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    gap:0.5rem;
+  }
+  .legal-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .footer-logo {
+    height: 6vh;
+    width: 8vw;
+    margin-bottom: 1rem;
+    align-self: flex-end;
+  }
+  .company-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+  .footer_icons{
+    height: 5.5vh;
+    width: 3vw;
+  }
