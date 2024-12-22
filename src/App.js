@@ -7,8 +7,6 @@ import AboutUs from './components/AboutUs';
 import MediaPage from './components/MediaPage/MediaPage';
 import './App.css';
 import Footer from './components/Footer';
-import TeamSlider from './components/TeamPage';
-import teamphototest from './assets/team1.jpg'
 
 
 const App = () => {
