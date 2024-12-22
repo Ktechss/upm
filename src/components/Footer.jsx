@@ -8,7 +8,7 @@ import phone_logo from '../assets/footer_icons/Phone_Icon.png'
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contactus">
       <div className="footer-container">
         <div className="footer-section contact-info">
           <div className="contact-item">

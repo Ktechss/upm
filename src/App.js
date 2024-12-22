@@ -5,6 +5,7 @@ import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
 import AboutUs from './components/AboutUs';
 import MediaPage from './components/MediaPage/MediaPage';
+import TeamPage from './components/TeamPage';
 import './App.css';
 import Footer from './components/Footer';
 
@@ -21,6 +22,7 @@ const App = () => {
                 <HomePage />
                 <Services />
                 <WhyChooseUs />
+                <TeamPage/>
                 <AboutUs />
               </>
             }

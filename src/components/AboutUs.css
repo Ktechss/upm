@@ -1,36 +1,63 @@
+/* About Us section container */
 .about-us {
-    background-color: #ffffff; /* White background */
-    padding: 3rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  gap: 2rem; /* Creates space between text and globe */
+  height: 100vh; /* Full viewport height */
+  background-color: #000000; /* Optional background */
+}
+
+/* About Us text */
+.about-us-text {
+  flex: 1; /* Take up available space */
+  max-width: 50%; /* Limit the width */
+  text-align: left; /* Align text to the left */
+}
+
+/* Headline styling */
+.about-us-headline {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+/* Description styling */
+.about-us-description {
+  font-size: 1.25rem;
+  color: #ffffff;
+  line-height: 1.8;
+}
+
+/* Globe container */
+#globeViz {
+  flex: 1; /* Take up available space */
+  max-width: 100%; /* Limit the width */
+  height: 100%; /* Height of the globe */
+  background-color: #fff; /* Optional background color */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add a slight shadow around the globe */
+}
+.about-us-3d-model{
+  height: 60vh;
+  width: 40vw;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .about-us {
+    flex-direction: column; /* Stack text and globe vertically */
     text-align: center;
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  
-  .about-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1.5rem;
-    color: #000;
+
+  .about-us-text {
+    max-width: 100%;
+    margin-bottom: 2rem; /* Space between text and globe */
   }
-  
-  .about-description {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #555;
-    width: 80%;
-    margin: 0 auto;
-    margin-bottom: 4rem;
+
+  #globeViz {
+    max-width: 100%;
   }
-  .team-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 1.5rem;
-  }  
-  .about-description {
-    text-align: justify;
-  }
-  
+}

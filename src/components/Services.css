@@ -1,13 +1,14 @@
 .services-section {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: #ffffff;
+    background-color: #000000;
   }
   
   .services-title {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    color: white;
   }
 
   .services-container {
@@ -21,13 +22,23 @@
   .service-card {
     width: 20rem;
     height: 30rem;
-    background: #fff;
+    background: #020202;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
+    border:1px solid #f3f3f3;
   }
+  /* .service-card:first-child{
+    background: linear-gradient(to bottom,rgba(161, 1, 1, 0.98),black);
+  }
+  .service-card:nth-child(2){
+    background: linear-gradient(to bottom ,rgb(1, 161, 49),black);
+  }
+  .service-card:nth-child(3){
+    background: linear-gradient(to bottom,rgb(52, 1, 161),black);
+  } */
   
   .service-card:hover {
     transform: translateY(-10px);
@@ -44,11 +55,13 @@
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    color: white;
+    
   }
   
   .service-description {
     font-size: 1rem;
-    color: #555;
+    color: #ffffff;
     line-height: 1.5;
   }
   

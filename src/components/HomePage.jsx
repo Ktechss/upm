@@ -90,8 +90,9 @@ const HomePage = () => {
           <ul>
             <li><button className="nav-buttons" onClick={() => scrollToSection('home')}>Home</button></li>
             <li><button className="nav-buttons" onClick={() => scrollToSection('services')}>Services</button></li>
-            <li><button className="nav-buttons" onClick={() => scrollToSection('team')}>Team</button></li>
-            <li><button className="nav-buttons" onClick={() => scrollToSection('contact')}>Contact</button></li>
+            <li><button className="nav-buttons" onClick={() => scrollToSection('teams')}>Team</button></li>
+            <li><button className="nav-buttons" onClick={() => scrollToSection('aboutUS')}>AboutUs</button></li>
+            <li><button className="nav-buttons" onClick={() => scrollToSection('contactus')}>Contact Us</button></li>
           </ul>
         </nav>
         <div className="social-icons">
@@ -104,10 +105,10 @@ const HomePage = () => {
       <main className="landing-content">
         <div className="headline">
           <h1 className="line">
-            One <span style={{color:'white'}}>{typedTextPixel}</span>
+            One <span style={{color:'#3d84e2'}}>{typedTextPixel}</span>
           </h1>
           <h1 className="line">
-            <span style={{color:'white'}} >{typedTextAt}</span> a Time
+            <span style={{color:'#3d84e2'}} >{typedTextAt}</span> a Time
           </h1>
         </div>
         <div className="landing_page_title">

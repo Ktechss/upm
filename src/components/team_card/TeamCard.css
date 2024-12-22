@@ -1,49 +1,50 @@
-.team-card {
-    width: 250px;
-    height: 35vh;
-    background-color: #000000;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0.5rem;
 
-  }
-  
-  .team-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .team-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .team-info {
-    padding: 0.5rem;
-    background: #ffffff;
-    border-radius: 10px;
-    border:0 1px black;
-  }
-  
-  .team-name {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0.5rem 0;
-    color: #333;
-  }
-  
-  .team-role {
-    font-size: 1rem;
-    color: #777;
-  }
-  
+
+.team-card {
+  width: 250px;
+  height: 35vh;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  background-color: #ffffff00;
+  border:2px solid #f3f3f3;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.team-image {
+  width: 100%;
+  height: 100%; /* Ensure image fits within the div */
+  border-radius: 10px;
+  background: linear-gradient(to top, rgba(56, 56, 56, 0), rgba(255, 255, 255, 0));
+  object-fit: cover; /* Maintain aspect ratio and fill div */
+}
+
+.team-info {
+  padding: 0.5rem;
+  background: #00000088;
+  border-radius: 10px;
+  border: 0 1px black;
+}
+
+.team-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+  color: #ffffff;
+}
+
+.team-role {
+  font-size: 1rem;
+  color: #ffffff;
+}
