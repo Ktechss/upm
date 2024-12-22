@@ -1,62 +1,143 @@
 .why-choose-us {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    justify-content: space-between;
-    gap:0;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #999;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  margin-top: 5rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.section-title .why-highlight {
+  color: #3d84e2; /* Green for expert.io */
+}
+
+.features-container {
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  padding-left : 8rem;
+  padding-right:8rem;
+}
+.feature-card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+.feature-card-container:first-child{
+  flex-grow: 6;
+}
+
+
+
+.feature-card-sub-conatiner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1.2rem;
+
+}
+
+.feature-card {
+  border-radius: 8px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(135, 45, 45, 0.1);
+  height: 30vh;
+  display: flex;
+  align-items: flex-end;
+}
+.feature-card:hover{
+  transform: scale(1.025); 
+  transition: transform 0.3s ease;
+}
+
+.feature-info{
+  color:white;
+}
+
+.special-card {
+  background: linear-gradient(to top,rgb(0, 0, 0),rgba(255, 255, 255, 0)),url('../assets/camera_lense.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  color: #fff;
+  position: relative;
+
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.cta-button {
+  background: #4ade80;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background: #3db670;
+}
+
+@media (max-width: 768px) {
+  .features-container {
+    grid-template-columns: 1fr;
   }
-  
-  .content {
-    max-width: 60%;
-    color: #333;
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  
-  .highlight {
-    color: #007bff;
-  }
-  
-  .description {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-  }
-  
-  .value-points {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #007bff;
-    margin-bottom: 1rem;
-  }
-  
-  .points-list {
-    list-style: none;
-    padding: 0;
-    font-size: 1rem;
-    line-height: 1.8;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-  
-  .points-list li {
-    flex: 1 1 45%;
-  }
-  
-  .image-container {
-    flex-shrink: 0;
-    
-  }
-  
-  .character-image {
-    width: 600px;
-    height: auto;
-  }
-  
+}
+
+/* Default opacity for all cards */
+.feature-card,
+.special-card {
+  opacity: 2;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Reduce opacity of other cards when one is hovered */
+.feature-card-container:hover .feature-card:not(:hover),
+.feature-card-container:hover .special-card:not(:hover) {
+  opacity: 0.5; /* Dim the non-hovered cards */
+}
+
+/* Highlight the hovered card */
+.feature-card:hover,
+.special-card:hover {
+  opacity: 1; /* Ensure hovered card stays fully visible */
+  transform: scale(1.05); /* Optional: Add a slight scale effect */
+}
