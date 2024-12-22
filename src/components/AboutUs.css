@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem;
+  padding: 8rem;
   gap: 2rem; /* Creates space between text and globe */
   height: 100vh; /* Full viewport height */
   background-color: #000000; /* Optional background */
@@ -26,9 +26,10 @@
 
 /* Description styling */
 .about-us-description {
-  font-size: 1.25rem;
+  font-size: 1.02rem;
   color: #ffffff;
   line-height: 1.8;
+  text-align: justify;
 }
 
 /* Globe container */
@@ -43,6 +44,7 @@
 .about-us-3d-model{
   height: 60vh;
   width: 40vw;
+  cursor: grab;
 }
 
 /* Responsive design for smaller screens */
