@@ -1,0 +1,28 @@
+/* CountryClock.css */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.country-clock {
+    display: inline-block;
+    text-align: center;
+    border: 2px solid #3D84E2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #18181800;
+    color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    font-family: "Josefin Sans", serif;
+    height: 7vh;
+    width: 7vw;
+  }
+  
+  .country-clock .time {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .country-clock .country {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
