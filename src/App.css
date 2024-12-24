@@ -1,7 +1,19 @@
-*{
+/* Tailwind Directives (Should be first) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+@import './components/AboutUs.css';
+
+/* Universal Reset (Can be kept, but should be careful with Tailwind's utilities) */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: content-box;
 }
+
+/* Smooth scrolling for the entire page */
 html {
   scroll-behavior: smooth;
 }

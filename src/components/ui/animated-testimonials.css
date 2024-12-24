@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+/* Container */
+.testimonials-container {
+    max-width: 60rem;
+    margin: 0 auto;
+    font-family: sans-serif;
+    padding: 5rem 1rem;
+  }
+  
+  /* Grid wrapper to position elements side by side */
+  .testimonials-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;  /* Default 1 column for small screens */
+    gap: 5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .testimonials-wrapper {
+      grid-template-columns: 1fr 1fr; /* 2 columns for medium screens and up */
+    }
+  }
+  
+  /* Image container */
+  .testimonials-image-wrapper {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+  }
+  
+  /* Text wrapper */
+  .testimonials-text-wrapper {
+    display: flex;
+    flex-direction: column;  /* Align the text vertically */
+    justify-content: center; /* Center text vertically */
+    gap:2rem;
+    padding-top: 1rem;
+    padding-bottom: 0;
+  }
+  
+  /* Text styles */
+  .team-text-des {
+    font-family:'Poppins', sans-serif;
+  }
+  
+  .team-text-des h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#3d84e2;
+  }
+  
+  .team-text-des p {
+    font-size: 1.025rem;
+    color: #ffffff; /* gray-500 */
+  }
+  
+  .team-text-des .quote {
+    font-size: 1.125rem;
+    color: #ffffff; /* gray-500 */
+    margin-top: 2rem;
+  }
+  
+  .inline-block {
+    display: inline-block;
+  }
+  
+  /* Buttons */
+  .button {
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 9999px;
+    background-color: #f3f4f600; /* gray-100 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .button .icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: black;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .button:hover .icon {
+    transform: rotate(12deg);
+  }
+  
+  .button .icon-left {
+    transform: rotate(-12deg);
+  }
+  .team-nav-icons{
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+    justify-content: center;
+  }
+
+  .arrow-icon, #previous-button {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .arrow-icon:hover {
+    transform: scale(1.2); /* Scales the image by 1.2 times */
+    filter: hue-rotate(180deg) brightness(1.5) saturate(2); /* Blend the color into the image */
+  }
+
+ 
