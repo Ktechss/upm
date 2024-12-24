@@ -1,0 +1,109 @@
+/* StickyScroll.css */
+
+.sticky-scroll-container {
+    height: 30rem;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    gap:6rem;
+    border-radius: 0.5rem;
+    padding: 2.5rem;
+  }
+  
+  .sticky-scroll-content {
+    position: relative;
+    display: flex;
+    align-items: start;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 80%;
+  }
+  
+  .sticky-scroll-inner {
+    max-width: 32rem;
+  }
+  
+  .sticky-scroll-card {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sticky-scroll-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e2e8f0;
+  }
+  
+  .sticky-scroll-description {
+    font-size: 1rem;
+    color: #ffffff;
+    max-width: 30rem;
+    margin-top: 2.5rem;
+    text-align: justify;
+  }
+  
+  .sticky-scroll-footer {
+    height: 10rem;
+  }
+  
+  .sticky-scroll-sidebar {
+    display: none;
+    height: 90%;
+    width: 35rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    position: sticky;
+    top: 2.5rem;
+    overflow: hidden;
+  }
+  
+  @media (min-width: 1024px) {
+    .sticky-scroll-sidebar {
+      display: block;
+    }
+  }
+  
+
+.wave-title {
+    display: flex;
+}
+
+.wave-title h2 {
+    position: absolute;
+    color: #363636;
+    transform: translate(-50%, -50%);
+    font-size: 2cap;
+}
+
+.wave-title h2:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 0.9px#03a9f4;
+}
+
+.wave-title h2:nth-child(2) {
+    color: #03a9f4;
+    /* animation: animate 3s ease-in-out infinite; */
+}
+
+@keyframes animate {
+    0% {
+        clip-path: polygon(0% 50%, 20% 55%, 40% 52%, 60% 58%, 80% 54%, 100% 50%, 100% 100%, 0% 100%);
+    }
+    25% {
+        clip-path: polygon(0% 54%, 20% 50%, 40% 56%, 60% 52%, 80% 58%, 100% 54%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 52%, 20% 58%, 40% 50%, 60% 54%, 80% 50%, 100% 56%, 100% 100%, 0% 100%);
+    }
+    75% {
+        clip-path: polygon(0% 50%, 20% 54%, 40% 58%, 60% 50%, 80% 56%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    100% {
+        clip-path: polygon(0% 50%, 20% 55%, 40% 52%, 60% 58%, 80% 54%, 100% 50%, 100% 100%, 0% 100%);
+    }
+}

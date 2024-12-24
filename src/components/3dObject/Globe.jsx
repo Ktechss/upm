@@ -1,29 +1,22 @@
 import React, { useEffect, useRef } from 'react';
 import Globe from 'globe.gl';
+import locationData from '../../User_Data/location_Data';
+
+// Move navigatLocationData outside of the component to avoid re-creating it on each render
+const navigatLocationData = [];
+for (let i = 0; i < locationData.length; i++) {
+  for (let j = i + 1; j < locationData.length; j++) {
+    navigatLocationData.push({
+      startLat: locationData[i].lat,
+      startLng: locationData[i].lng,
+      endLat: locationData[j].lat,
+      endLng: locationData[j].lng,
+    });
+  }
+}
 
 const GlobeComponent = () => {
   const globeRef = useRef(null);
-  const locationData =[
-    { lat: 40.7128, lng: -74.0060, name: 'New York' },
-        { lat: 51.5074, lng: -0.1278, name: 'London' },
-        { lat: 34.0522, lng: -118.2437, name: 'Los Angeles' },
-        { lat: 35.6895, lng: 139.6917, name: 'Tokyo, Japan' },
-        { lat: 20.5937, lng: 78.9629, name: 'India, Mumbai' },
-        { lat: -82.8628, lng: 135.0000, name: 'Antarctica' },
-
-
-  ];
-  const navigatLocationData=[];
-  for (let i = 0; i < locationData.length; i++) {
-    for (let j = i + 1; j < locationData.length; j++) {
-      navigatLocationData.push({
-        startLat: locationData[i].lat,
-        startLng: locationData[i].lng,
-        endLat: locationData[j].lat,
-        endLng: locationData[j].lng,
-      });
-    }
-  }
 
   useEffect(() => {
     const globe = Globe()
@@ -51,7 +44,7 @@ const GlobeComponent = () => {
       .arcStartLng('startLng')
       .arcEndLat('endLat')
       .arcEndLng('endLng')
-      .arcColor(() => ['blue', 'cyan','green','red'])
+      .arcColor(() => ['blue', 'cyan', 'green', 'red'])
       .arcAltitude(() => 0.2)
       .arcStroke(() => 1)
       .arcDashLength(0.5)
@@ -90,7 +83,7 @@ const GlobeComponent = () => {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []);
+  }, []); // Now there is no need to include navigatLocationData in the dependency array
 
   return (
     <div
@@ -102,6 +95,3 @@ const GlobeComponent = () => {
 };
 
 export default GlobeComponent;
-
-
-

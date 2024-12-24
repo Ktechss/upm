@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tabler/icons-react": "^3.26.0",
+    "autoprefixer": "^10.4.20",
+    "clsx": "^2.1.1",
     "cra-template": "1.2.0",
+    "framer-motion": "^11.15.0",
     "globe.gl": "^2.34.5",
     "i": "^0.3.7",
     "lucide-react": "^0.469.0",
     "moment-timezone": "^0.5.46",
+    "postcss": "^8.4.49",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.0",
     "react-scripts": "5.0.1",
     "swiper": "^11.1.15",
+    "tailwind-merge": "^2.6.0",
     "three": "^0.171.0"
   },
   "scripts": {
@@ -40,6 +46,7 @@
     ]
   },
   "devDependencies": {
+    "tailwindcss": "^3.4.17",
     "web-vitals": "^4.2.4"
   }
 }
