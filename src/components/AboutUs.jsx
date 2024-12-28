@@ -9,19 +9,17 @@ const AboutUs = () => {
     <section className="about-us">
       <div className="about-us-text-container">
         <div className='text'>
-          <h2 className='about-us-head-title'>About Us</h2>
-        <h2 className="about-us-headline">Serving Across the Globe</h2>
-        <p className="about-us-description">
-          As a global leader in digital media marketing,
-          we specialize in delivering exceptional services across media strategy,
-          consultancy, and marketing solutions. With an extensive presence in multiple
-          countries, we are dedicated to helping businesses thrive in the digital age.
-          From crafting innovative campaigns to providing strategic guidance, our
-          team ensures every client achieves unparalleled success.
-          Our mission is to bring your brand closer to its audience,
-          leveraging cutting-edge technology and creative expertise
-          to make a lasting impact worldwide.
-        </p>
+          <h2 className='about-us-head-title'>We serve across the Globe</h2>
+          <h2 className="about-us-headline"></h2>
+          <p className="about-us-description">
+            Unknown Pixel Media partners with businesses around the world, offering seamless collaboration no matter where you are. From North America to Europe, Asia to Australia, we craft strategies that resonate globally while delivering local impact.
+            Serving You, Anytime, Anywhere:
+            A Global Presence with Local Insights | Round-the-Clock Support aligned to your time zone.
+            Time Zones: Vancouver, Toronto, Winnipeg, New Delhi, Australia, London, Italy, Germany, California.
+
+            Our expertise spans continents, ensuring your brand’s message is heard across cultures and markets, bringing your vision to life on a global scale.
+
+          </p>
         </div>
         <div className='world-clock'>
           {locationData.map((location) => (

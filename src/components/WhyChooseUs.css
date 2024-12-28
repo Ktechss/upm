@@ -5,19 +5,28 @@
   text-align: center;
 }
 
+
 .section-subtitle {
   color: #ffffff;
   font-size: 0.9rem;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  margin-top: 5rem;
-
+  margin-bottom: 2rem;
+  width: 80%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  transition: opacity 1s ease-in; /* Smooth fade-in transition */
 }
+
+.section-subtitle.fade-in-visible {
+  opacity: 1; /* Fade-in effect */
+}
+
+
 
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 2rem;
   color: white;
 }
 
@@ -96,7 +105,6 @@
 .feature-card h3 {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 0.5rem;
 }
 
 .feature-card p {
@@ -104,22 +112,7 @@
   line-height: 1.5;
 }
 
-.cta-button {
-  background: #4ade80;
-  color: #fff;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 4px;
-  font-size: 0.9rem;
-  font-weight: bold;
-  margin-top: 1rem;
-  cursor: pointer;
-  transition: background 0.3s;
-}
 
-.cta-button:hover {
-  background: #3db670;
-}
 
 @media (max-width: 768px) {
   .features-container {

@@ -1,0 +1,25 @@
+.cta-button {
+    background:black;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .cta-button:hover {
+    background:#03a9f4;
+    border: none;
+  }
+  .cta-arrow-image{
+    height: 1.2rem;
+    width: 1.2rem;
+  }

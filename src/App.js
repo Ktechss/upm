@@ -8,6 +8,7 @@ import MediaPage from './components/MediaPage/MediaPage';
 import TeamPage from './components/TeamPage';
 import './App.css';
 import Footer from './components/Footer';
+import ServicePage from './components/Service_Page/ServicePage';
 
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
             }
           />
           <Route path="/media" element={<MediaPage />} />
+          <Route path="/services" element={<ServicePage/>}/>
         </Routes>
       </Router>
       <Footer />

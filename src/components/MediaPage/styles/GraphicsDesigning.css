@@ -1,0 +1,104 @@
+.graphics-design{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    width: 100vw;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.graphics-design-content-box{
+    width: 40%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(255, 255, 255);
+}
+.graphics-slider {
+    display: flex;
+    width: calc(100% * 6); /* 6 = number of images */
+    height: 80%;
+    animation: slide 15s linear infinite;
+    gap: 5rem;
+}
+
+.graphics-design-images {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    position: relative; /* For positioning pseudo-elements */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.graphics-design-images::before,
+.graphics-design-images::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 20%; /* Adjust width for more/less fade */
+    z-index: 1;
+}
+
+.graphics-design-images::before {
+    left: 0; /* Apply gradient on the left side */
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), transparent); /* Left fade to white */
+}
+
+.graphics-design-images::after {
+    right: 0; /* Apply gradient on the right side */
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), transparent); /* Right fade to white */
+}
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.graphics-design-text{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:3.5rem;
+}
+.graphics-design-text h2{
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+.graphics-design-button{
+    background-color: #2a7be5;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 10px;
+    height: 1.9rem;
+    width: 13rem;
+    border: none;
+    transition: all 0.3s ease-out;
+}
+.graphics-design-button:hover{
+    background-color: #146de1;
+    transform: scale(1.025);
+}
+
+#Background_Simple{
+    width: 100%;
+    height: 100%;
+}

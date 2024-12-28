@@ -1,0 +1,68 @@
+.logo-design{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5rem;
+    width: 100vw;
+    height: 100vh;
+}
+.logo-design-content-box, .logo-design-text{
+    width: 40%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0);
+}
+.logo-design-content-box {
+    background: url('../assets/media-service-image4.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: slideBackground 15s linear infinite; /* 10s for the sliding duration, infinite to loop */
+}
+
+@keyframes slideBackground {
+    0% {
+        background-position: 30% center; /* Start position off-screen to the left */
+    }
+    50% {
+        background-position: 100% center; /* End position off-screen to the right */
+    }
+    100%{
+        background-position: 30% center;
+    }
+}
+
+
+.logo-design-text{
+    justify-content: center;
+    align-items: flex-start;
+    gap:2rem;
+}
+.logo-design-text h2{
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+.logo-design-button{
+    background-color: #2a7be5;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 10px;
+    height: 1.8rem;
+    width: 10rem;
+    border: none;
+    transition: all 0.3s ease-out;
+}
+.logo-design-button:hover{
+    background-color: #146de1;
+    transform: scale(1.025);
+}
+
+.logo-design-images,#Background_Simple{
+    width: 100%;
+    height: 100%;
+
+}
+

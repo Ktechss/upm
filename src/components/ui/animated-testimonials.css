@@ -104,4 +104,20 @@
     filter: hue-rotate(180deg) brightness(1.5) saturate(2); /* Blend the color into the image */
   }
 
- 
+ .social-links-for-team{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap:0.5rem;
+  margin-top:1.1rem ;
+ }
+ .social-icon-for-team {
+  max-width: 2rem;
+  max-height: 2.5rem;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.social-icon-for-team:hover {
+  transform: scale(1.1); /* Scale by 1.5 times on hover */
+}
