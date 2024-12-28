@@ -1,0 +1,121 @@
+/* General container for the Media Service section */
+.media-service {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  
+  .service-buttons {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Allow wrapping of buttons */
+  }
+  
+  .service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .service-buttons button {
+    padding: 12px 25px;
+    background-color: #ffffff;
+    font-size: 0.9rem;
+    border: none;
+    color: black;
+    border-radius: 8px;
+    border: 1px solid #007bff;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add smooth hover animation */
+    white-space: nowrap; /* Prevent button text from wrapping */
+    text-overflow: ellipsis; /* Truncate text if it's too long */
+    overflow: hidden; /* Hide any overflowed text */
+  }
+  
+  .service-buttons button:hover {
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+  }
+  
+  .service-card {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .service-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .service-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .service-buttons button.selected {
+    background-color: #007bff; /* Highlighted background color */
+    color: white; /* Change text color */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  .media-service-headings{
+    margin-bottom: 2rem;
+  }
+  .media-service-healine{
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .service-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .service-card {
+      width: 80%;
+      margin: 10px 0;
+    }
+  
+    .service-buttons {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      align-items: center; /* Center buttons */
+    }
+  
+    .service-buttons button {
+      width: 100%; /* Make buttons take full width on small screens */
+      margin-bottom: 10px; /* Add space between buttons */
+    }
+  }
+  

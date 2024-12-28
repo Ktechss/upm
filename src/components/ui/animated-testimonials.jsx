@@ -131,6 +131,24 @@ const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
                 </motion.span>
               ))}
             </motion.p>
+            {/* Social Links */}
+            <div className="social-links-for-team">
+              {testimonials[active].socialLinks.map((link, index) => (
+                <a
+                  key={index}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-link"
+                >
+                  {/* Render icon dynamically from the iconPath */}
+                  <img
+                    src={link.iconPath}
+                    className="social-icon-for-team"
+                  />
+                </a>
+              ))}
+            </div>
           </motion.div>
           <div className="flex gap-4 pt-12 md:pt-0 team-nav-icons">
             <button
@@ -138,13 +156,13 @@ const AnimatedTestimonials = ({ testimonials, autoplay = false }) => {
               className="button"
             >
               {/* <IconArrowLeft className="icon icon-left" /> */}
-              <img src={arrow_icon_left} className="arrow-icon" alt="Previous"/>
+              <img src={arrow_icon_left} className="arrow-icon" alt="Previous" />
             </button>
             <button
               onClick={handleNext}
               className="button"
             >
-              <img src={arrow_icon_right} className="arrow-icon"/>
+              <img src={arrow_icon_right} className="arrow-icon" />
               {/* <IconArrowRight className="icon" /> */}
             </button>
           </div>

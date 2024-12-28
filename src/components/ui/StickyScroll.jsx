@@ -40,6 +40,16 @@ export const StickyScroll = ({ content, contentClassName }) => {
     setBackgroundGradient(linearGradients[activeCard % linearGradients.length]);
   }, [activeCard]);
 
+  // Timeline scrolling logic
+  const timelineRef = useRef(null);
+
+  useEffect(() => {
+    if (timelineRef.current) {
+      const percentage = (activeCard / (cardLength - 1)) * 100;
+      timelineRef.current.style.height = `${percentage+50}%`;
+    }
+  }, [activeCard, cardLength]);
+
   return (
     <motion.div
       animate={{
@@ -48,7 +58,13 @@ export const StickyScroll = ({ content, contentClassName }) => {
       className="sticky-scroll-container custom-style"
       ref={ref}
     >
+      
       <div className="sticky-scroll-content">
+      <div className="sticky-scroll-timeline-container">
+        <div className="sticky-scroll-timeline">
+          <div ref={timelineRef} className="sticky-scroll-timeline-progress" />
+        </div>
+      </div>
         <div className="sticky-scroll-inner">
           {content.map((item, index) => (
             <div key={item.title + index} className="sticky-scroll-card">
@@ -62,8 +78,8 @@ export const StickyScroll = ({ content, contentClassName }) => {
                 className="sticky-scroll-title"
               >
                 <div className="wave-title">
-                  <h2>{item.title}</h2>
-                  <h2>{item.title}</h2>
+                  <h2 className="wave-title-h2">{item.title}</h2>
+                  <h2 className="wave-title-h2">{item.title}</h2>
                 </div>
               </motion.h2>
               <motion.p
@@ -77,6 +93,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
               >
                 {item.description}
               </motion.p>
+              {item.cta}
             </div>
           ))}
           <div className="sticky-scroll-footer" />
@@ -100,6 +117,7 @@ export const StickyScroll = ({ content, contentClassName }) => {
           <p className="text-center text-white">No video available</p>
         )}
       </div>
+      
     </motion.div>
   );
 };

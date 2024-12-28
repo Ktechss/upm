@@ -1,0 +1,9 @@
+.services-page{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    max-height: 100vh;
+    max-width: 100vw;
+}

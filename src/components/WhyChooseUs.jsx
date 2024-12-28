@@ -4,9 +4,9 @@ import video_editing_image from "../assets/services_images/video_editing.jpg";
 import video_editing_image1 from "../assets/services_images/video_editing_1.jpg";
 import video_editing_image2 from "../assets/services_images/video_editing_2.jpg";
 
-import customer_satisfaction_image from "../assets/services_images/satisfaction.jpg";
-import customer_satisfaction_image1 from "../assets/services_images/satisfaction_1.jpg";
-import customer_satisfaction_image2 from "../assets/services_images/satisfaction_2.jpg";
+import customer_satisfaction_image from "../assets/services_images/data_driven_photo.jpg";
+import customer_satisfaction_image1 from "../assets/services_images/data_driven_photo.jpg";
+import customer_satisfaction_image2 from "../assets/services_images/data_driven_photo.jpg";
 
 import consultancy_image from "../assets/services_images/consultancy.jpg";
 import consultancy_image1 from "../assets/services_images/consultancy_1.jpg";
@@ -60,12 +60,32 @@ const WhyChooseUs = () => {
     return () => clearInterval(interval);
   }, [consultancyImages, videoEditingImages, satisfactionImages, designingImages]);
 
+  // Fade-in effect using IntersectionObserver
+  useEffect(() => {
+    const subtitle = document.querySelector(".section-subtitle");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Add the class to trigger the fade-in effect
+          entry.target.classList.add("fade-in-visible");
+          observer.unobserve(entry.target); // Stop observing after triggering the effect
+        }
+      });
+    }, { threshold: 0.5 }); // Trigger when 50% of the element is visible
+
+    observer.observe(subtitle); // Start observing the subtitle
+  }, []);
+
   return (
     <section className="why-choose-us">
-      <h5 className="section-subtitle">WHY CHOOSE US</h5>
       <h2 className="section-title">
         Why <span className="why-highlight">Unknown Pixel Media</span> is The Right Choice for You
       </h2>
+      <h5 className="section-subtitle">
+        At Unknown Pixel Media, our vision is clear to be a global leader in digital space and marketing, using cutting-edge technology and creative strategies to empower businesses worldwide. Our mission drives us to deliver data-driven solutions tailored to your unique goals, with a globally connected team committed to excellence
+      </h5>
+      
       <div className="features-container">
         <div className="feature-card-container">
           <div className="feature-card-sub-conatiner">
@@ -80,13 +100,10 @@ const WhyChooseUs = () => {
               }}
             >
               <div className="feature-info">
-                <div className="icon">👨‍🏫</div>
-                <h3>Consultancy</h3>
+                <div className="icon"></div>
+                <h3>Visionary Leadership</h3>
                 <p>
-                  Learn from top industry professionals who bring years of
-                  real-world experience to the classroom, providing you with the
-                  latest tools, techniques, and insights needed to excel in your
-                  field.
+                  We’re not just about today; we’re focused on the future. With a deep understanding of today and beyond, we design strategies that align with evolving trends, ensuring your business stays ahead in the digital age.
                 </p>
               </div>
             </div>
@@ -102,12 +119,10 @@ const WhyChooseUs = () => {
               }}
             >
               <div className="feature-info">
-                <div className="icon">📜</div>
-                <h3>Video Editing</h3>
+                <div className="icon"></div>
+                <h3>Comprehensive Expertise</h3>
                 <p>
-                  Earn certifications that are highly regarded by employers,
-                  helping you to enhance your resume, gain industry recognition,
-                  and open doors to new career opportunities.
+                  Our team brings unparalleled experience in: Business strategy for growth and scalability. Media and creative design with cutting-edge 3D and VFX. Marketing strategies that deliver measurable results.
                 </p>
               </div>
             </div>
@@ -124,13 +139,10 @@ const WhyChooseUs = () => {
             }}
           >
             <div className="feature-info">
-              <div className="icon">📚</div>
-              <h3>100+ Customer Satisfaction</h3>
+              <div className="icon"></div>
+              <h3>Data-Driven Innovation</h3>
               <p>
-                expert.io offers over 100 courses that cover essential skills in
-                today’s tech industry. Whether you're a beginner or an experienced
-                professional, our courses in web development, data science, and
-                cybersecurity provide practical, hands-on learning.
+                We combine advanced analytics, trend insights, and global expertise to create impactful campaigns that resonate with your audience and boost ROI.
               </p>
             </div>
           </div>
@@ -148,13 +160,10 @@ const WhyChooseUs = () => {
             }}
           >
             <div className="feature-info">
-              <div className="icon">📅</div>
-              <h3>Flexible Learning Schedules</h3>
+              <div className="icon"></div>
+              <h3>Collaborative Global Team</h3>
               <p>
-                At expert.io, we understand the importance of balancing learning
-                with a busy lifestyle. That’s why our courses are available
-                on-demand, allowing you to learn at your own pace, anytime and
-                anywhere.
+                With a network of forward-thinking professionals, we bring a globally connected perspective, ensuring your brand’s voice is heard across borders.
               </p>
             </div>
           </div>

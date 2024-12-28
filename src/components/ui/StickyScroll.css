@@ -17,20 +17,22 @@
     align-items: start;
     padding-left: 1rem;
     padding-right: 1rem;
-    height: 80%;
+    height: 100%;
   }
   
   .sticky-scroll-inner {
     max-width: 32rem;
+    overflow-y: scroll;
   }
   
   .sticky-scroll-card {
-    margin-top: 5rem;
+    margin-top: 6rem;
     margin-bottom: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    gap:2rem;
   }
   
   .sticky-scroll-title {
@@ -43,12 +45,12 @@
     font-size: 1rem;
     color: #ffffff;
     max-width: 30rem;
-    margin-top: 2.5rem;
+    margin-top: 0.5rem;
     text-align: justify;
   }
   
   .sticky-scroll-footer {
-    height: 10rem;
+    height: 1rem;
   }
   
   .sticky-scroll-sidebar {
@@ -76,7 +78,7 @@
 .wave-title h2 {
     position: absolute;
     color: #363636;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
     font-size: 2cap;
 }
 
@@ -89,6 +91,37 @@
     color: #03a9f4;
     /* animation: animate 3s ease-in-out infinite; */
 }
+
+.sticky-scroll-timeline-container {
+  display: flex;
+  /* position: absolute; */
+  top: 0;
+  left: 10px; /* Move to the left */
+  margin-right: 2.5rem;
+  width: 0.15rem;
+  height: 300%;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+  background: linear-gradient(to bottom,black,white,black);
+}
+
+.sticky-scroll-timeline {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sticky-scroll-timeline-progress {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--cyan-500);
+  background: linear-gradient(to top,black,var(--cyan-500));
+  transition: height 0.3s ease-in-out;
+}
+
+
 
 @keyframes animate {
     0% {

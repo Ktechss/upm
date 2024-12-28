@@ -9,7 +9,7 @@ function TeamPage() {
       <div className='team-page-headings'>
         <h2 className='team-page-headline'>Meet Our Team</h2>
         <br/>
-        <h3 className='team-page-tagline'>Get to Know the Faces Behind Our Success</h3>
+        <h3 className='team-page-tagline'>Get to Know the Forces Behind Our Success</h3>
       </div>
       <div className="team-container">
       <AnimatedTestimonials testimonials={team_info} />
