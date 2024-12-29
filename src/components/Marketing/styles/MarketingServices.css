@@ -1,0 +1,100 @@
+.marketing-services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:5rem;
+  font-family: Arial, sans-serif;
+}
+
+.marketing-services-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:2rem;
+  width: 100%;
+}
+
+.marketing-services-section-title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.marketing-services-section-title-next {
+  width: 20rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.marketing-services-cards-container {
+  width: 80%;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marketing-services-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 2.5rem;
+  background: linear-gradient(140deg, #3d84e2, #78abee);
+  color: white;
+  width: 17rem;
+  height: 34rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.marketing-services-card-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.marketing-services-list {
+  list-style:disc;
+  padding: 0;
+  margin: 0;
+}
+
+.marketing-services-list-item {
+  margin-bottom: 0.5rem;
+}
+
+.marketing-services-all-in-one-growth {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  gap:2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.marketing-services-all-in-one-growth-list {
+  list-style:disc;
+  padding: 0;
+}
+
+.marketing-services-all-in-one-growth-item {
+  margin-bottom: 0.5rem;
+}
+.all-in-one-card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #3d84e2, #78abee);
+  border-radius: 10px;
+  padding: 2.5rem;
+  gap:5rem;
+  width: 75%;
+  color: white;
+}

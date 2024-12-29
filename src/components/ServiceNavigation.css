@@ -1,0 +1,32 @@
+.service-navigation {
+    margin: 2rem 0;
+    text-align: center;
+  }
+  
+  .service-navigation h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .service-navigation ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .service-navigation li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  
+  .service-navigation li a {
+    text-decoration: none;
+    color: #3d84e2;
+    font-weight:550;
+    transition: color 0.3s ease;
+  }
+  
+  .service-navigation li a:hover {
+    color: #7fb3f6;
+  }
+  
