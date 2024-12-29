@@ -9,6 +9,8 @@ import TeamPage from './components/TeamPage';
 import './App.css';
 import Footer from './components/Footer';
 import ServicePage from './components/Service_Page/ServicePage';
+import Consulting_Page from './components/Consulting/Consulting_Page';
+import MarketingPage from './components/Marketing/MarketingPage';
 
 
 const App = () => {
@@ -32,7 +34,9 @@ const App = () => {
             }
           />
           <Route path="/media" element={<MediaPage />} />
+          <Route path="/marketing" element={<MarketingPage />} />
           <Route path="/services" element={<ServicePage/>}/>
+          <Route path="/consulting" element={<Consulting_Page/>}/>
         </Routes>
       </Router>
       <Footer />
