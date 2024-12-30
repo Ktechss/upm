@@ -24,6 +24,10 @@
     max-width: 32rem;
     overflow-y: scroll;
   }
+  .sticky-scroll-inner::-webkit-scrollbar
+  {
+    display: none;
+  }
   
   .sticky-scroll-card {
     margin-top: 6rem;

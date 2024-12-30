@@ -12,6 +12,9 @@ body, html {
   animation: zoomInBackground 1.5s ease-in-out; /* Add animation */
   z-index: 1;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 
 /* Keyframes for zoom-in effect */
 @keyframes zoomInBackground {

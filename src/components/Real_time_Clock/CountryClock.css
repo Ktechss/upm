@@ -1,28 +1,62 @@
-/* CountryClock.css */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 .country-clock {
-    display: inline-block;
-    text-align: center;
-    border: 2px solid #3D84E2;
-    border-radius: 10px;
-    padding: 10px 20px;
-    margin: 10px;
-    background-color: #18181800;
-    color: #ffffff;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    font-family: "Josefin Sans", serif;
-    height: 7vh;
-    width: 7vw;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid #3D84E2;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #18181800;
+  color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  font-family: "Josefin Sans", serif;
+  height: 7vh;
+  width: 7vw;
+  display: flex;
+  flex-direction: column; /* Stack time and country vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+}
+
+.country-clock .time {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.country-clock .country {
+  font-size: 0.95rem;
+  margin-top: 5px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .country-clock {
+    height: auto; /* Auto height to fit content */
+    width: 40vw; /* Adjust width for better fit */
+    padding: 15px 25px; /* Adjust padding for mobile */
   }
-  
+
   .country-clock .time {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px; /* Reduce font size for mobile */
   }
-  
+
   .country-clock .country {
-    font-size: 0.95rem;
-    margin-top: 5px;
+    font-size: 0.9rem; /* Reduce font size for mobile */
   }
-  
+}
+
+@media (max-width: 480px) {
+  .country-clock {
+    width: 80vw; /* Adjust width for smaller screens */
+    padding: 12px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .country-clock .time {
+    font-size: 18px; /* Further reduce font size for very small screens */
+  }
+
+  .country-clock .country {
+    font-size: 0.85rem; /* Further reduce font size for very small screens */
+  }
+}

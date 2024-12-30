@@ -1,71 +1,142 @@
 .header-container {
-    margin-top: 0vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background-color: #33333300;
-    color: #000000;
-    width: 85%;
-  }
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .upm_logo {
-    width: 8vw;
-    height: 6vh;
+  margin-top: 0vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #33333300;
+  color: #000000;
+  width: 85%;
+  position: relative; /* Needed for positioning hamburger */
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.upm_logo {
+  width: 8vw;
+  height: 6vh;
+}
+
+.navigation ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation ul li {
+  margin: 0 1rem;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navigation ul li a:hover {
+  color: #007bff;
+}
+
+.nav-buttons {
+  background: transparent;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  letter-spacing: 0.1rem;
+}
+
+.nav-buttons:hover {
+  transform: scale(1.15);
+  transition: transform 0.3s ease;
+  color: #3d84e2 !important;
+}
+
+.social-icons a {
+  margin: 0 0.5rem;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .navigation ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
   }
-  
+
   .navigation ul li {
-    margin: 0 1rem;
-  }
-  
-  .navigation ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    transition: color 0.3s;
-  }
-  
-  .navigation ul li a:hover {
-    color: #007bff;
+    margin: 1rem 0;
   }
 
-.nav-buttons {
-    background: transparent;
-    border: 0;
-    text-decoration: none;
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 2rem;
     color: #fff;
-    font-weight: 500;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-    letter-spacing: 0.1rem;
-  }
-  
-  .nav-buttons:hover {
-    transform: scale(1.15); /* Slightly enlarges the button to 115% of its original size */
-    transition: transform 0.3s ease; /* Adds a smooth transition effect */
-    color: #3d84e2 !important;
+    position: absolute;
+    right: 20px;  /* Change this to 'left: 20px;' for left positioning */
+    top: 20px;    /* Adjust the top position if necessary */
   }
 
-  .social-icons a {
-    margin: 0 0.5rem;
+  .hamburger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: #fff;
+    transition: all 0.3s;
   }
-  
-  .social-icons img {
-    width: 24px;
-    height: 24px;
-    transition: opacity 0.3s;
+
+  .hamburger-menu.active span:nth-child(1) {
+    transform: rotate(45deg);
+    position: relative;
+    top: 8px;
   }
-  
-  .social-icons img:hover {
-    opacity: 0.7;
+
+  .hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
   }
+
+  .hamburger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -8px;
+  }
+
+  .navigation.active ul {
+    display: flex;
+    position: absolute;
+    right: 0; /* Align it to the right */
+    top: 60px; /* Adjust to the height of the header */
+    background-color: #333;
+    width: 100%;  /* Adjust width as per your need */
+    flex-direction: column;
+    text-align: center;
+  }
+}
