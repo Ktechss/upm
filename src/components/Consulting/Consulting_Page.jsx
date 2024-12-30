@@ -12,10 +12,10 @@ import instagram_icon from '../../assets/social_link_icons/instagram.png';
 import logo from '../../assets/upm_logo/UPM_B5.jpg';
 
 const navigationLinks = [
-  { label: 'Home', href: '#home' },
+  { label: 'Home', href: '/' },
   { label: 'Services', href: '#services' },
   { label: 'Team', href: '#teams' },
-  { label: 'About Us', href: '#aboutUS' },
+  { label: 'About Us', href: '#aboutus' },
   { label: 'Contact Us', href: '#contactus' },
 ];
 

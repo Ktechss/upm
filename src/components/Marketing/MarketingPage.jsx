@@ -6,16 +6,17 @@ import './styles/MarketingPage.css';
 
 import logo from '../../assets/upm_logo/UPM_B5.jpg';
 import ServiceNavigation from '../ServiceNavigation';
+import ContactUs from '../ContactUs';
 
 import facebook_icon from '../../assets/social_link_icons/facebook.png';
 import twitter_icon from '../../assets/social_link_icons/instagram.png';
 import instagram_icon from '../../assets/social_link_icons/instagram.png';
 
 const navigationLinks = [
-  { label: 'Home', href: '#home' },
+  { label: 'Home', href: '/' },
   { label: 'Services', href: '#services' },
   { label: 'Team', href: '#teams' },
-  { label: 'About Us', href: '#aboutUS' },
+  { label: 'About Us', href: '#aboutus' },
   { label: 'Contact Us', href: '#contactus' },
 ];
 
@@ -43,6 +44,7 @@ function MarketingPage() {
       <MarketingSection1 />
       <MarketingServices />
       <ServiceNavigation currentService="Marketing" services={services} />
+      <ContactUs/>
     </div>
   );
 }

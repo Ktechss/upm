@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/MarketingServices.css';
+import crown_icon from '../assets/crown.png';
 
 function MarketingServices() {
   const services = [
@@ -55,8 +56,12 @@ function MarketingServices() {
       <section className="marketing-services-section">
         <h2 className="marketing-services-section-title">Marketing Services</h2>
         <div className="marketing-services-cards-container">
+
           {services.map((service, index) => (
             <div key={index} className="marketing-services-card">
+              <div className='marketing-services-cards-icon-container'>
+                <img className='marketing-services-cards-icon' src={crown_icon} />
+              </div>
               <h3 className="marketing-services-card-title">{service.title}</h3>
               <ul className="marketing-services-list">
                 {service.items.map((item, idx) => (
@@ -72,7 +77,13 @@ function MarketingServices() {
 
       <section className="marketing-services-all-in-one-growth">
         <div className='all-in-one-card'>
+          <div className='marketing-service-section-title-container'>
+          <div className='marketing-services-cards-icon-container'>
+            <img className='marketing-services-cards-icon' src={crown_icon} />
+          </div>
           <h2 className="marketing-services-section-title-next">{allInOneGrowthSuite.title}</h2>
+          </div>
+          
           <ul className="marketing-services-all-in-one-growth-list">
             {allInOneGrowthSuite.items.map((item, index) => (
               <li key={index} className="marketing-services-all-in-one-growth-item">
