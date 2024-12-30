@@ -35,7 +35,6 @@ const App = () => {
           />
           <Route path="/media" element={<MediaPage />} />
           <Route path="/marketing" element={<MarketingPage />} />
-          <Route path="/services" element={<ServicePage/>}/>
           <Route path="/consulting" element={<Consulting_Page/>}/>
         </Routes>
       </Router>

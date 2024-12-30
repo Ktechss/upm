@@ -11,6 +11,11 @@
   
   .service-navigation ul {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:1.5rem;
     padding: 0;
   }
   
@@ -21,12 +26,31 @@
   
   .service-navigation li a {
     text-decoration: none;
-    color: #3d84e2;
+    color: #1a1a1a;
     font-weight:550;
+    letter-spacing: 0.15rem;
     transition: color 0.3s ease;
   }
   
   .service-navigation li a:hover {
     color: #7fb3f6;
+  }
+  
+  
+  .service-navigation li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    position: relative; /* Position relative for the line */
+  }
+  
+  .service-navigation li:not(:last-child)::after {
+    content: ""; /* Empty content for the line */
+    position: absolute;
+    top: 50%; /* Center the line vertically */
+    right: -0.75rem; /* Adjust spacing to align the line properly */
+    transform: translateY(-50%);
+    width: 1px; /* Line thickness */
+    height: 60%; /* Line height */
+    background-color: #000000; /* Line color */
   }
   

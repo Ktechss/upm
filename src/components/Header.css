@@ -53,7 +53,7 @@
   .nav-buttons:hover {
     transform: scale(1.15); /* Slightly enlarges the button to 115% of its original size */
     transition: transform 0.3s ease; /* Adds a smooth transition effect */
-    color: #3d84e2;
+    color: #3d84e2 !important;
   }
 
   .social-icons a {

@@ -6,7 +6,7 @@ import locationData from '../User_Data/location_Data';
 
 const AboutUs = () => {
   return (
-    <section className="about-us">
+    <section className="about-us" id='aboutus'>
       <div className="about-us-text-container">
         <div className='text'>
           <h2 className='about-us-head-title'>We serve across the Globe</h2>

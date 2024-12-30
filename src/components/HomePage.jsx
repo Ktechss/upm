@@ -21,7 +21,7 @@ const HomePage = () => {
     { label: 'Home', href: '#home' },
     { label: 'Services', href: '#services' },
     { label: 'Team', href: '#teams' },
-    { label: 'About Us', href: '#aboutUS' },
+    { label: 'About Us', href: '#aboutus' },
     { label: 'Contact Us', href: '#contactus' },
   ];
 
@@ -77,7 +77,7 @@ const HomePage = () => {
       <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
       <main className="landing-content">
         <div className="headline">
-          <h1 className="Sloagan-line">Building Brands</h1>
+          <h1 className="Sloagan-line">Building</h1>
           <h1 className="line">
             <span style={{ color: 'white' }}>One</span>
             <span style={{ color: '#3d84e2' }}>Pixel</span>
