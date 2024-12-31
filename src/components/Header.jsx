@@ -37,11 +37,7 @@ const Header = ({ logo, navigationLinks, socialIcons }) => {
       </div>
       
       {/* Hamburger Menu Icon */}
-      <div className="hamburger-menu" onClick={toggleMenu}>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+ 
 
       <nav className={`navigation ${isMenuOpen ? 'active' : ''}`}>
         <ul>
