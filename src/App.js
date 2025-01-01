@@ -6,6 +6,7 @@ import WhyChooseUs from './components/WhyChooseUs';
 import AboutUs from './components/AboutUs';
 import MediaPage from './components/MediaPage/MediaPage';
 import TeamPage from './components/TeamPage';
+import PageServices from './components/PageServices';
 import './App.css';
 import Footer from './components/Footer';
 import ServicePage from './components/Service_Page/ServicePage';
@@ -26,6 +27,7 @@ const App = () => {
               <>
                 <HomePage />
                 <Services />
+                <PageServices/>
                 <WhyChooseUs />
                 <TeamPage/>
                 <AboutUs />

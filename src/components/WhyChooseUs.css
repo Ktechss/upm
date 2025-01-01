@@ -7,15 +7,17 @@
 
 
 .section-subtitle {
+  margin-top: 2rem;
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   margin-bottom: 2rem;
-  width: 80%;
+  width: 60%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   opacity: 0; /* Initially hidden */
   transition: opacity 1s ease-in; /* Smooth fade-in transition */
+  line-height: 2rem;
 }
 
 .section-subtitle.fade-in-visible {
@@ -72,9 +74,9 @@
   box-shadow: 0px 2.5px 20px rgba(122, 122, 122, 0.259);
   height: 30vh;
   display: flex;
-
-  align-items: flex-end;
   animation:zoomInFadeOutforWhy 6.5s ease-in infinite;
+  align-items: flex-end;
+
 
 }
 .feature-card:hover{
@@ -103,7 +105,7 @@
 }
 
 .feature-card h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 

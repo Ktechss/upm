@@ -15,6 +15,8 @@ import autodesk from '../assets/tech_card_Icons/Autodesk_maya.png';
 import meta from '../assets/tech_card_Icons/meta.png';
 import mailchimp from '../assets/tech_card_Icons/mailchimp.jpg';
 import logo from '../assets/upm_logo/UPM_W4.png';
+import { Highlight } from './ui/HeroHighLight-Component/HeroHighlight';
+import TextGenerateEffect from './ui/TextGenerateEffect';
 
 const HomePage = () => {
   const navigationLinks = [
@@ -67,6 +69,8 @@ const HomePage = () => {
     setTechCard3(getRandomTech(techCard3Options));
   };
 
+  const words ='Building Brands';
+
   useEffect(() => {
     const interval = setInterval(updateCardsRandomly, 1500);
     return () => clearInterval(interval);
@@ -77,7 +81,10 @@ const HomePage = () => {
       <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
       <main className="landing-content">
         <div className="headline">
-          <h1 className="Sloagan-line">Building Brands</h1>
+          <h1 className="Sloagan-line">
+            {/* Building Brands */}
+            <TextGenerateEffect words={words}/>
+          </h1>
           <h1 className="line">
             <span style={{ color: 'white' }}>One</span>
             <span style={{ color: '#3d84e2' }}>Pixel</span>
@@ -87,7 +94,10 @@ const HomePage = () => {
           </h1>
         </div>
         <div className="landing_page_title">
+          {/* <p className="lpt">Makes your brand well-known in the Digital Space</p> */}
+          <Highlight>
           <p className="lpt">Makes your brand well-known in the Digital Space</p>
+          </Highlight>
         </div>
         <div className="tech-card-container">
           <TechCard id="techcard1" techImage={techCard1.techImage} techName={techCard1.techName} />
