@@ -33,6 +33,7 @@ body::-webkit-scrollbar{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  /* margin-bottom: 8rem; */
 }
 
 /* Header Styling */
@@ -77,25 +78,7 @@ body::-webkit-scrollbar{
   padding: 0.5rem 1rem;
 }
 
-.explore-button {
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #3d84e2;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0px 1.5px 5px rgba(0, 0, 0, 0.548);
-  transition: background-color 0.3s, transform 0.2s;
-}
 
-.explore-button:hover {
-  color: white;
-  box-shadow: 0px 2px 10px rgba(52, 52, 52, 0.548);
-  background-color: #0a52e0;
-  transform: scale(1.05);
-}
 
 .landing_page_title {
   width: 900px;
@@ -112,7 +95,7 @@ body::-webkit-scrollbar{
 
 /* Tech Card Styling */
 .tech-card-container {
-  margin-top: 2rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: row;
   gap: 20px; /* Adjusted gap for spacing */
@@ -184,8 +167,13 @@ body::-webkit-scrollbar{
   align-items: flex-start;
   color: #ffffff;
   font-weight: bold;
-
 }
+
+@keyframes white-to-blue 
+{
+  
+}
+
 
 /* Typing animation */
 @keyframes typing {
