@@ -1,0 +1,48 @@
+.swiper-button-prev, .swiper-button-next {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: calc(var(--swiper-navigation-size) / 44* 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+/* Ensure Swiper wrapper transitions are smooth */
+.swiper-wrapper {
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth swipe easing */
+    will-change: transform; /* Optimize for performance */
+  }
+  
+  /* Style for Swiper slides */
+  .swiper-slide {
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth transform and opacity */
+    will-change: transform, opacity; /* Optimize for smoothness */
+  }
+  
+  /* Highlight the active slide */
+  .swiper-slide-active {
+    transform: scale(1.1); /* Slightly enlarge the active slide */
+    z-index: 10; /* Bring active slide to the foreground */
+    opacity: 1; /* Ensure full opacity for active slide */
+  }
+  
+  /* Style for inactive slides */
+  .swiper-slide:not(.swiper-slide-active) {
+    opacity: 0.6; /* Dim inactive slides */
+    transform: scale(0.9); /* Slightly shrink inactive slides */
+  }
+  
+  /* For coverflow effect */
+  .swiper-slide-shadow-left,
+  .swiper-slide-shadow-right {
+    opacity: 0.5; /* Subtle shadows for the coverflow effect */
+    transition: opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth shadow transitions */
+  }
+  
+  

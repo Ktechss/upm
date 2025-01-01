@@ -83,13 +83,18 @@ body::-webkit-scrollbar{
 .landing_page_title {
   width: 900px;
   display: flex; /* Use flexbox to stretch child elements */
+  justify-content: center;
+  align-items: center;
 }
 
 .lpt {
+  padding: 0.5rem;
   flex: 1; /* Make the <p> tag take up the full width */
   color: rgb(255, 255, 255);
   margin: 0; /* Remove any default margin */
-  font-size: 1.25rem; /* Increased font size for better visibility */
+  font-size: 1.6rem; /* Increased font size for better visibility */
+  font-weight: 700;
+  letter-spacing: 0.1rem;
   line-height: 0.8;
 }
 

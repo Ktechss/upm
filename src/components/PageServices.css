@@ -1,0 +1,18 @@
+.PageServices{
+
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:3.5rem;   
+    background: rgb(0, 0, 0);
+    padding-bottom: 5rem;
+}
+.PageServices h1{
+    color: white;
+    font-size: 3.5rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.571);
+}

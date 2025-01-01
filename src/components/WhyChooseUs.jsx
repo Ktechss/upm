@@ -12,9 +12,9 @@ import consultancy_image from "../assets/services_images/consultancy.jpg";
 import consultancy_image1 from "../assets/services_images/consultancy_1.jpg";
 import consultancy_image2 from "../assets/services_images/consultancy_2.jpg";
 
-import designing_image from "../assets/services_images/desigining.jpg";
-import designing_image1 from "../assets/services_images/desigining.jpg";
-import designing_image2 from "../assets/services_images/desigining.jpg";
+import designing_image from "../assets/services_images/team_images.jpg";
+import designing_image1 from "../assets/services_images/team_images.jpg";
+import designing_image2 from "../assets/services_images/team_images.jpg";
 
 const WhyChooseUs = () => {
   // Image arrays for each card
@@ -80,11 +80,10 @@ const WhyChooseUs = () => {
   return (
     <section className="why-choose-us">
       <h2 className="section-title">
-        Why <span className="why-highlight">Unknown Pixel Media</span> is The Right Choice for You
+        Why <span className="why-highlight">Unknown Pixel Media</span> is<br/> The Right Choice for You
       </h2>
       <h5 className="section-subtitle">
-        At Unknown Pixel Media, our vision is clear to be a global leader in digital space and marketing, using cutting-edge technology and creative strategies to empower businesses worldwide. Our mission drives us to deliver data-driven solutions tailored to your unique goals, with a globally connected team committed to excellence
-      </h5>
+      At Unknown Pixel Media, our vision is to lead the global digital space by leveraging cutting-edge technology and creative strategies, empowering businesses to reach their full potential. Guided by our mission, we deliver innovative, data-driven solutions tailored to our clients’ goals, foster a global network of forward-thinking professionals, and adapt to the evolving digital landscape with a team dedicated to excellence.</h5>
       
       <div className="features-container">
         <div className="feature-card-container">

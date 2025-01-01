@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { cn } from "../../utils/cn";
 import { FlipWordsDemo } from "./FlipWordsDemo";
 import './LampContainer.css';
+import arrow_down from './assets/arrow_down.png';
 
 export function LampDemo() {
     return (
@@ -19,7 +20,9 @@ export function LampDemo() {
                 className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
             >
                 <FlipWordsDemo />
-                <button className="explore-button">Explore</button>
+                <button className="explore-button">
+                    <img src={arrow_down}/>
+                </button>
             </motion.h1>
 
         </LampContainer>

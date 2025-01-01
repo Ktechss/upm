@@ -16,17 +16,16 @@
   font-size: 1rem;
   letter-spacing: 0.1rem;
   color: #fff;
-  background-color: #3d84e2;
+  background-color: rgb(0, 0, 0);
   border: none;
-  border-radius: 5px;
+  border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 1.5px 5px rgba(0, 0, 0, 0.548);
   transition: background-color 0.3s, transform 0.2s;
+  width: 3vh;
+  height: 5vh;
 }
 
 .explore-button:hover {
-  color: white;
-  box-shadow: 0px 2px 10px rgba(52, 52, 52, 0.548);
-  background-color: #0a52e0;
-  transform: scale(1.05);
+  transform: scale(1.5);
 }
