@@ -78,3 +78,7 @@
   .custom-style::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, and Opera */
   }
+
+  .LampLight{
+    margin-top: 5rem;
+  }

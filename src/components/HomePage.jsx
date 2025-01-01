@@ -77,7 +77,7 @@ const HomePage = () => {
       <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
       <main className="landing-content">
         <div className="headline">
-          <h1 className="Sloagan-line">Building</h1>
+          <h1 className="Sloagan-line">Building Brands</h1>
           <h1 className="line">
             <span style={{ color: 'white' }}>One</span>
             <span style={{ color: '#3d84e2' }}>Pixel</span>
@@ -89,7 +89,6 @@ const HomePage = () => {
         <div className="landing_page_title">
           <p className="lpt">Makes your brand well-known in the Digital Space</p>
         </div>
-        <button className="explore-button">Explore</button>
         <div className="tech-card-container">
           <TechCard id="techcard1" techImage={techCard1.techImage} techName={techCard1.techName} />
           <TechCard id="techcard2" techImage={techCard2.techImage} techName={techCard2.techName} />
