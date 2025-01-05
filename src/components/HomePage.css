@@ -3,14 +3,9 @@ body, html {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.214), rgb(0, 0, 0)), url('../assets/camera_lense-2.jpg');
-  background-position: center;
-  background-size: 100%; /* Start with a zoomed-in background */
-  background-repeat: no-repeat;
   height: 100%;
   color: #333;
-  animation: zoomInBackground 1.5s ease-in-out; /* Add animation */
-  z-index: 1;
+  background: white;
 }
 body::-webkit-scrollbar{
   display: none;
@@ -33,6 +28,12 @@ body::-webkit-scrollbar{
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.214), rgb(0, 0, 0)), url('../assets/camera_lense-2.jpg');
+  background-position: center;
+  background-size: 100%; /* Start with a zoomed-in background */
+  background-repeat: no-repeat;
+  animation: zoomInBackground 1.5s ease-in-out; /* Add animation */
+  z-index: 1;
   /* margin-bottom: 8rem; */
 }
 
@@ -194,5 +195,106 @@ body::-webkit-scrollbar{
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  /* General Page Styling */
+  body, html {
+    font-size: 14px; /* Reduce base font size for better scaling */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Home Page Styling */
+  .home-page {
+    height: auto; /* Allow content to define height */
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    background-size: cover; /* Ensure background scales correctly */
+  }
+
+  /* Landing Content Styling */
+  .landing-content {
+    padding: 1rem;
+  }
+
+  .headline .line {
+    font-size: 2.5rem; /* Scale down headline text */
+    line-height: 1.2; /* Adjust line spacing */
+  }
+
+  .landing_page_title {
+    width: 100%; /* Make title width dynamic */
+  }
+
+  .lpt {
+    font-size: 1.2rem; /* Scale text size */
+    line-height: 1.5; /* Adjust line height */
+  }
+
+  /* Slogan Styling */
+  .Sloagan-line {
+    font-size: 1.6rem; /* Adjust font size */
+    width: 100%; /* Make slogan width dynamic */
+    text-align: center; /* Center-align text */
+  }
+
+  /* Tech Card Container */
+  .tech-card-container {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 1rem; /* Reduce gap between cards */
+    margin-top: 2rem; /* Adjust spacing */
+  }
+
+  /* Individual Tech Cards */
+  .tech-card:first-child,
+  .tech-card:nth-child(2),
+  .tech-card:nth-child(3) {
+    transform: none; /* Remove rotation for better alignment */
+    padding: 1.05rem;
+    margin-top: 0.5rem;
+  }
+
+  /* Typewriter Effect */
+  .typewriter-effect {
+    font-size: 1.2rem; /* Scale down typewriter text */
+  }
+
+  /* Zoom-In Effect for Background */
+  @keyframes zoomInBackground {
+    0% {
+      background-size: 200%; /* Start with more zoom for mobile */
+    }
+    100% {
+      background-size: cover; /* Ensure it fits */
+    }
+  }
+
+  /* Responsive Adjustments for Images */
+  img {
+    max-width: 100%; /* Ensure images fit within viewport */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Padding and Margins */
+  section, div {
+    padding: 1rem; /* Uniform padding */
+    margin: 0 auto; /* Center align */
+  }
+
+  /* Text Alignments */
+  h1, h2, h3, h4, h5, h6, p {
+    text-align: center; /* Center-align for better readability */
+    word-wrap: break-word; /* Break long words */
+  }
+
+  /* Animation Adjustments */
+  .fade-in {
+    animation: fadeIn 1s forwards; /* Keep animations */
+  }
+
+  .fade-out {
+    animation: fadeOut 1s forwards; /* Keep animations */
   }
 }

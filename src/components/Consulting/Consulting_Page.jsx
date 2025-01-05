@@ -15,7 +15,7 @@ const navigationLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '#services' },
   { label: 'Team', href: '#teams' },
-  { label: 'About Us', href: '#aboutus' },
+  { label: 'About Us', href: '/about_us' },
   { label: 'Contact Us', href: '#contactus' },
 ];
 

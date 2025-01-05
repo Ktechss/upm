@@ -4,7 +4,7 @@ import SwiperCoverflow from './ui/SwiperCoverflow';
 
 function PageServices() {
   return (
-    <div className='PageServices'>
+    <div className='PageServices' id='services'>
         <h1>What We Do Best</h1>
         <div style={{height:"100%",width:"100%",background:"transparent"}}>
         <SwiperCoverflow/>

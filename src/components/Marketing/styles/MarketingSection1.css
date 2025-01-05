@@ -17,11 +17,12 @@
 }
 
 .marketing-section-1-content-box {
-    background: url('../assets/Marketing_Image.jpg');
+    background: url('../assets/Marketing_services_Image.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     animation: slideBackground 15s linear infinite; /* 15s for the sliding duration, infinite to loop */
+    border-radius: 1.5rem;
 }
 
 @keyframes slideBackground {

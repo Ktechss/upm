@@ -5,7 +5,6 @@
   align-items: center;
   padding: 8rem;
   gap: 2rem; /* Creates space between text and globe */
-  height: 100vh; /* Full viewport height */
   background-color: #000000; /* Optional background */
 }
 
@@ -97,5 +96,59 @@
   .world-clock {
     justify-content: center; /* Center clocks on mobile */
     gap: 10px; /* Reduce space between clocks */
+  }
+}
+
+@media (max-width: 768px) {
+  /* About Us container adjustments for mobile */
+  .about-us {
+    flex-direction: column; /* Stack text and globe vertically */
+    padding: 2rem; /* Reduce padding for mobile */
+    text-align: center; /* Center-align text for mobile */
+    gap: 1.5rem; /* Adjust gap for better spacing */
+  }
+
+  /* Text container adjustments */
+  .about-us-text-container {
+    max-width: 100%; /* Allow full width for text on mobile */
+    margin-bottom: 1.5rem; /* Add spacing between text and globe */
+    text-align: center; /* Center text for better readability */
+    gap: 1.5rem; /* Reduce gap between text elements */
+  }
+
+  /* Headline adjustments */
+  .about-us-head-title {
+    font-size: 1.8rem; /* Slightly reduce font size */
+  }
+
+  .about-us-headline {
+    font-size: 1.5rem; /* Adjust headline font size */
+  }
+
+  /* Description adjustments */
+  .about-us-description {
+    font-size: 0.95rem; /* Slightly smaller font size for readability */
+    line-height: 1.6; /* Adjust line height for better readability */
+    text-align: justify; /* Retain justified text */
+  }
+
+  /* Globe container adjustments */
+  #globeViz {
+    max-width: 100%; /* Globe takes full width on mobile */
+    height: 40vh; /* Reduce globe height for better fit */
+    margin: 0 auto; /* Center the globe */
+  }
+
+  .about-us-3d-model {
+    width: 80vw; /* Adjust globe width */
+    height: 40vh; /* Adjust globe height */
+    cursor: grab; /* Retain cursor style */
+  }
+
+  /* World clock adjustments */
+  .world-clock {
+    justify-content: center; /* Center the clocks */
+    flex-wrap: wrap; /* Allow wrapping for better layout */
+    gap: 10px; /* Reduce gap between clock elements */
   }
 }

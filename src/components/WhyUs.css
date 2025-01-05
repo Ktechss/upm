@@ -1,0 +1,31 @@
+.WhyUs{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    background: rgb(0, 0, 0);
+    padding-bottom: 5rem;
+}
+.WhyUs h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+}
+.why-highlight{
+    color: #3d84e2;
+}
+.WhyUs h5 {
+    margin-top: 2rem;
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    width: 80%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 2rem;
+}

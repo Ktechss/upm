@@ -70,3 +70,74 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  /* Teams page adjustments */
+  .testimonials-wrapper{
+    width: 100%;
+  }
+  .teams-page {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+  .testimonials-container{
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Headings styling for smaller screens */
+  .team-page-headline {
+    font-size: 2rem;
+  }
+
+  .team-page-tagline {
+    font-size: 1.2rem;
+  }
+
+  /* Team container adjustments for mobile */
+  .team-container {
+    flex-direction: column; /* Stack cards vertically */
+    gap: 1rem;
+    padding: 0;
+  }
+
+  /* Team card adjustments */
+  .team-card {
+    display: flex;
+    flex-direction: column; /* Ensure card content stacks */
+    align-items: center;
+    text-align: center;
+    gap: 1rem; /* Add spacing between image and details */
+  }
+
+  /* Testimonial image adjustments */
+  .team-card-image {
+    width: 100%;
+    max-width: 200px; /* Limit size for smaller screens */
+    height: auto;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden;
+  }
+
+  /* Details styling */
+  .team-card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .team-card-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .team-card-role {
+    font-size: 1rem;
+    color: #3d84e2;
+  }
+
+  .team-card-description {
+    font-size: 0.9rem;
+    color: #ddd;
+  }
+}

@@ -20,9 +20,11 @@ export function LampDemo() {
                 className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
             >
                 <FlipWordsDemo />
-                <button className="explore-button">
+                <a href="#services">
+                <button className="explore-button" >
                     <img src={arrow_down}/>
                 </button>
+                </a>
             </motion.h1>
 
         </LampContainer>

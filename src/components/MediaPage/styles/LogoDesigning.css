@@ -20,6 +20,7 @@
     background-position: center;
     background-repeat: no-repeat;
     animation: slideBackground 15s linear infinite; /* 10s for the sliding duration, infinite to loop */
+    border-radius: 1.5rem;
 }
 
 @keyframes slideBackground {
