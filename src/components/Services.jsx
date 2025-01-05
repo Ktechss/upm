@@ -9,7 +9,7 @@ import content from '../User_Data/Media_data';
 
 const Services = () => {
   return (
-    <section className="services-section" id="services">
+    <section className="services-section">
       <div className='LampLight'>
         <LampDemo/>
         </div>

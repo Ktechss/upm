@@ -11,12 +11,13 @@ import ContactUs from '../ContactUs';
 import facebook_icon from '../../assets/social_link_icons/facebook.png';
 import twitter_icon from '../../assets/social_link_icons/instagram.png';
 import instagram_icon from '../../assets/social_link_icons/instagram.png';
+import ContactUsCtaButton from '../Button_Ui/ContactUsCtaButton';
 
 const navigationLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '#services' },
   { label: 'Team', href: '#teams' },
-  { label: 'About Us', href: '#aboutus' },
+  { label: 'About Us', href: '/about_us' },
   { label: 'Contact Us', href: '#contactus' },
 ];
 
@@ -43,6 +44,7 @@ const MediaPage = () => {
       <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
       <LogoDesigning />
       <MediaService />
+      <ContactUsCtaButton navigation_link="#contactus" />
       <ServiceNavigation currentService="Media" services={services} />
       <ContactUs/>
     </div>

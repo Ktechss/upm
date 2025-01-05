@@ -12,11 +12,13 @@ import facebook_icon from '../../assets/social_link_icons/facebook.png';
 import twitter_icon from '../../assets/social_link_icons/instagram.png';
 import instagram_icon from '../../assets/social_link_icons/instagram.png';
 
+import ContactUsCtaButton from '../Button_Ui/ContactUsCtaButton';
+
 const navigationLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '#services' },
   { label: 'Team', href: '#teams' },
-  { label: 'About Us', href: '#aboutus' },
+  { label: 'About Us', href: '/about_us' },
   { label: 'Contact Us', href: '#contactus' },
 ];
 
@@ -43,7 +45,8 @@ function MarketingPage() {
       <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
       <MarketingSection1 />
       <MarketingServices />
-      <ServiceNavigation currentService="Marketing" services={services} />
+      <ContactUsCtaButton navigation_link="#contactus" />
+      <ServiceNavigation currentService="Marketing" services={services} />    
       <ContactUs/>
     </div>
   );

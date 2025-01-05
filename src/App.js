@@ -7,11 +7,13 @@ import AboutUs from './components/AboutUs';
 import MediaPage from './components/MediaPage/MediaPage';
 import TeamPage from './components/TeamPage';
 import PageServices from './components/PageServices';
+import WhyUS from './components/WhyUs';
 import './App.css';
 import Footer from './components/Footer';
 import ServicePage from './components/Service_Page/ServicePage';
 import Consulting_Page from './components/Consulting/Consulting_Page';
 import MarketingPage from './components/Marketing/MarketingPage';
+import AboutUsPage from './components/About_US/AboutUsPage';
 
 
 const App = () => {
@@ -28,7 +30,7 @@ const App = () => {
                 <HomePage />
                 <Services />
                 <PageServices/>
-                <WhyChooseUs />
+                <WhyUS/>
                 <TeamPage/>
                 <AboutUs />
                 
@@ -38,6 +40,7 @@ const App = () => {
           <Route path="/media" element={<MediaPage />} />
           <Route path="/marketing" element={<MarketingPage />} />
           <Route path="/consulting" element={<Consulting_Page/>}/>
+          <Route path='/about_us' element={<AboutUsPage/>}/>
         </Routes>
       </Router>
       <Footer />

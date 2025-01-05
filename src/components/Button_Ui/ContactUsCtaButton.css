@@ -1,0 +1,28 @@
+.ContactUsCtaButton{
+    padding: 2rem 0rem;
+}
+.Contact-Us-Cta-Button {
+    background: black;
+    color: white;
+    border-radius: 0.80rem;
+    width: 10rem;
+    height: 3rem;
+
+    /* Centering text inside the button */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    /* Optional styling for better button appearance */
+    font-size: 1rem; /* Adjust text size */
+    border: none; /* Remove border */
+    cursor: pointer; /* Show pointer on hover */
+    /* Smooth transition */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+/* Hover Effect */
+.Contact-Us-Cta-Button:hover {
+    transform: scale(1.05); /* Increase size by 10% */
+    background-color: #333; /* Optional: Slightly lighter background */
+}

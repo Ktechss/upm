@@ -5,7 +5,7 @@ import member_2 from '../assets/team_member_images/team-member_2.jpg';
 import member_3 from '../assets/team_member_images/teja_pic.png';
 import member_4 from '../assets/team_member_images/team-member_4.jpg';
 import member_5 from '../assets/team_member_images/team-member_5.jpg';
-import baljit from '../assets/team_member_images/Baljit_Singh_Image.jpg';
+import baljit from '../assets/team_member_images/Baljit.jpg';
 import facebook_icon from '../assets/social_link_icons/facebook.png';
 import instagram_icon from '../assets/social_link_icons/instagram.png';
 import linkedin_icon from '../assets/social_link_icons/linkedin.png';
@@ -44,26 +44,26 @@ const team_info = [
         { url: "https://www.linkedin.com/in/vanjarapusaiteja/",iconPath: linkedin_icon },
         { url: "unknownpixelmedia@gmail.com",iconPath: gmail_icon },
       ],
-    },
-    {
-      quote: "An outstanding solution! I saved so much time and effort. Will definitely continue using it.",
-      name: "Emily Davis",
-      designation: "Marketing Specialist",
-      src: member_4,
-      socialLinks: [
-        { url: "https://linkedin.com/in/johndoe",iconPath: linkedin_icon },
-        { url: "https://linkedin.com/in/johndoe",iconPath: gmail_icon },
-      ],
-    },
-    {
-      quote: "The team support was exceptional, and the product is intuitive and powerful. Very impressed.",
-      name: "Chris Lee",
-      designation: "Entrepreneur",
-      src: member_5,
-      socialLinks: [
-        { url: "https://linkedin.com/in/johndoe",iconPath: linkedin_icon },
-        { url: "https://linkedin.com/in/johndoe",iconPath: gmail_icon },
-      ],
+    // },
+    // {
+    //   quote: "",
+    //   name: "Emily Davis",
+    //   designation: "Marketing Specialist",
+    //   src: member_4,
+    //   socialLinks: [
+    //     { url: "https://linkedin.com/in/johndoe",iconPath: linkedin_icon },
+    //     { url: "https://linkedin.com/in/johndoe",iconPath: gmail_icon },
+    //   ],
+    // },
+    // {
+    //   quote: ".",
+    //   name: "Chris Lee",
+    //   designation: "Entrepreneur",
+    //   src: member_5,
+    //   socialLinks: [
+    //     { url: "https://linkedin.com/in/johndoe",iconPath: linkedin_icon },
+    //     { url: "https://linkedin.com/in/johndoe",iconPath: gmail_icon },
+    //   ],
     },
   ];
   export default team_info;

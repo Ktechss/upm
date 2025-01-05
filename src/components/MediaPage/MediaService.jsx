@@ -31,9 +31,14 @@ import Twitter from './assets/Social_Media_Management/Twitter_logo.gif';
 import Mail_Marketing from './assets/PPC/mail_marketing.gif';
 import Social_media_ads from './assets/PPC/Social_Media_Ads.gif'
 
+import video_podcast from './assets/video_podcast/video_podcast.gif';
+import audio_podcast from './assets/video_podcast/audio_podcast.gif';
+
 import youtube_shots from './assets/Video_Content/youtube_shots.gif';
 import long_video_formate from './assets/Video_Content/Long_Video_Formate.gif'
 import tik_tok from './assets/Video_Content/tik-tok.gif';
+
+
 
 const MediaService = () => {
   const [selectedService, setSelectedService] = useState('graphicDesigning');
@@ -82,8 +87,8 @@ const MediaService = () => {
       { logo: long_video_formate, name: 'Long Format Videos', description: 'High-quality long-form videos for YouTube or other platforms.' },
     ],
     videoEditingPodcastManagement: [
-      { logo: logo, name: 'Video Podcast Editing & Management', description: 'Professional editing and management of your video podcast.' },
-      { logo: logo, name: 'Audio Podcast Editing & Management', description: 'Audio editing and management for your podcast production.' },
+      { logo: video_podcast, name: 'Video Podcast Editing & Management', description: 'Professional editing and management of your video podcast.' },
+      { logo: audio_podcast, name: 'Audio Podcast Editing & Management', description: 'Audio editing and management for your podcast production.' },
     ],
   };
 
@@ -107,7 +112,7 @@ const MediaService = () => {
   };
 
   return (
-    <div className="media-service">
+    <div className="media-service" id='media-services'>
       <div className='media-service-headings'>
         <h2 className='media-service-healine'>Media Service We Offer</h2>
       </div>

@@ -38,12 +38,12 @@
   
   .Consulting_Section_3_Service-content {
     width: 80%;
-    background: linear-gradient(180deg, #3d84e2, #78abee); /* Starting gradient at 0 degrees */
+    background: linear-gradient(164deg, #3d84e2, #000000); /* Starting gradient at 0 degrees */
     border: 0px solid black;
     border-radius: 10px;
     display: flex;
     padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.417); /* Add a subtle shadow */
+    box-shadow: 3px 8px 10px rgba(0, 0, 0, 0.633); /* Add a subtle shadow */
 }
 
 
@@ -78,9 +78,10 @@
   }
   
   .Consulting_Section_3_Service-left ul {
-    list-style-type: disc;
+    list-style-type:circle;
     margin-left: 1.5rem;
     margin-bottom: 1rem;
+    line-height: 1.8rem;
   }
   
   .Consulting_Section_3_Service-left button {
@@ -90,12 +91,12 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 7rem;
+    width: 9rem;
     transition: background-color 0.3s;
   }
   
   .Consulting_Section_3_Service-left button:hover {
-    background-color: #0056b3;
+    background-color: #05c558;
   }
   
   .Consulting_Section_3_Service-right {

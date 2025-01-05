@@ -30,51 +30,51 @@ function ContactUs() {
       <h1>Connect with us.</h1>
       <div className="contact-us-container-form">
         {/* Name Section */}
-        <div className="name-container">
-          <div className="first-name-container">
-            <h4 className="form-box-title">First Name</h4>
+        <div className="contact-us-name-container">
+          <div className="contact-us-first-name-container">
+            <h4 className="contact-us-form-box-title">First Name</h4>
             <input
               type="text"
               name="firstName"
               placeholder='Enter First Name'
               value={formData.firstName}
               onChange={handleChange}
-              className="form-box-title-input"
+              className="contact-us-form-box-title-input"
             />
           </div>
-          <div className="last-name-container">
-            <h4 className="form-box-title">Last Name</h4>
+          <div className="contact-us-last-name-container">
+            <h4 className="contact-us-form-box-title">Last Name</h4>
             <input
               type="text"
               name="lastName"
               placeholder='Enter Last Name'
               value={formData.lastName}
               onChange={handleChange}
-              className="form-box-title-input"
+              className="contact-us-form-box-title-input"
             />
           </div>
         </div>
 
         {/* Email and Region Section */}
-        <div className="email-region-container">
-          <div className="email-container">
-            <h4 className="form-box-title">Email</h4>
+        <div className="contact-us-email-region-container">
+          <div className="contact-us-email-container">
+            <h4 className="contact-us-form-box-title">Email</h4>
             <input
               type="email"
               name="email"
               placeholder='Enter Email'
               value={formData.email}
               onChange={handleChange}
-              className="form-box-title-input"
+              className="contact-us-form-box-title-input"
             />
           </div>
-          <div className="region-container">
-            <h4 className="form-box-title">Region</h4>
+          <div className="contact-us-region-container">
+            <h4 className="contact-us-form-box-title">Region</h4>
             <select
               name="region"
               value={formData.region}
               onChange={handleChange}
-              className="form-box-title-input"
+              className="contact-us-form-box-title-input"
             >
               <option value="">Select your region</option>
               <option value="North America">North America</option>
@@ -88,13 +88,13 @@ function ContactUs() {
         </div>
 
         {/* Category Section */}
-        <div className="category-container">
-          <h4 className="form-box-title">Category</h4>
+        <div className="contact-us-category-container">
+          <h4 className="contact-us-form-box-title">Category</h4>
           <select
             name="category"
             value={formData.category}
             onChange={handleChange}
-            className="form-box-title-input category-select"
+            className="contact-us-form-box-title-input contact-us-category-select"
           >
             <option value="">Choose the category that best describes your inquiry</option>
             <option value="General Inquiry">General Inquiry</option>
@@ -105,20 +105,20 @@ function ContactUs() {
         </div>
 
         {/* Description Section */}
-        <div className="description-container">
-          <h4 className="form-box-title">How can we help your brand?*</h4>
+        <div className="contact-us-description-container">
+          <h4 className="contact-us-form-box-title">How can we help your brand?*</h4>
           <textarea
             name="description"
             value={formData.description}
             onChange={handleChange}
-            className="form-box-title-input description-container-input"
+            className="contact-us-form-box-title-input contact-us-description-container-input"
             rows="4"
           ></textarea>
         </div>
 
         {/* Submit Button */}
-        <div className="submit-container">
-          <button type="submit" onClick={handleSubmit} className="submit-button">
+        <div className="contact-us-submit-container">
+          <button type="submit" onClick={handleSubmit} className="contact-us-submit-button">
             Submit
           </button>
         </div>

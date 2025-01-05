@@ -23,7 +23,7 @@ const HomePage = () => {
     { label: 'Home', href: '#home' },
     { label: 'Services', href: '#services' },
     { label: 'Team', href: '#teams' },
-    { label: 'About Us', href: '#aboutus' },
+    { label: 'About Us', href: '/about_us' },
     { label: 'Contact Us', href: '#contactus' },
   ];
 
