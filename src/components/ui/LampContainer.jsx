@@ -20,7 +20,7 @@ export function LampDemo() {
                 className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
             >
                 <FlipWordsDemo />
-                <a href="#services">
+                <a href="#services" style={{display:'flex', justifyContent:'center'}}>
                 <button className="explore-button" >
                     <img src={arrow_down}/>
                 </button>
