@@ -79,6 +79,8 @@
     font-size: 0.9rem;
     margin-top: 1rem; /* Reduce margin */
     padding: 0.5rem;
+    display: flex;
+    justify-content: center;
   }
 
   .explore-button img {

@@ -71,6 +71,7 @@
   align-items: center;
 }
 
+
 @media (max-width: 768px) {
   /* Teams page adjustments */
   .testimonials-wrapper{
@@ -81,8 +82,9 @@
     gap: 1.5rem;
   }
   .testimonials-container{
-    width: 100%;
-    padding: 0;
+    max-width: 100% !important;
+    width: 100% !important;
+    padding: 0 !important;
   }
 
   /* Headings styling for smaller screens */
@@ -139,5 +141,8 @@
   .team-card-description {
     font-size: 0.9rem;
     color: #ddd;
+  }
+  .testimonials-image-wrapper{
+    width: 22rem !important;
   }
 }
