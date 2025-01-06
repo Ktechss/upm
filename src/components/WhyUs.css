@@ -30,10 +30,6 @@
     line-height: 2rem;
 }
 @media (max-width: 768px){
-    .WhyUs{
-        gap:3.5rem;
-    }
-    
     .why-highlight{
         display: block;
         word-wrap: break-word; /* Break words if necessary *//* Add support for breaking long words */

@@ -1,0 +1,6 @@
+@media(max-width:768px){
+    .for-mobile-line-reveal-text{
+        font-size: 3.5rem !important;
+        text-align: center !important;
+    }
+}
