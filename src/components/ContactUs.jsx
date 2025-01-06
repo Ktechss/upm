@@ -27,7 +27,7 @@ function ContactUs() {
 
   return (
     <div className="contact-us-container" id='contactus'>
-      <h1>Connect with us.</h1>
+      <h1 className='contact-us-heading'>Connect with us.</h1>
       <div className="contact-us-container-form">
         {/* Name Section */}
         <div className="contact-us-name-container">
