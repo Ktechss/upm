@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../Header';
+import MobileHeader from '../MobileHeader'; // Import MobileHeader
 import MarketingServices from './components/MarketingServices';
 import MarketingSection1 from './components/MarketingSection1';
 import './styles/MarketingPage.css';
@@ -35,19 +36,36 @@ const services = [
 ];
 
 function MarketingPage() {
-  // Scroll to top when component mounts
+  const [isMobile, setIsMobile] = useState(false); // State to track if view is mobile
+
   useEffect(() => {
+    // Scroll to top when component mounts
     window.scrollTo(0, 0);
+
+    // Function to update `isMobile` based on screen width
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
-    <div className='MarketingPage'>
-      <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+    <div className="MarketingPage">
+      {/* Dynamically render MobileHeader or Header */}
+      {isMobile ? (
+        <MobileHeader logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+      ) : (
+        <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+      )}
       <MarketingSection1 />
       <MarketingServices />
       <ContactUsCtaButton navigation_link="#contactus" />
       <ServiceNavigation currentService="Marketing" services={services} />    
-      <ContactUs/>
+      <ContactUs />
     </div>
   );
 }

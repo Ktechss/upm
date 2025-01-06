@@ -8,6 +8,8 @@ import image3 from './assets/images/core_values.jpg';
 const UpmAboutUs = () => {
     return (
         <>
+        {/* Dynamically render MobileHeader or Header */}
+
             <div className="About-Us-upm-about-us">
                 <div className="About-Us-video-overlay"></div>
                 <video className="About-Us-background-video" autoPlay loop muted>

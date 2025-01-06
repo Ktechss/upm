@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
 import Header from './Header';
+import MobileHeader from './MobileHeader'; // Import the MobileHeader component
 import TechCard from './tech_banner/TechCard';
 import facebook_icon from '../assets/facbook_Icon.png';
 import twitter_icon from '../assets/twitter.svg';
@@ -57,6 +58,7 @@ const HomePage = () => {
   const [techCard1, setTechCard1] = useState(techCard1Options[0]);
   const [techCard2, setTechCard2] = useState(techCard2Options[0]);
   const [techCard3, setTechCard3] = useState(techCard3Options[0]);
+  const [isMobile, setIsMobile] = useState(false); // State to track if the view is mobile
 
   const getRandomTech = (options) => {
     const randomIndex = Math.floor(Math.random() * options.length);
@@ -69,34 +71,49 @@ const HomePage = () => {
     setTechCard3(getRandomTech(techCard3Options));
   };
 
-  const words ='Building Brands';
+  const words = 'Building Brands';
 
   useEffect(() => {
     const interval = setInterval(updateCardsRandomly, 1500);
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+    // Function to update `isMobile` based on screen width
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="home-page">
-      <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+      {/* Dynamically render MobileHeader or Header */}
+      {isMobile ? (
+        <MobileHeader logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+      ) : (
+        <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+      )}
       <main className="landing-content">
         <div className="headline">
           <h1 className="Sloagan-line">
-            {/* Building Brands */}
-            <TextGenerateEffect words={words}/>
+            <TextGenerateEffect words={words} />
           </h1>
           <h1 className="line">
-            <span style={{ color: 'white' }} className='for-mobile-line'>One</span>
-            <span style={{ color: '#3d84e2' }} className='for-mobile-line'>Pixel</span>
+            <span style={{ color: 'white' }} className="for-mobile-line">One</span>
+            <span style={{ color: '#3d84e2' }} className="for-mobile-line">Pixel</span>
           </h1>
           <h1 className="line">
-            <span style={{ color: '#3d84e2' }} className='for-mobile-line'>At</span> a Time
+            <span style={{ color: '#3d84e2' }} className="for-mobile-line">At</span> a Time
           </h1>
         </div>
         <div className="landing_page_title">
-          {/* <p className="lpt">Makes your brand well-known in the Digital Space</p> */}
           <Highlight>
-          <p className="lpt">Makes your brand well-known in the Digital Space</p>
+            <p className="lpt">Makes your brand well-known in the Digital Space</p>
           </Highlight>
         </div>
         <div className="tech-card-container">

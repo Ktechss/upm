@@ -119,3 +119,59 @@ select.contact-us-form-box-title-input {
 .contact-us-submit-container {
   width: 100%;
 }
+
+@media (max-width: 768px) {
+  /* Stack all fields in a column */
+  .contact-us-container-form {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important; /* Full width for the container */
+  }
+
+  /* Adjust input, textarea, and select fields */
+  .contact-us-form-box-title-input,
+  textarea.contact-us-form-box-title-input {
+    width: 80% !important; /* Inputs take 80% of the container */
+  }
+
+  /* Stack name, email, region, category, and description sections in a column */
+  .contact-us-name-container,
+  .contact-us-email-region-container,
+  .contact-us-category-container,
+  .contact-us-description-container {
+    width: 100% !important; /* Full width for each section */
+    display: flex !important;
+    flex-direction: column !important; /* Stack items vertically */
+    align-items: center !important; /* Center align */
+    gap: 1rem !important; /* Add spacing between items */
+  }
+
+  /* Adjust the submit button */
+  .contact-us-submit-button {
+    width: 30% !important; /* Submit button takes 50% width */
+    margin-top: 1rem !important; /* Add spacing above the button */
+  }
+  .contact-us-first-name-container, .contact-us-last-name-container, .contact-us-email-container, .contact-us-region-container, .contact-us-category-container, .contact-us-description-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    color: #000000;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us-category-select{
+    width: 65% !important;
+  }
+  .contact-us-heading{
+    font-size: 2.5rem !important;
+  }
+  .contact-us-submit-container{
+    display: flex !important;
+    width: 80% !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+

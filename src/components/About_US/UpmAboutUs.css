@@ -32,6 +32,7 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  z-index: 2;
 }
 
 .About-Us-text-reveal {
@@ -187,5 +188,43 @@
   .About-Us-cta-button {
       font-size: 1rem;
       padding: 8px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .About-Us-section-content {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 1 1 !important;
+  }
+
+  .About-Us-section-image {
+    flex: 1 1 !important;
+    /* width: 45%; */
+    width: 100% !important;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.435) !important;
+  }
+
+  .About-Us-section-list {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top: 1.5rem !important;
+    padding: 0 !important;
+    list-style: disc !important;
+    color: #555 !important;
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    text-align: justify !important;
+  }
+
+  /* New logic to place the image below the text */
+  .About-Us-mission-section {
+    display: flex !important;
+    flex-direction: column-reverse !important; /* Ensures the image appears below the content */
+    align-items: center !important; /* Center-aligns items */
+    gap: 1rem !important; /* Adds spacing between the text and image */
   }
 }

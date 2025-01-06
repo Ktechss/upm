@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './MediaPage.css';
 import LogoDesigning from './components/LogoDesigning';
 import GraphicsDesigning from './components/GraphicsDesigning';
 import MediaService from './MediaService';
 import Header from '../Header';
+import MobileHeader from '../MobileHeader'; // Import MobileHeader
 import logo from '../../assets/upm_logo/UPM_B5.jpg';
 import ServiceNavigation from '../ServiceNavigation';
 import ContactUs from '../ContactUs';
@@ -34,19 +35,36 @@ const services = [
 ];
 
 const MediaPage = () => {
-  // Scroll to top when the component is mounted
+  const [isMobile, setIsMobile] = useState(false); // State to track if view is mobile
+
   useEffect(() => {
+    // Scroll to top when the component is mounted
     window.scrollTo(0, 0);
+
+    // Function to update `isMobile` based on screen width
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize(); // Set initial value
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
   return (
     <div className="media-page">
-      <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+      {/* Dynamically render MobileHeader or Header */}
+      {isMobile ? (
+        <MobileHeader logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+      ) : (
+        <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+      )}
       <LogoDesigning />
       <MediaService />
       <ContactUsCtaButton navigation_link="#contactus" />
       <ServiceNavigation currentService="Media" services={services} />
-      <ContactUs/>
+      <ContactUs />
     </div>
   );
 };
