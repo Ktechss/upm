@@ -152,3 +152,25 @@
     gap: 10px; /* Reduce gap between clock elements */
   }
 }
+@media (max-width: 768px) {
+  /* World clock adjustments for 3 clocks per row */
+  .world-clock {
+    display: flex;
+    flex-wrap: wrap; /* Allow clocks to wrap into rows */
+    justify-content: center; /* Center clocks horizontally */
+    gap: 0.5rem; /* Reduce gap for better spacing */
+  }
+
+  .world-clock > div {
+    flex: 1 1 calc(33.33% - 0.5rem); /* Ensure 3 clocks fit per row */
+    max-width: calc(33.33% - 0.5rem); /* Limit width to one-third minus gap */
+    text-align: center; /* Center-align clock content */
+    box-sizing: border-box; /* Include padding and border in size */
+    font-size: 0.9rem; /* Reduce font size for better fit */
+  }
+
+  /* Optional: Adjust clock text styling */
+  .world-clock > div p {
+    font-size: 0.8rem; /* Smaller text inside the clocks */
+  }
+}

@@ -47,7 +47,7 @@ const AnimatedFlexCards = () => {
         <div className="AnimatedFlexCards-wrapper">
             <div className="AnimatedFlexCards-container">
                 {cards.map((card) => (
-                    <div key={card.id}>
+                    <div key={card.id} className="animated-flex-cards">
                         <input
                             type="radio"
                             name="slide"
