@@ -44,150 +44,98 @@
     opacity: 0.5; /* Subtle shadows for the coverflow effect */
     transition: opacity 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); /* Smooth shadow transitions */
   }
-  
-  @media (max-width: 768px) {
-    /* Navigation buttons for mobile */
-    .swiper-button-prev,
-    .swiper-button-next {
-      top: var(--swiper-navigation-top-offset, 70%); /* Lower buttons for mobile */
-      width: calc(var(--swiper-navigation-size) / 1.5); /* Scale down size */
-      height: calc(var(--swiper-navigation-size) / 1.5); /* Scale down size */
-      margin-top: calc(-1 * (var(--swiper-navigation-size) / 3)); /* Adjust margin */
-      z-index: 10;
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-    }
-  
-    /* Adjust Swiper wrapper transitions for smoother effect */
-    .swiper-wrapper {
-      transition: transform 0.5s ease-in-out; /* Faster transition for mobile */
-      will-change: transform; /* Optimize for performance */
-    }
-  
-    /* Style for Swiper slides */
-    .swiper-slide {
-      transition: transform 0.5s ease-in-out, 
-                  opacity 0.5s ease-in-out; /* Optimize transitions */
-      will-change: transform, opacity; /* Optimize for smoothness */
-    }
-  
-    /* Highlight the active slide */
-    .swiper-slide-active {
-      transform: scale(1.05); /* Less zoom for mobile */
-      z-index: 10;
-      opacity: 1;
-    }
-  
-    /* Style for inactive slides */
-    .swiper-slide:not(.swiper-slide-active) {
-      opacity: 0.8; /* Slightly dim inactive slides */
-      transform: scale(0.95); /* Slightly shrink inactive slides */
-    }
-  
-    /* Coverflow effect shadows */
-    .swiper-slide-shadow-left,
-    .swiper-slide-shadow-right {
-      opacity: 0.4; /* Reduce shadow opacity for a subtler effect */
-      transition: opacity 0.5s ease-in-out; /* Optimize transitions */
-    }
-  }
+ 
   @media (max-width: 768px) {
     /* General Swiper Adjustments */
     .swiper-slide {
-      height: 250px; /* Set fixed height for mobile */
-      margin: 1rem; /* Add spacing between slides */
-      border-radius: 10px; /* Ensure rounded corners are visible */
-      overflow: hidden; /* Ensure content respects borders */
+      transform: none !important; /* Remove tilt and scaling */
+      transition: none !important; /* Disable animations */
+      opacity: 1 !important; /* Ensure full visibility */
+      height: 40vh !important; /* Adjust height dynamically */
+      width: 90% !important;
+      margin: 1rem 0; /* Add spacing between slides */
+      padding: 1rem; /* Ensure proper padding for content */
+      border-radius: 10px; /* Keep rounded corners */
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      background: #ffffff; /* Add a background color for readability */
+      overflow: hidden; /* Ensure content stays inside */
       display: flex;
-      flex-direction: column; /* Align content vertically */
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      background: #ffffff; /* Add a background color for the card effect */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for card look */
+      margin-left: 0.5rem !important;
+      margin-right: 0.5rem !important;
     }
   
-    /* Remove rotation and animations */
-    .swiper-slide,
-    .swiper-slide-active,
-    .swiper-slide:not(.swiper-slide-active) {
-      transform: none; /* Remove rotation and scaling */
-      transition: none; /* Remove animations */
-      opacity: 1; /* Keep all slides fully visible */
+    /* Content inside slides */
+    .swiper-slide h1 {
+      font-size: 0.9rem !important; /* Smaller title for mobile */
+      margin-bottom: 0.5rem; /* Reduce spacing */
+      text-align: center;
+      color: #333; /* Ensure text is legible */
+    }
+  
+    .swiper-slide p {
+      font-size: 0.7rem !important; /* Adjust font size for mobile */
+      margin-bottom: 1rem; /* Adjust spacing */
+      text-align: justify; /* Ensure text is aligned and readable */
+      color: #ffffff;
+      width: 90%; /* Ensure text fits within the slide */
+    }
+  
+    .swiper-slide button {
+      font-size: 0.9rem !important; /* Smaller button text */
+      padding: 0.5rem 1rem; /* Adjust padding */
+      border-radius: 5px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for emphasis */
+      cursor: pointer;
+      margin-top: 1rem;
+      width: auto; /* Ensure button fits the content */
+      font-size: 0.6rem;
+    }
+  
+    .swiper-slide button:hover {
+      background-color: #0056b3; /* Slightly darker on hover */
     }
   
     /* Navigation Buttons */
     .swiper-button-prev,
     .swiper-button-next {
       top: 50%; /* Center vertically */
-      width: 40px; /* Fixed size for buttons */
-      height: 40px;
+      width: 30px; /* Reduce size for mobile */
+      height: 30px;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+      border-radius: 50%;
+      color: #fff;
       z-index: 10;
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for buttons */
-      border-radius: 50%; /* Circular buttons */
-      color: #ffffff; /* White color for icons */
-      transform: translateY(-50%); /* Ensure proper alignment */
     }
   
-    /* Ensure buttons don't overlap slides */
     .swiper-button-prev {
-      left: 10px; /* Adjust spacing from the left */
+      left: 10px; /* Add spacing on the left */
     }
   
     .swiper-button-next {
-      right: 10px; /* Adjust spacing from the right */
+      right: 10px; /* Add spacing on the right */
     }
-  
-    /* Text and Button Styling Inside Slides */
-    .swiper-slide h1,
-    .swiper-slide p,
-    .swiper-slide button {
-      margin: 0.5rem 0; /* Add spacing between elements */
-      padding: 0.5rem; /* Add padding for better touch experience */
-      max-width: 90%; /* Ensure content fits within the slide */
-    }
-  
-    .swiper-slide h1 {
-      font-size: 1.2rem; /* Adjust font size for headers */
-      font-weight: bold;
-      color: #333; /* Dark text color */
-    }
-  
-    .swiper-slide p {
-      font-size: 1rem; /* Adjust paragraph font size */
-      color: #666; /* Lighter text color */
-    }
-  
-    .swiper-slide button {
-      font-size: 0.9rem; /* Adjust button text size */
-      padding: 0.5rem 1rem; /* Add padding for a comfortable touch size */
-      border: none;
-      border-radius: 5px; /* Rounded corners for the button */
-      background-color: #007bff; /* Primary color for buttons */
-      color: #ffffff; /* White text */
-      cursor: pointer;
-    }
-  
-    .swiper-slide button:hover {
-      background-color: #0056b3; /* Darker blue on hover */
-    }
-  
-    /* Wrapper Adjustments */
     .swiper-wrapper {
-      gap: 1rem; /* Add spacing between slides */
-      padding: 1rem; /* Add padding for better layout */
+      transform: translate3d(-24rem, 0px, 0px) !important;
     }
-  
-    /* Shadows for Coverflow Effect (Optional) */
-    .swiper-slide-shadow-left,
-    .swiper-slide-shadow-right {
-      display: none; /* Remove unnecessary shadows for cleaner design */
-    }
+    .swiper-button-next:after , .swiper-button-prev:after {
+      font-family: swiper-icons;
+      font-size: 1rem;
+      text-transform: none !important;
+      letter-spacing: 0;
+      font-variant: initial;
+      line-height: 1;
   }
+    
+  }
+  
   
