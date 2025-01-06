@@ -212,6 +212,7 @@ body::-webkit-scrollbar{
     height: auto; /* Allow content to define height */
     padding: 2rem 1rem; /* Adjust padding for smaller screens */
     background-size: cover; /* Ensure background scales correctly */
+    background-position: 53%;
   }
 
   /* Landing Content Styling */
@@ -229,7 +230,7 @@ body::-webkit-scrollbar{
   }
 
   .lpt {
-    font-size: 1.2rem; /* Scale text size */
+    font-size: 0.7rem; /* Scale text size */
     line-height: 1.5; /* Adjust line height */
   }
 
@@ -237,7 +238,9 @@ body::-webkit-scrollbar{
   .Sloagan-line {
     font-size: 1.6rem; /* Adjust font size */
     width: 100%; /* Make slogan width dynamic */
-    text-align: center; /* Center-align text */
+    display: flex !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
   }
 
   /* Tech Card Container */
@@ -254,6 +257,7 @@ body::-webkit-scrollbar{
     transform: none; /* Remove rotation for better alignment */
     padding: 1.05rem;
     margin-top: 0.5rem;
+    height: 1.5rem;
   }
 
   /* Typewriter Effect */
@@ -296,5 +300,8 @@ body::-webkit-scrollbar{
 
   .fade-out {
     animation: fadeOut 1s forwards; /* Keep animations */
+  }
+  .for-mobile-line{
+    font-size: 2.5rem;
   }
 }

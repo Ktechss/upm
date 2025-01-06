@@ -86,11 +86,11 @@ const HomePage = () => {
             <TextGenerateEffect words={words}/>
           </h1>
           <h1 className="line">
-            <span style={{ color: 'white' }}>One</span>
-            <span style={{ color: '#3d84e2' }}>Pixel</span>
+            <span style={{ color: 'white' }} className='for-mobile-line'>One</span>
+            <span style={{ color: '#3d84e2' }} className='for-mobile-line'>Pixel</span>
           </h1>
           <h1 className="line">
-            <span style={{ color: '#3d84e2' }}>At</span> a Time
+            <span style={{ color: '#3d84e2' }} className='for-mobile-line'>At</span> a Time
           </h1>
         </div>
         <div className="landing_page_title">
