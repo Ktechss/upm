@@ -14,6 +14,9 @@ import twitter_icon from '../../assets/social_link_icons/instagram.png';
 import instagram_icon from '../../assets/social_link_icons/instagram.png';
 import ContactUsCtaButton from '../Button_Ui/ContactUsCtaButton';
 
+import useIsMobile from '../../hooks/useIsMobile';
+import MobileMediaSection1 from './components/MobileMediaSection1';
+
 const navigationLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '#services' },
@@ -60,7 +63,9 @@ const MediaPage = () => {
       ) : (
         <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
       )}
-      <LogoDesigning />
+      {
+        isMobile?(<MobileMediaSection1/>):(
+        <LogoDesigning />)}
       <MediaService />
       <ContactUsCtaButton navigation_link="#contactus" />
       <ServiceNavigation currentService="Media" services={services} />

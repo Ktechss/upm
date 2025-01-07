@@ -119,3 +119,58 @@
     }
   }
   
+  @media (max-width: 768px) {
+    .media-service {
+      padding: 20px; /* Adjust padding for smaller screens */
+    }
+  
+    .media-service-headings {
+      margin-bottom: 1.5rem; /* Reduce margin for compact spacing */
+    }
+  
+    .media-service-healine {
+      font-size: 2rem; /* Adjust headline size */
+      text-align: center; /* Center-align text */
+    }
+  
+    .service-buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center buttons */
+      gap: 10px; /* Adjust spacing between buttons */
+    }
+  
+    .service-buttons button {
+      width: 90%; /* Full-width buttons for better usability */
+      font-size: 0.85rem; /* Slightly smaller text size */
+      padding: 10px 20px; /* Adjust padding */
+    }
+  
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Flexible grid for cards */
+      gap: 15px; /* Adjust gap for smaller screens */
+      width: 100%; /* Ensure full-width layout */
+      justify-items: center; /* Center-align cards */
+    }
+  
+    .service-card {
+      width: 90%; /* Full-width cards for better layout */
+      padding: 15px; /* Reduce padding */
+      margin: 5px 0; /* Adjust margin */
+    }
+  
+    .service-logo {
+      width: 50px; /* Slightly smaller logos */
+      height: 50px;
+      margin-bottom: 10px;
+    }
+  
+    .service-card h3 {
+      font-size: 16px; /* Adjust font size for titles */
+    }
+  
+    .service-card p {
+      font-size: 12px; /* Adjust font size for descriptions */
+    }
+  }
+  

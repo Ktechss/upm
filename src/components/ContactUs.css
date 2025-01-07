@@ -173,5 +173,8 @@ select.contact-us-form-box-title-input {
     align-items: center !important;
     justify-content: center !important;
   }
+  .contact-us-container{
+    height: auto;
+  }
 }
 
