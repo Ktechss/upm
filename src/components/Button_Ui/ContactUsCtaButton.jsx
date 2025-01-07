@@ -4,7 +4,7 @@ import './ContactUsCtaButton.css';
 function ContactUsCtaButton({ navigation_link }) {
     return (
         <div className="ContactUsCtaButton">
-            <a href={navigation_link}>
+            <a href={navigation_link} className='cta-contact-us'>
                 <button className="Contact-Us-Cta-Button">
                     Connect with us
                 </button>

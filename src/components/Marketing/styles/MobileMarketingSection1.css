@@ -1,0 +1,70 @@
+.mobile-marketing-section-1 {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem; /* Spacing between elements */
+  }
+  
+  .mobile-marketing-heading {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .highlight {
+    color: #3d84e2;
+    font-size: 2.5rem;
+  }
+  .highlight2{
+    color: #3d84e2;
+    font-size: 1.5rem;
+  }
+  /* Image Section */
+  .mobile-marketing-image-container {
+    margin: 1rem 0;
+  }
+  
+  .mobile-marketing-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Content Section */
+  .mobile-marketing-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .mobile-marketing-text {
+    font-size: 1rem;
+    text-align: center; /* Center-align the text */
+    line-height: 1.5;
+    color: #333;
+    max-width: 90%; /* Restrict width for better readability */
+  }
+  
+  /* Button Styling */
+  button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(210deg, rgba(36, 119, 221, 0.27), rgb(36, 119, 221));
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 1.75rem;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background: rgb(36, 119, 221);
+    transform: scale(1.05);
+  }
+  

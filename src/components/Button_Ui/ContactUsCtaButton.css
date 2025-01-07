@@ -1,5 +1,8 @@
 .ContactUsCtaButton{
     padding: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .Contact-Us-Cta-Button {
     background: black;
@@ -25,4 +28,27 @@
 .Contact-Us-Cta-Button:hover {
     transform: scale(1.05); /* Increase size by 10% */
     background-color: #333; /* Optional: Slightly lighter background */
+}
+
+@media (max-width: 768px) {
+    .ContactUsCtaButton {
+        display: flex;
+        justify-content: center; /* Horizontally center the button */
+        align-items: center; /* Vertically center if needed */
+        padding: 2rem 0; /* Adjust padding for smaller screens */
+        text-align: center; /* Center-align text if necessary */
+
+    }
+
+    .Contact-Us-Cta-Button {
+        width: 10rem; /* Make the button responsive */
+        max-width: 15rem; /* Limit the button width */
+        height: 3.5rem; /* Adjust height for better appearance */
+        font-size: 1rem; /* Maintain readability */
+    }
+    .cta-contact-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

@@ -11,6 +11,7 @@ import facebook_icon from '../../assets/social_link_icons/facebook.png';
 import twitter_icon from '../../assets/social_link_icons/instagram.png';
 import instagram_icon from '../../assets/social_link_icons/instagram.png';
 import logo from '../../assets/upm_logo/UPM_B5.jpg';
+import MobileConsultingService from './components/MobileConsultingService';
 
 const navigationLinks = [
   { label: 'Home', href: '/' },
@@ -61,7 +62,12 @@ function Consulting_Page() {
       )}
       <Consulting_Section_1 />
       <Consulting_Section_2 />
-      <Consulting_Service />
+      {
+        isMobile ?(
+          <MobileConsultingService/>
+        ):(<Consulting_Service />)
+      }
+      
       <ServiceNavigation currentService="Consulting" services={services} />
       <ContactUs />
     </div>

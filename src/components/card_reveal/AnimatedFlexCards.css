@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #eeeeea;
+    background-color: #ffffff;
 }
 
 .AnimatedFlexCards-wrapper {
@@ -142,7 +142,7 @@ input:checked + label .AnimatedFlexCards-description {
     }
 
     body {
-        background-color: #eeeeea;
+        background-color: #ffffff;
     }
 
     .AnimatedFlexCards-wrapper {

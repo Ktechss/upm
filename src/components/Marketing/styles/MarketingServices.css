@@ -131,3 +131,71 @@
   width: 2.5rem;
   /* transform:rotate(35deg) ; */
 }
+
+@media (max-width: 768px) {
+  .marketing-services-cards-container {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center-align cards */
+    gap: 2rem; /* Add spacing between cards */
+    width: 100%; /* Use full width for mobile view */
+  }
+
+  .marketing-services-card {
+    width: 70%; /* Make the card responsive */
+    max-width: 350px; /* Limit maximum card width */
+    height: auto; /* Adjust height to fit content */
+    padding: 1.5rem; /* Reduce padding for mobile */
+    border-radius: 1.5rem; /* Adjust border radius */
+  }
+
+  .marketing-services-card-title {
+    font-size: 1.4rem; /* Adjust title size */
+    margin-bottom: 1rem; /* Add spacing below the title */
+    text-align: center; /* Center-align text */
+  }
+
+  .marketing-services-list-item {
+    font-size: 1rem; /* Adjust list item font size */
+    line-height: 1.4; /* Improve readability */
+    margin-bottom: 0.5rem; /* Add spacing between list items */
+    text-align: left; /* Align text for better readability */
+  }
+
+  .marketing-services-section-title {
+    font-size: 2rem; /* Adjust section title font size */
+    text-align: center; /* Center-align section title */
+    margin-bottom: 1.5rem; /* Add spacing below title */
+  }
+
+  .all-in-one-card {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-align content */
+    width: 70%; /* Make the card responsive */
+    max-width: 350px; /* Limit maximum card width */
+    padding: 2rem; /* Adjust padding */
+    border-radius: 1.5rem; /* Adjust border radius */
+    gap: 1.5rem; /* Add spacing between items */
+  }
+
+  .marketing-services-section-title-next {
+    font-size: 1.8rem; /* Adjust section title font size */
+    text-align: center; /* Center-align section title */
+  }
+
+  .marketing-services-all-in-one-growth-list {
+    font-size: 1rem; /* Adjust list font size */
+    line-height: 1.4; /* Improve readability */
+    margin-bottom: 0.5rem; /* Add spacing between list items */
+    text-align: center; /* Center-align text */
+  }
+
+  .marketing-services-cards-icon-container {
+    justify-content: center; /* Center-align icons */
+    gap: 1rem; /* Add spacing between icons */
+  }
+
+  .marketing-services-cards-icon {
+    height: 2rem; /* Adjust icon size */
+    width: 2rem; /* Adjust icon size */
+  }
+}

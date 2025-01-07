@@ -3,7 +3,7 @@ import Header from '../Header';
 import MobileHeader from '../MobileHeader'; // Import MobileHeader
 import MarketingServices from './components/MarketingServices';
 import MarketingSection1 from './components/MarketingSection1';
-import './styles/MarketingPage.css';
+
 
 import logo from '../../assets/upm_logo/UPM_B5.jpg';
 import ServiceNavigation from '../ServiceNavigation';
@@ -14,6 +14,7 @@ import twitter_icon from '../../assets/social_link_icons/instagram.png';
 import instagram_icon from '../../assets/social_link_icons/instagram.png';
 
 import ContactUsCtaButton from '../Button_Ui/ContactUsCtaButton';
+import MobileMarketingSection1 from './components/MobileMarketingSection1';
 
 const navigationLinks = [
   { label: 'Home', href: '/' },
@@ -61,7 +62,14 @@ function MarketingPage() {
       ) : (
         <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
       )}
-      <MarketingSection1 />
+      {
+        isMobile?(
+          <MobileMarketingSection1/>
+        ):(
+          <MarketingSection1/>
+        )
+      }
+      {/* <MarketingSection1 /> */}
       <MarketingServices />
       <ContactUsCtaButton navigation_link="#contactus" />
       <ServiceNavigation currentService="Marketing" services={services} />    

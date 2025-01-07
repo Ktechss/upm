@@ -61,3 +61,44 @@
     font-size: 1.2rem;
     text-align: center;
 }
+@media (max-width: 768px) {
+    .Consulting_Section_1 {
+        height: auto; /* Allow dynamic height for smaller screens */
+        gap: 2rem; /* Reduce gap between elements */
+    }
+
+    .background-video {
+        height: 50vh; /* Adjust video height for mobile */
+        object-fit: cover; /* Maintain proper aspect ratio */
+    }
+
+    .section-1-content {
+        text-align: center; /* Center align the content */
+    }
+
+    .section-1-content h3 {
+        font-size: 2cqh; /* Set heading size */
+        text-align: center; /* Ensure heading is centered */
+    }
+
+    .section-1-display-contents {
+        width: 90%; /* Adjust width to fit smaller screens */
+        margin-top: 1rem; /* Add spacing above content */
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center align text */
+        justify-content: center; /* Center content */
+        text-align: center; /* Center the paragraph text */
+    }
+
+    .section-1-display-contents p {
+        font-size: 1rem; /* Reduce font size for better readability */
+        text-align: center; /* Center align the text */
+        line-height: 1.5; /* Improve readability */
+        padding-bottom: 2.5rem;
+    }
+    .Consulting_Section_1 {
+        font-size: 3rem;
+        padding-top: 2rem !important;
+    }
+}
