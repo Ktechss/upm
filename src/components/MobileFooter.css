@@ -1,0 +1,108 @@
+.mobile-footer {
+    background: linear-gradient(to bottom, black, #007bff);
+    color: white;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .mobile-footer-follow-us {
+    margin-bottom: 1rem;
+  }
+  
+  .mobile-footer-follow-us h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mobile-footer-social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .mobile-footer-social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .mobile-footer-social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .mobile-footer-main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+  
+  .mobile-footer-contact,
+  .mobile-footer-services {
+    flex: 1;
+    margin: 0.5rem;
+  }
+  
+  .mobile-footer-contact .contact-item,
+  .mobile-footer-services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .mobile-footer-contact .contact-item img,
+  .mobile-footer-services img {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mobile-footer-contact .contact-item span,
+  .mobile-footer-services span {
+    font-size: 0.9rem;
+    text-align: left;
+  }
+  
+  .mobile-footer-services a {
+    color: #84d7ff;
+    text-decoration: none;
+    margin: 0 0.5rem;
+  }
+  
+  .mobile-footer-services a:hover {
+    text-decoration: underline;
+  }
+  
+  .mobile-footer-logo img {
+    width: 100px;
+    margin: 1rem auto;
+  }
+  
+  .mobile-footer-legal {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+  }
+  
+  .mobile-footer-legal p {
+    margin: 0;
+  }
+  
+  .mobile-footer-legal a {
+    color: #84d7ff;
+    text-decoration: none;
+  }
+  
+  .mobile-footer-legal a:hover {
+    text-decoration: underline;
+  }
+  .contact-item{
+    gap: .2rem !important;
+  }
+  .mobile-footer-contact{
+    display:'flex' !important;
+    flex-direction: column !important;
+    gap:0.6rem !important;
+  }
