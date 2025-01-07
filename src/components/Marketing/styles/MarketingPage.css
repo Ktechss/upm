@@ -1,5 +1,5 @@
 .MarketingPage{
-    background: rgb(255, 255, 255);
+    background:white !important;
     display: flex;
     flex-direction: column;
 }
