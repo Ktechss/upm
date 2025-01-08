@@ -7,9 +7,11 @@ import ServiceNavigation from '../ServiceNavigation';
 import ContactUs from '../ContactUs';
 import Header from '../Header';
 import MobileHeader from '../MobileHeader'; // Import MobileHeader
-import facebook_icon from '../../assets/social_link_icons/facebook.png';
-import twitter_icon from '../../assets/social_link_icons/instagram.png';
-import instagram_icon from '../../assets/social_link_icons/instagram.png';
+
+import facebook_icon from '../../assets/facbook_Icon.png';
+import twitter_icon from '../../assets/twitter.svg';
+import instagram_icon from '../../assets/instagram.png';
+
 import logo from '../../assets/upm_logo/UPM_B5.jpg';
 import MobileConsultingService from './components/MobileConsultingService';
 

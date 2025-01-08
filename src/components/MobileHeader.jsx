@@ -86,7 +86,7 @@ const MobileHeader = ({ logo, navigationLinks, socialIcons }) => {
                   src={icon.icon}
                   alt={icon.label}
                   className="social-icon"
-                  style={{ filter: isWhiteBackground ? 'none' : 'invert(1)' }}
+                  style={{ filter: isWhiteBackground ? 'invert(1)' : 'none' }}
                 />
               </a>
             ))}
