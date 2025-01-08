@@ -10,13 +10,7 @@ body, html {
 body::-webkit-scrollbar{
   display: none;
 }
-#root{
-  background: black;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+
 /* Keyframes for zoom-in effect */
 @keyframes zoomInBackground {
   0% {
@@ -227,7 +221,7 @@ body::-webkit-scrollbar{
   }
 
   .headline .line {
-    font-size: 2.5rem; /* Scale down headline text */
+    font-size: 3rem; /* Scale down headline text */
     line-height: 1.2; /* Adjust line spacing */
   }
 
@@ -308,6 +302,6 @@ body::-webkit-scrollbar{
     animation: fadeOut 1s forwards; /* Keep animations */
   }
   .for-mobile-line{
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }

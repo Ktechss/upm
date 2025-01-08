@@ -129,7 +129,7 @@
     }
   
     .card {
-      width: 90%; /* Adjust card width for mobile */
+      width: 80%; /* Adjust card width for mobile */
       padding: 1rem; /* Adjust padding for better fit */
       margin: auto; /* Center cards horizontally */
     }

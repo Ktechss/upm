@@ -3,6 +3,7 @@ import Header from '../Header';
 import MobileHeader from '../MobileHeader'; // Import MobileHeader
 import MarketingServices from './components/MarketingServices';
 import MarketingSection1 from './components/MarketingSection1';
+import './styles/MarketingPage.css';
 
 
 import logo from '../../assets/upm_logo/UPM_B5.jpg';

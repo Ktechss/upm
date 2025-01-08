@@ -127,9 +127,13 @@
     display: none;
   }
 }
-.logo{
-  width: 60% !important;
+@media(max-width:768px)
+{
+  .logo{
+    width: 60% !important;
+  }
 }
+
 
 /* Close Button Circle */
 .close-button-circle {
