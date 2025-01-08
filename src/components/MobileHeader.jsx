@@ -22,15 +22,13 @@ const MobileHeader = ({ logo, navigationLinks, socialIcons }) => {
       navigate(link.href);
     }
 
-    // Close the menu after navigation
-    setIsMenuOpen(false);
+    setIsMenuOpen(false); // Close the menu after navigation
   };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  // Determine background and text colors dynamically
   const isWhiteBackground = location.pathname !== '/';
   const backgroundColor = isWhiteBackground ? 'white' : 'black';
   const textColor = isWhiteBackground ? 'black' : 'white';
@@ -92,6 +90,16 @@ const MobileHeader = ({ logo, navigationLinks, socialIcons }) => {
                 />
               </a>
             ))}
+          </div>
+          <div
+            className="close-button-circle"
+            style={{
+              borderColor: textColor,
+              color: textColor,
+            }}
+            onClick={() => setIsMenuOpen(false)}
+          >
+            <span className="close-button">X</span>
           </div>
         </nav>
       )}
