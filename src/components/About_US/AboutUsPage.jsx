@@ -13,7 +13,7 @@ const navigationLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '#services' },
   { label: 'Team', href: '#teams' },
-  { label: 'About Us', href: '/aboutus' },
+  { label: 'About Us', href: '/about_us' },
   { label: 'Contact Us', href: '#contactus' },
 ];
 
@@ -37,6 +37,11 @@ function AboutUsPage() {
 
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  useEffect(() => {
+    // Scroll to top when the component is mounted
+    window.scrollTo(0, 0);
+  }, []); // Empty dependency array ensures this runs only on mount
 
   return (
     <div style={{ background: 'white' }} className="about_us_page">

@@ -28,10 +28,14 @@ const MobileFooter = () => {
 
       {/* Contact and Services Section */}
       <div className="mobile-footer-main-content">
-        <div className="mobile-footer-contact" style={{}}>
+        <div className="mobile-footer-contact">
           <div className="contact-item">
             <img src={mail_logo} alt="Email" />
-            <span>unknownpixelmedia@gmail.com</span>
+            <span>
+              <a href="mailto:unknownpixelmedia@gmail.com" style={{ textDecoration: "none", color: "inherit" }}>
+                unknownpixelmedia@gmail.com
+              </a>
+            </span>
           </div>
           <div className="contact-item">
             <img src={phone_logo} alt="Phone" />
@@ -48,12 +52,13 @@ const MobileFooter = () => {
             </span>
           </div>
         </div>
-        <div className="mobile-footer-services" style={{flexDirection:'column',alignItems:'flex-end'}}>
+        <div className="mobile-footer-services" style={{ flexDirection: "column", alignItems: "flex-end" }}>
           <img src={service_icon} alt="Services" />
-          <span style={{textAlign:'right',display:'flex',flexDirection:'column',gap:'0.5rem'}}>
+          <span style={{ textAlign: "right", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
             <strong>Services</strong>
             <br />
-            <a href="/media">Media</a><a href="/marketing">Marketing</a>{" "}
+            <a href="/media">Media</a>
+            <a href="/marketing">Marketing</a>
             <a href="/consulting">Consulting</a>
           </span>
         </div>

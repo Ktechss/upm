@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Services from './components/Services';
 import WhyChooseUs from './components/WhyChooseUs';
@@ -36,41 +36,57 @@ const socialIcons = [
   { label: 'Twitter', icon: twitter_icon, href: '#' },
   { label: 'Instagram', icon: instagram_icon, href: '#' },
 ];
-const App = () => {
+
+const AppContent = () => {
+  const location = useLocation();
   const isMobile = useIsMobile(); // Check if the user is on a mobile device
 
+  // Determine the background color based on the path
+  const rootStyle = {
+    background: location.pathname === '/' ? 'black' : 'white',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    minHeight: '100vh', // Ensure full height
+  };
+
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                {isMobile ? (
-                  <MobileHeader logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
-                ) : (
-                  <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
-                )}
-                <HomePage />
-                <Services />
-                <PageServices />
-                <WhyUS />
-                <TeamPage />
-                <AboutUs />
-              </>
-            }
-          />
-          <Route path="/media" element={<MediaPage />} />
-          <Route path="/marketing" element={<MarketingPage />} />
-          <Route path="/consulting" element={<Consulting_Page />} />
-          <Route path="/about_us" element={<AboutUsPage />} />
-        </Routes>
-      </Router>
+    <div style={rootStyle}>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              {isMobile ? (
+                <MobileHeader logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+              ) : (
+                <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
+              )}
+              <HomePage />
+              <Services />
+              <PageServices />
+              <WhyUS />
+              <TeamPage />
+              <AboutUs />
+            </>
+          }
+        />
+        <Route path="/media" element={<MediaPage />} />
+        <Route path="/marketing" element={<MarketingPage />} />
+        <Route path="/consulting" element={<Consulting_Page />} />
+        <Route path="/about_us" element={<AboutUsPage />} />
+      </Routes>
       {/* Dynamically render the footer */}
       {isMobile ? <MobileFooter /> : <Footer />}
-    </>
+    </div>
   );
 };
+
+const App = () => (
+  <Router>
+    <AppContent />
+  </Router>
+);
 
 export default App;

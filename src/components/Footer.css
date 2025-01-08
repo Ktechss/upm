@@ -1,11 +1,11 @@
 .footer {
     background: linear-gradient(to bottom,black,#007bff) ;
-    padding: 2rem;
+    padding: 2rem 0rem;
     color: #f9f9f9;
     font-family: Arial, sans-serif;
-    padding-left: 8rem;
-    padding-right: 8rem;
+
     font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
   }
   
   .footer-container {
@@ -13,6 +13,7 @@
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    padding: 0rem 7rem;
   }
   
   .footer-section {

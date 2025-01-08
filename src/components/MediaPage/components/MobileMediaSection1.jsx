@@ -9,7 +9,7 @@ function MobileMediaSection1() {
     <section className="mobile-media-section">
       {/* Heading */}
       <h2 className="mobile-media-heading">
-        Crafting <span style={{ color: "#3d84e2" }}>Media</span> That Inspires and Engages
+        Crafting <span style={{ color: "#3d84e2" }} className='media-heding'>Media</span> That Inspires and Engages
       </h2>
 
       {/* Image */}

@@ -154,7 +154,8 @@
     }
   
     .service-card {
-      width: 90%; /* Full-width cards for better layout */
+      width: 80%; /* Full-width cards for better layout */
+      height: 85%;
       padding: 15px; /* Reduce padding */
       margin: 5px 0; /* Adjust margin */
     }
