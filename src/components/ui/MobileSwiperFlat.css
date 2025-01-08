@@ -1,6 +1,6 @@
 /* Navigation Arrows */
 .arrow-buttons-container {
-  position: absolute; /* Fix to prevent movement */
+  margin-top: 1.5rem;
   bottom: 20px; /* Position at the bottom */
   width: 100%; /* Full width container */
   display: flex;
@@ -12,7 +12,7 @@
 .arrow-button {
   font-size: 2rem;
   color: #fff;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(56, 56, 56, 0.5);
   border: none;
   border-radius: 50%;
   width: 50px;

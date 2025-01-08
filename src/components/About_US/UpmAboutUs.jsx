@@ -12,7 +12,7 @@ const UpmAboutUs = () => {
 
             <div className="About-Us-upm-about-us">
                 <div className="About-Us-video-overlay"></div>
-                <video className="About-Us-background-video" autoPlay loop muted>
+                <video className="About-Us-background-video" autoPlay loop muted playsInline>
                     <source src={back_video} type="video/mp4" />
                     Your browser does not support the video tag.
                 </video>
