@@ -1,10 +1,12 @@
 /* Navigation Arrows */
 .arrow-buttons-container {
+  position: absolute; /* Fix to prevent movement */
   bottom: 20px; /* Position at the bottom */
   width: 100%; /* Full width container */
   display: flex;
   justify-content: center; /* Center the buttons */
   gap: 1rem; /* Space between the buttons */
+  z-index: 2; /* Ensure it stays above the video */
 }
 
 .arrow-button {
@@ -20,7 +22,6 @@
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  pointer-events: auto; /* Ensure interactivity */
 }
 
 .arrow-button:hover {
@@ -32,7 +33,8 @@
 .mobile-swiper-flat {
   position: relative;
   width: 100%;
-  overflow: hidden;
+  overflow: hidden; /* Ensure no content spills out */
+  background: black; /* Add a background for contrast */
 }
 
 /* Carousel Viewport */
@@ -42,14 +44,79 @@
   height: 70vh;
   margin: 0 auto; /* Center the viewport */
   border-radius: 20px;
-  overflow: hidden;
+  overflow: hidden; /* Ensure video stays inside */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 1; /* Ensure content stays above video */
 }
 
-/* Description Styling */
-.carousel-description {
+/* Video Styling */
+.carousel-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video stays within container */
+  border-radius: 20px; /* Match the viewport's border radius */
+  z-index: 0; /* Keep the video below the content */
+}
+
+/* Content Overlay */
+.carousel-overlay {
+  position: absolute; /* Position over the video */
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4); /* Add slight overlay for text visibility */
   color: white;
-  text-align: justify;
+  padding: 1rem;
+  z-index: 2; /* Ensure it's above the video */
+  text-align: center;
+}
+
+/* Content Styling */
+.carousel-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.carousel-description {
+  font-size: 1rem;
   margin-bottom: 1.3rem;
-  line-height: 1.7rem;
+  line-height: 1.5rem;
+}
+
+.carousel-cta {
+  margin-top: 1rem;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .carousel-viewport {
+    width: 95%; /* Adjust width for smaller screens */
+    height: 60vh; /* Reduce height for mobile screens */
+    margin: 0 auto;
+    border-radius: 15px; /* Adjust border radius */
+  }
+
+  .arrow-buttons-container {
+    bottom: 10px; /* Slightly closer to the bottom */
+  }
+
+  .arrow-button {
+    width: 40px; /* Reduce button size */
+    height: 40px;
+    font-size: 1.8rem; /* Adjust icon size */
+  }
+
+  .carousel-title {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  .carousel-description {
+    font-size: 0.9rem; /* Adjust text size */
+    line-height: 1.4rem;
+  }
 }

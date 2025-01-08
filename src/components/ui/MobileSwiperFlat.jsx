@@ -1,8 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import "./MobileSwiperFlat.css";
-
-// Import content
 import content from "../../User_Data/Media_data";
 
 export default function MobileSwiperFlat() {
