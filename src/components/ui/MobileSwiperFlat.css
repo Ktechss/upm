@@ -1,0 +1,55 @@
+/* Navigation Arrows */
+.arrow-buttons-container {
+  bottom: 20px; /* Position at the bottom */
+  width: 100%; /* Full width container */
+  display: flex;
+  justify-content: center; /* Center the buttons */
+  gap: 1rem; /* Space between the buttons */
+}
+
+.arrow-button {
+  font-size: 2rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  pointer-events: auto; /* Ensure interactivity */
+}
+
+.arrow-button:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+/* Carousel Container */
+.mobile-swiper-flat {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Carousel Viewport */
+.carousel-viewport {
+  position: relative;
+  width: 90%;
+  height: 70vh;
+  margin: 0 auto; /* Center the viewport */
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Description Styling */
+.carousel-description {
+  color: white;
+  text-align: justify;
+  margin-bottom: 1.3rem;
+  line-height: 1.7rem;
+}

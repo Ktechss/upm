@@ -1,103 +1,156 @@
 /* Mobile Header Container */
 .mobile-header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0rem;
-    background-color: #00000000; /* Adjust as needed */
-    color: #fff;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0rem;
+  background-color: #00000000; /* Adjust as needed */
+  color: #fff;
+  width: 100%;
+}
+
+.mobile-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo img {
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+  display: flex;
+ 
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  cursor: pointer;
+}
+
+.hamburger-menu .line {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu .line.open:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-menu .line.open:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu .line.open:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Navigation Menu */
+.mobile-navigation {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.mobile-nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-nav-links li {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.mobile-nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.mobile-social-icons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+/* Close Button Circle */
+.close-button-circle {
+  position: absolute;
+  bottom: 2rem; /* Position at the bottom of the menu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.close-button-circle:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.close-button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+/* Show MobileHeader only on small screens */
+@media (min-width: 768px) {
+  .mobile-header-container {
+    display: none;
   }
-  
-  .mobile-header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  
-  .logo img {
-    height: 40px;
-    cursor: pointer;
-  }
-  
-  /* Hamburger Menu */
-  .hamburger-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
-    cursor: pointer;
-  }
-  
-  .hamburger-menu .line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    transition: transform 0.3s ease;
-  }
-  
-  .hamburger-menu .line.open:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-  
-  .hamburger-menu .line.open:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .hamburger-menu .line.open:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-  
-  /* Mobile Navigation Menu */
-  .mobile-navigation {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #000;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-  }
-  
-  .mobile-nav-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .mobile-nav-links li {
-    margin: 1rem 0;
-    text-align: center;
-  }
-  
-  .mobile-nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  
-  .mobile-social-icons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
-  .social-icon {
-    width: 30px;
-    height: 30px;
-  }
-  
-  /* Show MobileHeader only on small screens */
-  @media (min-width: 768px) {
-    .mobile-header-container {
-      display: none;
-    }
-  }
-  
-  
+}
+
+/* Close Button Circle */
+.close-button-circle {
+  position: absolute;
+  bottom: 2rem; /* Position at the bottom of the menu */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.close-button-circle:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Subtle background change */
+  transform: scale(1.1);
+}
+
+.close-button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: inherit;
+  text-align: center;
+}
