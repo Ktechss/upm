@@ -10,9 +10,9 @@ import logo from '../../assets/upm_logo/UPM_B5.jpg';
 import ServiceNavigation from '../ServiceNavigation';
 import ContactUs from '../ContactUs';
 
-import facebook_icon from '../../assets/social_link_icons/facebook.png';
-import twitter_icon from '../../assets/social_link_icons/instagram.png';
-import instagram_icon from '../../assets/social_link_icons/instagram.png';
+import facebook_icon from '../../assets/facbook_Icon.png';
+import twitter_icon from '../../assets/twitter.svg';
+import instagram_icon from '../../assets/instagram.png';
 
 import ContactUsCtaButton from '../Button_Ui/ContactUsCtaButton';
 import MobileMarketingSection1 from './components/MobileMarketingSection1';

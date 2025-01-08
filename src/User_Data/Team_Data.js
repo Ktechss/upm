@@ -1,10 +1,7 @@
 
-import teamimg1 from '../assets/team1.jpg';
 import member_1 from '../assets/team_member_images/Kamaljeet_k.png';
-import member_2 from '../assets/team_member_images/team-member_2.jpg';
 import member_3 from '../assets/team_member_images/teja_pic.png';
-import member_4 from '../assets/team_member_images/team-member_4.jpg';
-import member_5 from '../assets/team_member_images/team-member_5.jpg';
+
 import baljit from '../assets/team_member_images/Baljit.jpg';
 import facebook_icon from '../assets/social_link_icons/facebook.png';
 import instagram_icon from '../assets/social_link_icons/instagram.png';

@@ -1,6 +1,6 @@
 import React from 'react';
 import './UpmAboutUs.css';
-import back_video from './assets/video/back_video.mp4';
+import back_video from './assets/video/abvsw.mp4';
 import image1 from './assets/images/vision_leader_ship.jpg';
 import image2 from './assets/images/Mission_image.jpg';
 import image3 from './assets/images/core_values.jpg';
