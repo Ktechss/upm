@@ -24,7 +24,7 @@
 /* Hamburger Menu */
 .hamburger-menu {
   display: flex;
- 
+  width: 10%;
   flex-direction: column;
   justify-content: space-between;
   height: 20px;
@@ -126,6 +126,9 @@
   .mobile-header-container {
     display: none;
   }
+}
+.logo{
+  width: 60% !important;
 }
 
 /* Close Button Circle */

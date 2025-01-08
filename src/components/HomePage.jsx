@@ -1,11 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './HomePage.css';
-import Header from './Header';
-import MobileHeader from './MobileHeader'; // Import the MobileHeader component
 import TechCard from './tech_banner/TechCard';
-import facebook_icon from '../assets/facbook_Icon.png';
-import twitter_icon from '../assets/twitter.svg';
-import instagram_icon from '../assets/instagram.png';
+
 import photoshop from '../assets/photoshop.png';
 import premierpro from '../assets/premiere-pro.png';
 import affter_effect from '../assets/after-effects.png';
@@ -15,24 +11,14 @@ import figma from '../assets/tech_card_Icons/figma.png';
 import autodesk from '../assets/tech_card_Icons/Autodesk_maya.png';
 import meta from '../assets/tech_card_Icons/meta.png';
 import mailchimp from '../assets/tech_card_Icons/mailchimp.jpg';
-import logo from '../assets/upm_logo/UPM_W4.png';
+
 import { Highlight } from './ui/HeroHighLight-Component/HeroHighlight';
 import TextGenerateEffect from './ui/TextGenerateEffect';
 
 const HomePage = () => {
-  const navigationLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'Services', href: '#services' },
-    { label: 'Team', href: '#teams' },
-    { label: 'About Us', href: '/about_us' },
-    { label: 'Contact Us', href: '#contactus' },
-  ];
+  
 
-  const socialIcons = [
-    { label: 'Facebook', icon: facebook_icon, href: '#' },
-    { label: 'Twitter', icon: twitter_icon, href: '#' },
-    { label: 'Instagram', icon: instagram_icon, href: '#' },
-  ];
+  
 
   const techCard1Options = [
     { techImage: photoshop, techName: 'Adobe Photoshop' },
@@ -93,11 +79,7 @@ const HomePage = () => {
   return (
     <div className="home-page">
       {/* Dynamically render MobileHeader or Header */}
-      {isMobile ? (
-        <MobileHeader logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
-      ) : (
-        <Header logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
-      )}
+     
       <main className="landing-content">
         <div className="headline">
           <h1 className="Sloagan-line">

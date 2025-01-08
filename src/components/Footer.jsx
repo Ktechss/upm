@@ -33,7 +33,7 @@ const Footer = () => {
             < i className="icon-email">
               <img className="footer_icons" src={mail_logo} />
             </i>
-            <span>unknownpixelmedia@gmail.com </span>
+            <span><mailto>unknownpixelmedia@gmail.com</mailto> </span>
           </div>
           <div className="contact-item">
             <i className="icon-phone">
