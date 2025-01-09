@@ -1,0 +1,25 @@
+/* Loader.css */
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Black background for a space effect */
+    z-index: 1000; /* Ensure it's above all other elements */
+  }
+  
+  .rocket-loader {
+    width: 100%; /* Adjust size as needed */
+    height: auto;
+  }
+  @media (max-width:768px) {
+    .rocket-loader {
+        width: 250% !important; /* Adjust size as needed */
+        overflow: hidden;
+      }
+  }
+  

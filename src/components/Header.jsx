@@ -29,6 +29,7 @@ const Header = ({ logo, navigationLinks, socialIcons }) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  const isWhiteBackground = location.pathname !== '/';
 
   return (
     <header className="header-container">
@@ -59,7 +60,7 @@ const Header = ({ logo, navigationLinks, socialIcons }) => {
       <div className="social-icons">
         {socialIcons.map((icon, index) => (
           <a key={index} href={icon.href} aria-label={icon.label}>
-            <img src={icon.icon} alt={icon.label} className="social-icon" />
+            <img src={icon.icon} alt={icon.label} className="social-icon" style={{ filter: isWhiteBackground ? 'invert(1)' : 'none' }} />
           </a>
         ))}
       </div>

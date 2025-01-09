@@ -4,6 +4,7 @@ import back_video from './assets/video/abvsw.mp4';
 import image1 from './assets/images/vision_leader_ship.jpg';
 import image2 from './assets/images/Mission_image.jpg';
 import image3 from './assets/images/core_values.jpg';
+import InstagramFeed from '../Instagram_Component/InstagramFeed';
 
 const UpmAboutUs = () => {
     return (
@@ -70,6 +71,7 @@ const UpmAboutUs = () => {
                     <a href="#contactus" className="About-Us-cta-button">👉 Connect With Us Today</a>
                 </section>
             </div>
+            <InstagramFeed/>
         </>
     );
 };
