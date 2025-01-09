@@ -17,18 +17,12 @@ import instagram_icon from '../../assets/instagram.png';
 import ContactUsCtaButton from '../Button_Ui/ContactUsCtaButton';
 import MobileMarketingSection1 from './components/MobileMarketingSection1';
 
-const navigationLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '#services' },
-  { label: 'Team', href: '#teams' },
-  { label: 'About Us', href: '/about_us' },
-  { label: 'Contact Us', href: '#contactus' },
-];
+import { navigationLinks, socialLinks } from '../../links'; // Import centralized links
 
 const socialIcons = [
-  { label: 'Facebook', icon: facebook_icon, href: '#' },
-  { label: 'Twitter', icon: twitter_icon, href: '#' },
-  { label: 'Instagram', icon: instagram_icon, href: '#' },
+  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
+  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
+  { label: 'Instagram', icon: instagram_icon, href: socialLinks.Instagram },
 ];
 
 const services = [

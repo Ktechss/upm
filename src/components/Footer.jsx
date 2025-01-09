@@ -23,8 +23,8 @@ const Footer = () => {
             <span className="company-location">
               <strong style={{ fontSize: '1.2rem' }}>Services</strong>
               <br />
-              <a href="/media" style={{ fontSize: '1.1rem', fontWeight: '520' }} className="footer-navigations">Media</a> | 
-              <a href="/marketing" style={{ fontSize: '1.1rem', fontWeight: '520' }} className="footer-navigations"> Marketing</a> | 
+              <a href="/media" style={{ fontSize: '1.1rem', fontWeight: '520' }} className="footer-navigations">Media</a> |
+              <a href="/marketing" style={{ fontSize: '1.1rem', fontWeight: '520' }} className="footer-navigations"> Marketing</a> |
               <a href="/consulting" style={{ fontSize: '1.1rem', fontWeight: '520' }} className="footer-navigations"> Consulting</a>
             </span>
           </div>
@@ -58,24 +58,24 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-section company-info">
-          <div className="footer-section social-links-footer">
+          <div className="social-links-footer">
             <h4>Follow Us</h4>
             <div className="social-icons">
-              <i className="icon-youtube">
-                <img src={instagram} alt="Instagram Icon" />
-              </i>
-              <i className="icon-linkedin">
-                <img src={facebook} alt="Facebook Icon" />
-              </i>
-              <i className="icon-facebook">
-                <img src={reddit} alt="Reddit Icon" />
-              </i>
-              <i className="icon-twitter">
-                <img src={linkedin} alt="LinkedIn Icon" />
-              </i>
-              <i className="icon-instagram">
-                <img src={youtube} alt="YouTube Icon" />
-              </i>
+              <a href="https://www.instagram.com/unknownpixelmedia/ " target="_blank" rel="noopener noreferrer">
+                <img src={instagram} alt="Instagram Icon" className="social-icon" />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61566675155483 " target="_blank" rel="noopener noreferrer">
+                <img src={facebook} alt="Facebook Icon" className="social-icon" />
+              </a>
+              <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">
+                <img src={reddit} alt="Reddit Icon" className="social-icon" />
+              </a>
+              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                <img src={linkedin} alt="LinkedIn Icon" className="social-icon" />
+              </a>
+              <a href="https://www.youtube.com/@UnknownPixelMedia" target="_blank" rel="noopener noreferrer">
+                <img src={youtube} alt="YouTube Icon" className="social-icon" />
+              </a>
             </div>
           </div>
           <div className="footer-section legal">
