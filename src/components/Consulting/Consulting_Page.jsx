@@ -15,18 +15,12 @@ import instagram_icon from '../../assets/instagram.png';
 import logo from '../../assets/upm_logo/UPM_B5.jpg';
 import MobileConsultingService from './components/MobileConsultingService';
 
-const navigationLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '#services' },
-  { label: 'Team', href: '#teams' },
-  { label: 'About Us', href: '/about_us' },
-  { label: 'Contact Us', href: '#contactus' },
-];
+import { navigationLinks, socialLinks } from '../../links'; // Import centralized links
 
 const socialIcons = [
-  { label: 'Facebook', icon: facebook_icon, href: '#' },
-  { label: 'Twitter', icon: twitter_icon, href: '#' },
-  { label: 'Instagram', icon: instagram_icon, href: '#' },
+  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
+  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
+  { label: 'Instagram', icon: instagram_icon, href: socialLinks.Instagram },
 ];
 
 // List of services
