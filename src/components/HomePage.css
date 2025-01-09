@@ -213,6 +213,7 @@ body::-webkit-scrollbar{
     height: auto; /* Allow content to define height */ /* Adjust padding for smaller screens */
     background-size: cover; /* Ensure background scales correctly */
     background-position: 53%;
+    animation: none !important;
   }
 
   /* Landing Content Styling */
