@@ -1,12 +1,12 @@
 // components/Loader.js
 import React from 'react';
-import './Loader.css'; // Optional if you want additional styles
-import rocketGif from './assets/Rocket-loading.gif'; // Adjust the path as needed
+import './Loader.css';
 
 const Loader = () => {
   return (
     <div className="loader-container">
-      <img src={rocketGif} alt="Loading..." className="rocket-loader" />
+      <div className="spinner"></div>
+      <p className="loading-text">Loading...</p>
     </div>
   );
 };
