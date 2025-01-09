@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import Services from './components/Services';
@@ -9,7 +9,7 @@ import PageServices from './components/PageServices';
 import WhyUS from './components/WhyUs';
 import Footer from './components/Footer';
 import MobileFooter from './components/MobileFooter';
-
+import Loader from './components/Loader/Loader'; // Import the Loader
 import Consulting_Page from './components/Consulting/Consulting_Page';
 import MarketingPage from './components/Marketing/MarketingPage';
 import AboutUsPage from './components/About_US/AboutUsPage';
@@ -82,10 +82,36 @@ const AppContent = () => {
   );
 };
 
-const App = () => (
-  <Router>
-    <AppContent />
-  </Router>
-);
+const App = () => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const handlePageLoad = () => {
+      setLoading(false); // Stop showing the loader when the page is fully loaded
+    };
+
+    if (document.readyState === 'complete') {
+      // If the page is already loaded
+      handlePageLoad();
+    } else {
+      // Otherwise, wait for the "load" event
+      window.addEventListener('load', handlePageLoad);
+    }
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('load', handlePageLoad);
+    };
+  }, []);
+
+  return (
+    <>
+      {loading && <Loader />} {/* Show the loader while loading */}
+      <Router>
+        <AppContent />
+      </Router>
+    </>
+  );
+};
 
 export default App;

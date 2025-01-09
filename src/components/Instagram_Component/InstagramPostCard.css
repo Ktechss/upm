@@ -1,0 +1,58 @@
+.instagram-post-card {
+  border: 1px solid #ddd;
+  /* border-radius: 10px; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.173);
+  max-width: 400px;
+  /* margin: 10px; */
+  overflow: hidden;
+  background-color: #fff;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Media, details, and button */
+}
+
+.media-container {
+  width: 100%;
+}
+
+.media-container img,
+.media-container video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-details {
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  display: grid;
+  grid-template-rows: auto auto; /* Caption and metrics */
+  gap: 10px;
+  height: 150px; /* Set a fixed height */
+  overflow: hidden;
+}
+
+.caption {
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1.2; /* Consistent line height */
+}
+
+.engagement-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns for likes and comments */
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.view-on-instagram {
+  text-decoration: none;
+  color: #3897f0;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #ddd; /* Visual separator */
+}
