@@ -1,0 +1,173 @@
+.UpmContactPage1 {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    width: 100%;
+  }
+  
+  .UpmContactPage1-pic-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    height: 20rem;
+    background-color: #1b67f4;
+    background: linear-gradient(180deg,white,rgba(0, 0, 0, 0),white) ,url('./assets/team_images.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .UpmContactPage1-pic-heading-head {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .UpmContactPage1-forms-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .UpmContactPage1-forms-details-left,
+  .UpmContactPage1-forms-details-right {
+    width: 80%;
+    margin-top: 2rem;
+  }
+  
+  ._cUP1np9gMvFQrcPftuf.xahN8AEzyAvQtVj17TPv{
+    margin: 0 !important;
+    display: none !important;
+  }
+  
+  .UpmContactPage1-forms-details-left-heading ,.UpmContactPage1-forms-details-left-normal-heading{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  .UpmContactPage1-forms-details-left-normal-heading{
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  .UpmContactPage1-forms-details-left-sub-heading {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #666;
+    text-align: center;
+  }
+  
+  /* Updated Contact Info Grid */
+  .UpmContactPage1-contact-info {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px; /* Space between items */
+  }
+  
+  .UpmContactPage1-contact-info-item {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+  }
+  
+  .UpmContactPage1-icon-box {
+    background-color: #e0f4f9;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+  
+  .UpmContactPage1-icon-box i {
+    font-size: 1.5rem;
+    color: #1b67f4;
+  }
+  
+  .UpmContactPage1-contact-info-item h4 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .UpmContactPage1-contact-info-item p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  .UpmContactPage1-social-media {
+    margin-top: 20px;
+  }
+  
+  .UpmContactPage1-social-media-icons a {
+    font-size: 1.5rem;
+    color: #666;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .UpmContactPage1-social-media-icons a:hover {
+    color: #1b67f4;
+  }
+  
+  .UpmContactPage1-forms-details-right-heading {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+  }
+  
+  .UpmContactPage1-forms-details-right-sub-heading {
+    font-size: 1rem;
+    margin: 10px 0 20px;
+    color: #666;
+  }
+  
+  .UpmContactPage1-contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .UpmContactPage1-form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .UpmContactPage1-form-group input {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .UpmContactPage1-textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  .UpmContactPage1-button {
+    padding: 10px;
+    background-color: #1b67f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .UpmContactPage1-button:hover {
+    background-color: #1458b8;
+  }
+  

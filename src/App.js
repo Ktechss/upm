@@ -24,6 +24,8 @@ import instagram_icon from './assets/instagram.png';
 import logo from './assets/upm_logo/UPM_W4.png';
 
 import { navigationLinks, socialLinks } from './links'; // Import centralized links
+import TeamSection from './components/Teams/TeamSection';
+import UpmContact from './components/ContactUs/UpmContact';
 
 const socialIcons = [
   { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
@@ -61,6 +63,7 @@ const AppContent = () => {
               <Services />
               <PageServices />
               <WhyUS />
+              <TeamSection/>
               <TeamPage />
               <AboutUs />
             </>
@@ -70,6 +73,7 @@ const AppContent = () => {
         <Route path="/marketing" element={<MarketingPage />} />
         <Route path="/consulting" element={<Consulting_Page />} />
         <Route path="/about_us" element={<AboutUsPage />} />
+        <Route path="/contact_us" element={<UpmContact/>}/>
       </Routes>
       {/* Dynamically render the footer */}
       {isMobile ? <MobileFooter /> : <Footer />}

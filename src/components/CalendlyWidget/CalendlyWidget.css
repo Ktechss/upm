@@ -1,0 +1,105 @@
+/* CalendlyWidget.css */
+
+.calendly-widget {
+    margin-top: 2rem !important;
+    text-align: center;
+    width: 100%; /* Occupy 80% of the parent div */
+    height: auto;
+  }
+  
+  .calendly-toggle-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .calendly-toggle-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .calendly-widget-container {
+    width: 100%; /* The widget spans the full width of its parent container */
+    height: auto; /* Set a fixed height for the Calendly widget */
+ /* Add a max height for larger screens */
+    overflow: hidden; /* Prevent overflow */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    /* border: 1px solid #ddd;
+    border-radius: 8px; */
+    border-radius: 10px;
+    margin-bottom: 2rem;
+  }
+  ._3efP_GeH5kyBAzqnLzL{
+    max-width: fit-content !important;
+    width: 100% !important;
+  }
+  ._cUP1np9gMvFQrcPftuf.xahN8AEzyAvQtVj17TPv {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+  ._cUP1np9gMvFQrcPftuf{
+    display: none;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  /* Tablet and smaller devices */
+  @media (max-width: 768px) {
+    .calendly-widget {
+      width: 80% !important; /* Occupy 90% of the parent div on smaller devices */
+      display: flex;
+      flex-direction:column;
+      gap: 1.5rem;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .calendly-toggle-button {
+      font-size: 0.9rem; /* Slightly smaller text for buttons */
+      padding: 8px 12px; /* Adjust padding */
+      width: 45%;
+    }
+  
+    .calendly-widget-container {
+      height: auto; /* Reduce height for smaller screens */
+      max-height: 500px;
+    }
+  }
+  /* Target the Calendly widget container */
+.calendly-widget {
+  overflow: hidden; /* Hide the scrollbars */
+}
+
+/* If you want to specifically target horizontal and vertical scrollbars */
+.calendly-widget::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in WebKit browsers */
+}
+
+.calendly-widget {
+  -ms-overflow-style: none; /* Hides scrollbar in IE and Edge */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+  
+  /* Mobile and smaller devices */
+  @media (max-width: 480px) {
+    .calendly-widget {
+      width: 85%; /* Occupy 95% of the parent div on mobile devices */
+    }
+  
+    .calendly-toggle-button {
+      width: 45%;
+      font-size: 0.9rem; /* Smaller font size for buttons */
+      padding: 6px 10px; /* Adjust padding */
+    }
+  
+    .calendly-widget-container {
+      height: 400px; /* Reduce height further for small devices */
+      max-height: 400px;
+    }
+  }
+  

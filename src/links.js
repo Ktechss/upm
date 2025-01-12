@@ -11,6 +11,6 @@ export const socialLinks = {
     { label: 'Services', href: '#services' },
     { label: 'Team', href: '#teams' },
     { label: 'About Us', href: '/about_us' },
-    { label: 'Contact Us', href: '#contactus' },
+    { label: 'Contact Us', href: '/contact_us' },
   ];
   

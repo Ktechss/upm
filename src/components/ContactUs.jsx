@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './ContactUs.css'; // You can add your own styles here
+import CalendlyWidget from './CalendlyWidget/CalendlyWidget';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -89,7 +90,7 @@ function ContactUs() {
 
         {/* Category Section */}
         <div className="contact-us-category-container">
-          <h4 className="contact-us-form-box-title">Category</h4>
+          <h4 className="contact-us-form-box-title contact-us-form-box-title-h4 ">Category</h4>
           <select
             name="category"
             value={formData.category}
@@ -106,7 +107,7 @@ function ContactUs() {
 
         {/* Description Section */}
         <div className="contact-us-description-container">
-          <h4 className="contact-us-form-box-title">How can we help your brand?*</h4>
+          <h4 className="contact-us-form-box-title contact-us-form-box-title-h4">How can we help your brand?*</h4>
           <textarea
             name="description"
             value={formData.description}
@@ -123,6 +124,7 @@ function ContactUs() {
           </button>
         </div>
       </div>
+      {/* <CalendlyWidget/> */}
     </div>
   );
 }

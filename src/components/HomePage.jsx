@@ -14,6 +14,7 @@ import mailchimp from '../assets/tech_card_Icons/mailchimp.jpg';
 
 import { Highlight } from './ui/HeroHighLight-Component/HeroHighlight';
 import TextGenerateEffect from './ui/TextGenerateEffect';
+import TeamSection from './Teams/TeamSection';
 
 const HomePage = () => {
   
