@@ -196,6 +196,9 @@
       align-items: center; /* Center align content */
       text-align: center;
       width: 100%; /* Ensure full width of container */
+      padding: 0 !important;
+      padding-bottom: 1rem !important;
+
     }
   
     .UpmContactPage1-icon-box {

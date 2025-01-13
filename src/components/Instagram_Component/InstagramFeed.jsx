@@ -6,7 +6,7 @@ const InstagramFeed = () => {
   const [posts, setPosts] = useState([]);
   const [accountInfo, setAccountInfo] = useState({}); // To store username and profile picture
   const [loading, setLoading] = useState(true);
-  const [visiblePosts, setVisiblePosts] = useState(8); // Number of posts initially visible
+  const [visiblePosts, setVisiblePosts] = useState(3); // Number of posts initially visible
 
   // Access token for API calls
   const url_id ='';
@@ -39,7 +39,7 @@ const InstagramFeed = () => {
   }, []);
 
   const handleLoadMore = () => {
-    setVisiblePosts((prevVisiblePosts) => Math.min(prevVisiblePosts + 8, posts.length));
+    setVisiblePosts((prevVisiblePosts) => Math.min(prevVisiblePosts + 3, posts.length));
   };
 
   if (loading) {

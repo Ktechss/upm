@@ -10,6 +10,7 @@ import location_logo from '../assets/footer_icons/location_icon.png';
 import mail_logo from '../assets/footer_icons/mail_icon.png';
 import phone_logo from '../assets/footer_icons/Phone_Icon.png';
 import service_icon from '../assets/footer_icons/service_icon.png';
+import twitter_logo from '../assets/twitter.svg';
 
 const Footer = () => {
   return (
@@ -21,11 +22,11 @@ const Footer = () => {
               <img className="footer_icons" src={service_icon} alt="Services Icon" />
             </i>
             <span className="company-location">
-              <strong style={{ fontSize: '1.2rem' }}>Services</strong>
+              <strong style={{ fontSize: '1.2rem', fontWeight:'500' }}>Services</strong>
               <br />
-              <a href="/media" style={{ fontSize: '1.1rem', fontWeight: '520' }} className="footer-navigations">Media</a> |
-              <a href="/marketing" style={{ fontSize: '1.1rem', fontWeight: '520' }} className="footer-navigations"> Marketing</a> |
-              <a href="/consulting" style={{ fontSize: '1.1rem', fontWeight: '520' }} className="footer-navigations"> Consulting</a>
+              <a href="/media" style={{ fontSize: '1.1rem', fontWeight: '470' }} className="footer-navigations">Media</a> |
+              <a href="/marketing" style={{ fontSize: '1.1rem', fontWeight: '470' }} className="footer-navigations"> Marketing</a> |
+              <a href="/consulting" style={{ fontSize: '1.1rem', fontWeight: '470' }} className="footer-navigations"> Consulting</a>
             </span>
           </div>
           <div className="contact-item">
@@ -67,15 +68,15 @@ const Footer = () => {
               <a href="https://www.facebook.com/profile.php?id=61566675155483 " target="_blank" rel="noopener noreferrer">
                 <img src={facebook} alt="Facebook Icon" className="social-icon" />
               </a>
-              <a href="https://www.reddit.com" target="_blank" rel="noopener noreferrer">
-                <img src={reddit} alt="Reddit Icon" className="social-icon" />
+              <a href="https://x.com/unknownpixelmed" target="_blank" rel="noopener noreferrer">
+                <img src={twitter_logo} alt="Reddit Icon" className="social-icon" />
               </a>
-              <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              {/* <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
                 <img src={linkedin} alt="LinkedIn Icon" className="social-icon" />
               </a>
               <a href="https://www.youtube.com/@UnknownPixelMedia" target="_blank" rel="noopener noreferrer">
                 <img src={youtube} alt="YouTube Icon" className="social-icon" />
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="footer-section legal">

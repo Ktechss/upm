@@ -11,7 +11,7 @@ body {
 
 .AnimatedFlexCards-wrapper {
     width: 100%;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -148,7 +148,7 @@ input:checked + label .AnimatedFlexCards-description {
     .AnimatedFlexCards-wrapper {
         margin-top: 3.5rem;
         width: 100%;
-        height: 65vh; /* Adjust height dynamically */
+        height: 85vh !important; /* Adjust height dynamically */
         display: flex;
         align-items: center;
         justify-content: center;

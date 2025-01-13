@@ -179,3 +179,13 @@
     font-size: 0.75rem !important;
   }
 }
+
+.world-lock-container{
+  flex: 1; /* Take up available space */
+  max-width: 50%; /* Limit the width */
+  /* text-align: left; Align text to the left */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 2.5rem;
+}

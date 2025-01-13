@@ -89,16 +89,16 @@ const App = () => {
 
     if (document.readyState === 'complete') {
       // If the page is already loaded
-      handlePageLoad();
     } else {
       // Otherwise, wait for the "load" event
       window.addEventListener('load', handlePageLoad);
     }
-
+    
     // Cleanup the event listener when the component unmounts
     return () => {
       window.removeEventListener('load', handlePageLoad);
     };
+    handlePageLoad();
   }, []);
 
   return (
