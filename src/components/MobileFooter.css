@@ -67,7 +67,7 @@
   }
   
   .mobile-footer-services a {
-    color: #84d7ff;
+    color: #3D84E2;
     text-decoration: none;
     margin: 0 0.5rem;
   }
@@ -91,7 +91,7 @@
   }
   
   .mobile-footer-legal a {
-    color: #84d7ff;
+    color: #3D84E2;
     text-decoration: none;
   }
   
@@ -100,6 +100,7 @@
   }
   .contact-item{
     gap: .2rem !important;
+    margin-bottom: 1.2rem;
   }
   .mobile-footer-contact{
     display:'flex' !important;

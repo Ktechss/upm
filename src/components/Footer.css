@@ -96,11 +96,11 @@
     gap: 1.5rem;
   }
   .footer_icons{
-    height: 4.7vh;
+    height:auto;
     width: 3vw;
   }
   .footer-navigations:hover{
-    color: rgb(84, 224, 255);
+    color: #3D84E2;
   }
 
   @media (max-width: 768px) {

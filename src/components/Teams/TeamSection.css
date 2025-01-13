@@ -15,13 +15,13 @@
   .team-section-sub-title {
     font-size: 1.5rem;
     margin-bottom: 20px;
-    color: cyan;
+    color: #3D84E2;
   }
   
   /* Team Grid */
   .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 20px;
   }
   
@@ -118,5 +118,10 @@
         max-width: 100% !important;
         max-height: 100% !important;
         height: 100% !important;
+      }
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+        gap: 20px;
       }
 }

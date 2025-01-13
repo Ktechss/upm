@@ -6,10 +6,10 @@ import instagram from '../assets/footer_icons/footer_Instagram.png';
 import reddit from '../assets/footer_icons/reddit.png';
 import linkedin from '../assets/footer_icons/footer_linkedin.png';
 import youtube from '../assets/footer_icons/footer_youtube.png';
-import location_logo from '../assets/footer_icons/location_icon.png';
-import mail_logo from '../assets/footer_icons/mail_icon.png';
-import phone_logo from '../assets/footer_icons/Phone_Icon.png';
-import service_icon from '../assets/footer_icons/service_icon.png';
+import location_logo from '../assets/footer_icons/location_footer_icon.png';
+import mail_logo from '../assets/footer_icons/circle_mail_logo.png';
+import phone_logo from '../assets/footer_icons/Phone_footer_icon.png';
+import service_icon from '../assets/footer_icons/Service_footer_icon.png';
 import twitter_logo from '../assets/twitter.svg';
 
 const Footer = () => {
