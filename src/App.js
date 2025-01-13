@@ -4,7 +4,6 @@ import HomePage from './components/HomePage';
 import Services from './components/Services';
 import AboutUs from './components/AboutUs';
 import MediaPage from './components/MediaPage/MediaPage';
-import TeamPage from './components/TeamPage';
 import PageServices from './components/PageServices';
 import WhyUS from './components/WhyUs';
 import Footer from './components/Footer';
@@ -64,7 +63,6 @@ const AppContent = () => {
               <PageServices />
               <WhyUS />
               <TeamSection/>
-              <TeamPage />
               <AboutUs />
             </>
           }
