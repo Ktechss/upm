@@ -13,6 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center !important;
+      background-size: cover;
   }
   
   .UpmContactPage1-pic-heading-head {
@@ -169,5 +171,41 @@
   
   .UpmContactPage1-button:hover {
     background-color: #1458b8;
+  }
+  
+  @media (max-width: 768px) {
+    .UpmContactPage1-pic-heading {
+      text-align: center;
+      margin-bottom: 20px;
+      height: 20rem;
+      background-color: #1b67f4;
+      background: linear-gradient(180deg,white,rgba(0, 0, 0, 0),white) ,url('./assets/team_images.jpg');
+      background-position: center !important;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .UpmContactPage1-contact-info {
+      grid-template-columns: 1fr; /* Single column for smaller screens */
+    }
+  
+    .UpmContactPage1-contact-info-item {
+      display: flex;
+      flex-direction: column; /* Ensure consistent alignment */
+      align-items: center; /* Center align content */
+      text-align: center;
+      width: 100%; /* Ensure full width of container */
+    }
+  
+    .UpmContactPage1-icon-box {
+      width: 60px;
+      height: 60px; /* Make icons larger for better visibility */
+    }
+  
+    .UpmContactPage1-contact-info-item h4, 
+    .UpmContactPage1-contact-info-item p {
+      width: 100%; /* Ensure text content aligns properly */
+    }
   }
   
