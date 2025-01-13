@@ -9,58 +9,41 @@ import linkedin_icon from '../assets/social_link_icons/linkedin.png';
 import gmail_icon from '../assets/social_link_icons/gmail.png';
 import youtube_icon from '../assets/social_link_icons/youtube.png';
 const team_info = [
-    {
-      quote: "",
-      name: "Kamaljeet Kainth",
-      designation: "Founder & Growth Strategist",
-      src: member_1,
-      socialLinks: [
-       
-        { url: "https://www.linkedin.com/in/kamaljeetkainth/",iconPath: linkedin_icon },
-        { url: "https://www.instagram.com/kamaljeet.kainth/",iconPath: instagram_icon},
-        { url: "unknownpixelmedia@gmail.com",iconPath: gmail_icon },
-        { url: "https://www.youtube.com/@podcastbykk",iconPath: youtube_icon},
-      ],
-    },
-    {
-      quote: "",
-      name: "Baljit Singh",
-      designation: "Director, Media Strategy",
-      src: baljit,
-      socialLinks: [
-        { url: "https://www.linkedin.com/in/baljit-singh-6aba76192/",iconPath: linkedin_icon },
-        { url: "unknownpixelmedia@gmail.com",iconPath: gmail_icon },
-      ],
-    },
-    {
-      quote: "",
-      name: "S. Teja",
-      designation: "Chief Marketing Officer",
-      src: member_3,
-      socialLinks: [
-        { url: "https://www.linkedin.com/in/vanjarapusaiteja/",iconPath: linkedin_icon },
-        { url: "unknownpixelmedia@gmail.com",iconPath: gmail_icon },
-      ],
-    // },
-    // {
-    //   quote: "",
-    //   name: "Emily Davis",
-    //   designation: "Marketing Specialist",
-    //   src: member_4,
-    //   socialLinks: [
-    //     { url: "https://linkedin.com/in/johndoe",iconPath: linkedin_icon },
-    //     { url: "https://linkedin.com/in/johndoe",iconPath: gmail_icon },
-    //   ],
-    // },
-    // {
-    //   quote: ".",
-    //   name: "Chris Lee",
-    //   designation: "Entrepreneur",
-    //   src: member_5,
-    //   socialLinks: [
-    //     { url: "https://linkedin.com/in/johndoe",iconPath: linkedin_icon },
-    //     { url: "https://linkedin.com/in/johndoe",iconPath: gmail_icon },
-    //   ],
-    },
-  ];
-  export default team_info;
+  {
+    quote: "",
+    name: "Baljit Singh",
+    designation: "Director, Media Strategy",
+    src: baljit,
+    socialLinks: [
+      { url: "https://www.linkedin.com/in/baljit-singh-6aba76192/", iconPath: linkedin_icon },
+      { url: "mailto:unknownpixelmedia@gmail.com", iconPath: gmail_icon },
+    ],
+  },
+
+  {
+    quote: "",
+    name: "Kamaljeet Kainth",
+    designation: "Founder & Growth Strategist",
+    src: member_1,
+    socialLinks: [
+
+      { url: "https://www.linkedin.com/in/kamaljeetkainth/", iconPath: linkedin_icon },
+      { url: "https://www.instagram.com/kamaljeet.kainth/", iconPath: instagram_icon },
+      { url: "mailto:unknownpixelmedia@gmail.com", iconPath: gmail_icon },
+      { url: "https://www.youtube.com/@podcastbykk", iconPath: youtube_icon },
+    ],
+  },
+
+  {
+    quote: "",
+    name: "S. Teja",
+    designation: "Chief Marketing Officer",
+    src: member_3,
+    socialLinks: [
+      { url: "https://www.linkedin.com/in/vanjarapusaiteja/", iconPath: linkedin_icon },
+      { url: "mailto:unknownpixelmedia@gmail.com", iconPath: gmail_icon },
+    ],
+  },
+  
+];
+export default team_info;

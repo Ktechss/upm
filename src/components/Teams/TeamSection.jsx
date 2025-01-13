@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TeamSection.css";
-import team_info from "../../User_Data/Team_Data";
+import team_info from "../../User_Data/Team_Data"; // Import the dynamic team data
 
 function TeamSection() {
   const [activeCard, setActiveCard] = useState(null);
@@ -34,8 +34,8 @@ function TeamSection() {
                     <a
                       key={idx}
                       href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={social.url.startsWith("mailto:") ? "_self" : "_blank"}
+                      rel={social.url.startsWith("mailto:") ? "" : "noopener noreferrer"}
                       className="social-link"
                     >
                       <img
