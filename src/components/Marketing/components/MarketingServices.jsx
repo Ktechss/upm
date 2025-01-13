@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/MarketingServices.css';
 import crown_icon from '../assets/crown.png';
+import start_icon from '../assets/star.png';
 
 function MarketingServices() {
   const services = [
@@ -59,7 +60,7 @@ function MarketingServices() {
           {services.map((service, index) => (
             <div key={index} className="marketing-services-card">
               <div className="marketing-services-cards-icon-container">
-                {Array(index).fill(0).map((_, idx) => (
+                {Array(index+1).fill(0).map((_, idx) => (
                   <img
                     key={idx}
                     className="marketing-services-cards-icon"
@@ -87,20 +88,31 @@ function MarketingServices() {
             <div className="marketing-services-cards-icon-container">
               <img
                 className="marketing-services-cards-icon"
-                src={crown_icon}
+                src={start_icon}
                 alt="Crown Icon"
               />
               <img
                 className="marketing-services-cards-icon"
-                src={crown_icon}
+                src={start_icon}
                 alt="Crown Icon"
               />
               <img
                 className="marketing-services-cards-icon"
-                src={crown_icon}
+                src={start_icon}
+                alt="Crown Icon"
+              />
+              <img
+                className="marketing-services-cards-icon"
+                src={start_icon}
+                alt="Crown Icon"
+              />
+              <img
+                className="marketing-services-cards-icon"
+                src={start_icon}
                 alt="Crown Icon"
               />
             </div>
+            
             <h2 className="marketing-services-section-title-next">
               {allInOneGrowthSuite.title}
             </h2>

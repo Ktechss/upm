@@ -9,6 +9,7 @@ const InstagramFeed = () => {
   const [visiblePosts, setVisiblePosts] = useState(8); // Number of posts initially visible
 
   // Access token for API calls
+  const url_id ='';
   const ACCESS_TOKEN = 'EAAWADqZBELDIBO5hD1bKZCW3bwiAN6ZB4aP31sZCNnXXkH73ZCLMv6GxgUaphTJStz6ZCA9V8dfU0W7pDhP6DxY6t2dW8nKvjWWh3EOAzaSMgrZC5k5RBeRuoiVXWJVcXnhZBIFrCleaOy6WTWrwQ8IzsNvSC5nNhZAFGaGQoShU3Dh0DLHHD1fibZCS6S';
 
   useEffect(() => {
