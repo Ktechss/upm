@@ -10,6 +10,7 @@ import location_logo from "../assets/footer_icons/location_icon.png";
 import mail_logo from "../assets/footer_icons/mail_icon.png";
 import phone_logo from "../assets/footer_icons/Phone_Icon.png";
 import service_icon from "../assets/footer_icons/service_icon.png";
+import twitter_logo from '../assets/twitter.svg';
 
 const MobileFooter = () => {
   return (
@@ -18,11 +19,11 @@ const MobileFooter = () => {
       <div className="mobile-footer-follow-us">
         <h4>Follow Us</h4>
         <div className="mobile-footer-social-icons">
-          <img src={facebook} alt="Facebook" />
-          <img src={instagram} alt="Instagram" />
-          <img src={reddit} alt="Reddit" />
-          <img src={linkedin} alt="LinkedIn" />
-          <img src={youtube} alt="YouTube" />
+         <a href="https://www.facebook.com/profile.php?id=61566675155483"><img src={facebook} alt="Facebook" /></a>
+         <a href="https://www.instagram.com/unknownpixelmedia/"><img src={instagram} alt="Instagram" /></a>
+         <a href="https://x.com/unknownpixelmed" className="inverted-icon"> <img src={twitter_logo} alt="twitter"  /></a>
+         {/* <a href=""><img src={linkedin} alt="LinkedIn" /></a>
+         <a href=""><img src={youtube} alt="YouTube" /></a> */}
         </div>
       </div>
 

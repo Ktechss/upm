@@ -29,7 +29,7 @@ h2 {
 
 .post-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columns for laptops and larger screens */
+  grid-template-columns: repeat(3, 1fr); /* 4 columns for laptops and larger screens */
   gap: 0.5rem; /* Add consistent spacing between posts */
   justify-content: center;
 }
@@ -110,7 +110,7 @@ h2 {
 /* Responsive Design */
 @media (max-width: 768px) {
   .post-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    grid-template-columns: repeat(1, 1fr); /* 2 columns for tablets */
     gap: 0.5rem; /* Adjust gap for medium-sized screens */
   }
 
@@ -121,7 +121,7 @@ h2 {
 
 @media (max-width: 480px) {
   .post-container {
-    grid-template-columns: repeat(2, 1fr); /* Ensure 2 columns for smaller mobile screens */
+    grid-template-columns: repeat(1, 1fr); /* Ensure 2 columns for smaller mobile screens */
     gap: 0.5rem; /* Maintain consistent spacing */
   }
 

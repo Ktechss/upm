@@ -3,8 +3,10 @@ import GlobeComponent from './3dObject/Globe';
 import './AboutUs.css';
 import CountryClock from './Real_time_Clock/CountryClock';
 import locationData from '../User_Data/location_Data';
+import useIsMobile from '../hooks/useIsMobile';
 
 const AboutUs = () => {
+  const isMobile = useIsMobile();
   return (
     <section className="about-us" id='aboutus'>
       <div className="about-us-text-container">
@@ -21,6 +23,23 @@ const AboutUs = () => {
 
           </p>
         </div>
+        {!isMobile && (
+          <div className='world-clock'>
+            {locationData.map((location) => (
+              <CountryClock
+                key={location.name}
+                countryName={location.name}
+                timezone={location.timezone}
+              />
+            ))}
+          </div>
+        )}
+
+      </div>
+      <div className='about-us-3d-model'>
+        <GlobeComponent />
+      </div>
+      {isMobile && (
         <div className='world-clock'>
           {locationData.map((location) => (
             <CountryClock
@@ -30,10 +49,7 @@ const AboutUs = () => {
             />
           ))}
         </div>
-      </div>
-      <div className='about-us-3d-model'>
-        <GlobeComponent />
-      </div>
+      )}
     </section>
   );
 }

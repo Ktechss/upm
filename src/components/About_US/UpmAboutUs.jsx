@@ -3,7 +3,7 @@ import './UpmAboutUs.css';
 import back_video from './assets/video/abvsw.mp4';
 import image1 from './assets/images/vision_leader_ship.jpg';
 import image2 from './assets/images/Mission_image.jpg';
-import image3 from './assets/images/core_values.jpg';
+import image3 from './assets/images/core_value.jpg';
 import InstagramFeed from '../Instagram_Component/InstagramFeed';
 
 const UpmAboutUs = () => {
@@ -53,11 +53,11 @@ const UpmAboutUs = () => {
                     <div className="About-Us-section-content">
                         <h2 className="About-Us-section-title">Our Core Values</h2>
                         <ul className="About-Us-section-list">
-                            <li>Client-Centric Approach: We prioritize understanding and fulfilling the unique visions of every client.</li>
-                            <li>Innovation: We use creative and technological advancements to craft strategies that set our clients apart.</li>
-                            <li>Excellence: We are committed to delivering exceptional outcomes and building lasting partnerships.</li>
-                            <li>Integrity: Transparency and trust are at the heart of every project we undertake.</li>
-                            <li>Global Perspective: With a globally connected team, we bring diverse insights to drive meaningful results.</li>
+                            <li><span style={{fontWeight:'bold'}}>Client-Centric Approach:</span> We prioritize understanding and fulfilling the unique visions of every client.</li>
+                            <li><span style={{fontWeight:'bold'}}>Innovation:</span> We use creative and technological advancements to craft strategies that set our clients apart.</li>
+                            <li><span style={{fontWeight:'bold'}}>Excellence:</span> We are committed to delivering exceptional outcomes and building lasting partnerships.</li>
+                            <li><span style={{fontWeight:'bold'}}>Integrity:</span> Transparency and trust are at the heart of every project we undertake.</li>
+                            <li><span style={{fontWeight:'bold'}}>Global Perspective:</span> With a globally connected team, we bring diverse insights to drive meaningful results.</li>
                         </ul>
                     </div>
                     <img src={image3} alt="Values" className="About-Us-section-image" />

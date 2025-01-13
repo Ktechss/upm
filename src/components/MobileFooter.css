@@ -1,5 +1,5 @@
 .mobile-footer {
-    background: linear-gradient(to bottom, black, #007bff);
+    background: linear-gradient(to bottom, black, #000000);
     color: white;
     padding: 1rem;
     font-family: Arial, sans-serif;
@@ -20,7 +20,7 @@
     justify-content: center;
     gap: 1rem;
   }
-  
+
   .mobile-footer-social-icons img {
     width: 30px;
     height: 30px;
