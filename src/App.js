@@ -82,22 +82,22 @@ const AppContent = () => {
 const App = () => {
   const [loading, setLoading] = useState(true);
 
+  const handlePageLoad = () => {
+    setLoading(false); // Stop showing the loader when the page is fully loaded
+  };
   useEffect(() => {
-    const handlePageLoad = () => {
-      setLoading(false); // Stop showing the loader when the page is fully loaded
-    };
 
-    if (document.readyState === 'complete') {
-      // If the page is already loaded
-    } else {
-      // Otherwise, wait for the "load" event
-      window.addEventListener('load', handlePageLoad);
-    }
+    // if (document.readyState === 'complete') {
+    //   // If the page is already loaded
+    // } else {
+    //   // Otherwise, wait for the "load" event
+    //   window.addEventListener('load', handlePageLoad);
+    // }
     
-    // Cleanup the event listener when the component unmounts
-    return () => {
-      window.removeEventListener('load', handlePageLoad);
-    };
+    // // Cleanup the event listener when the component unmounts
+    // return () => {
+    //   window.removeEventListener('load', handlePageLoad);
+    // };
     handlePageLoad();
   }, []);
 
