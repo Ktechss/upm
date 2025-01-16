@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './ServiceNavigation.css';
+import { useEffect } from 'react';
 
 const ServiceNavigation = ({ currentService, services }) => {
+   
   return (
     <div className="service-navigation">
       <h3>Explore Our Other Services</h3>

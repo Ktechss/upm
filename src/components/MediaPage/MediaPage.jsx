@@ -16,6 +16,7 @@ import MobileMediaSection1 from './components/MobileMediaSection1';
 
 import { navigationLinks, socialLinks } from '../../links'; // Import centralized links
 
+
 const socialIcons = [
   { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
   { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
@@ -29,6 +30,7 @@ const services = [
 ];
 
 const MediaPage = () => {
+  
   const [isMobile, setIsMobile] = useState(false); // State to track if view is mobile
 
   useEffect(() => {
@@ -49,6 +51,7 @@ const MediaPage = () => {
   return (
     <div className="media-page">
       {/* Dynamically render MobileHeader or Header */}
+      
       {isMobile ? (
         <MobileHeader logo={logo} navigationLinks={navigationLinks} socialIcons={socialIcons} />
       ) : (
