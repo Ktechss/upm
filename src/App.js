@@ -46,6 +46,8 @@ const AppContent = () => {
     minHeight: '100vh', // Ensure full height
   };
 
+  
+
   return (
     <div style={rootStyle}>
       <Routes>

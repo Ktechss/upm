@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import './ContactUs.css'; // You can add your own styles here
-import CalendlyWidget from './CalendlyWidget/CalendlyWidget';
+import React, { useState, useEffect } from 'react';
+import api from '../urls/api'; // Axios instance
+import './ContactUs.css';
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -12,6 +12,32 @@ function ContactUs() {
     description: '',
   });
 
+  const [regions, setRegions] = useState([]);
+  const [categories, setCategories] = useState([]);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [responseMessage, setResponseMessage] = useState('');
+  const [showPopup, setShowPopup] = useState(false); // For popup visibility
+
+  // Fetch regions and categories when the component loads
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const [regionsResponse, categoriesResponse] = await Promise.all([
+          api.get('/api/regions'), // Fetch regions
+          api.get('/api/categories'), // Fetch categories
+        ]);
+
+        setRegions(regionsResponse.data);
+        setCategories(categoriesResponse.data);
+      } catch (error) {
+        console.error('Error fetching regions or categories:', error);
+        setResponseMessage('Failed to load regions or categories.');
+      }
+    };
+
+    fetchData();
+  }, []);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -20,15 +46,46 @@ function ContactUs() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Submitted:', formData);
-    // Add logic to send the data to an API or handle the submission
+    setIsSubmitting(true);
+  
+    try {
+      const response = await api.post('/api/contacts', formData);
+  
+      console.log('Response:', response); // Debugging response
+  
+      if (response.status >= 200 && response.status < 300) { // Handling all 2xx success codes
+        setResponseMessage('Thank you for contacting us. We will get back to you soon!');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          region: '',
+          category: '',
+          description: '',
+        });
+        setShowPopup(true); // Show the popup
+      } else {
+        setResponseMessage('Failed to submit the form. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting the form:', error);
+      setResponseMessage('An error occurred. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+  
+
+  const closePopup = () => {
+    setShowPopup(false);
+    setTimeout(() => setResponseMessage(''), 2000);
   };
 
   return (
-    <div className="contact-us-container" id='contactus'>
-      <h1 className='contact-us-heading'>Connect with us.</h1>
+    <div className="contact-us-container" id="contactus">
+      <h1 className="contact-us-heading">Connect with us.</h1>
       <div className="contact-us-container-form">
         {/* Name Section */}
         <div className="contact-us-name-container">
@@ -37,7 +94,7 @@ function ContactUs() {
             <input
               type="text"
               name="firstName"
-              placeholder='Enter First Name'
+              placeholder="Enter First Name"
               value={formData.firstName}
               onChange={handleChange}
               className="contact-us-form-box-title-input"
@@ -48,7 +105,7 @@ function ContactUs() {
             <input
               type="text"
               name="lastName"
-              placeholder='Enter Last Name'
+              placeholder="Enter Last Name"
               value={formData.lastName}
               onChange={handleChange}
               className="contact-us-form-box-title-input"
@@ -63,7 +120,7 @@ function ContactUs() {
             <input
               type="email"
               name="email"
-              placeholder='Enter Email'
+              placeholder="Enter Email"
               value={formData.email}
               onChange={handleChange}
               className="contact-us-form-box-title-input"
@@ -78,12 +135,11 @@ function ContactUs() {
               className="contact-us-form-box-title-input"
             >
               <option value="">Select your region</option>
-              <option value="North America">North America</option>
-              <option value="Europe">Europe</option>
-              <option value="Asia">Asia</option>
-              <option value="Australia">Australia</option>
-              <option value="Africa">Africa</option>
-              <option value="South America">South America</option>
+              {regions.map((region) => (
+                <option key={region.id} value={region.name}>
+                  {region.name}
+                </option>
+              ))}
             </select>
           </div>
         </div>
@@ -98,10 +154,11 @@ function ContactUs() {
             className="contact-us-form-box-title-input contact-us-category-select"
           >
             <option value="">Choose the category that best describes your inquiry</option>
-            <option value="General Inquiry">General Inquiry</option>
-            <option value="Support">Support</option>
-            <option value="Feedback">Feedback</option>
-            <option value="Partnership">Partnership</option>
+            {categories.map((category) => (
+              <option key={category.id} value={category.name}>
+                {category.name}
+              </option>
+            ))}
           </select>
         </div>
 
@@ -119,12 +176,30 @@ function ContactUs() {
 
         {/* Submit Button */}
         <div className="contact-us-submit-container">
-          <button type="submit" onClick={handleSubmit} className="contact-us-submit-button">
-            Submit
+          <button
+            type="submit"
+            onClick={handleSubmit}
+            className="contact-us-submit-button"
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? 'Submitting...' : 'Submit'}
           </button>
         </div>
+
+        {/* Response Message */}
+        {responseMessage && <p className="contact-us-response-message">{responseMessage}</p>}
       </div>
-      {/* <CalendlyWidget/> */}
+
+      {/* Popup */}
+      {showPopup && (
+        <div className="popup-overlay">
+          <div className="popup-content">
+            <h2>Form Submitted</h2>
+            <p>Thank you for reaching out! We will contact you soon.</p>
+            <button onClick={closePopup} className="popup-close-button">Close</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
