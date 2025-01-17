@@ -67,8 +67,8 @@ const UpmAboutUs = () => {
                     <p className="About-Us-cta-text">
                         Unknown Pixel Media isn’t just about solutions—it’s about realizing dreams, helping businesses achieve unique goals, and creating strategies that stand out in a crowded world. We’re here to make your vision a reality.
                     </p>
-                    <p className="About-Us-cta-highlight">✨ Let’s Create Something Remarkable Together</p>
-                    <a href="#contactus" className="About-Us-cta-button">👉 Connect With Us Today</a>
+                    <p className="About-Us-cta-highlight">Let’s Create Something Remarkable Together</p>
+                    <a href="#contactus" className="About-Us-cta-button">Connect With Us Today</a>
                 </section>
             </div>
             <InstagramFeed/>
