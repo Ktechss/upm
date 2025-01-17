@@ -178,6 +178,11 @@ select.contact-us-form-box-title-input {
   color:white;
 }
 
+.error-message{
+  color: red;
+  width: 93%;
+}
+
 @media (max-width: 768px) {
   /* Stack all fields in a column */
   .contact-us-container-form {

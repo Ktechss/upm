@@ -14,17 +14,18 @@ function ContactUs() {
 
   const [regions, setRegions] = useState([]);
   const [categories, setCategories] = useState([]);
+  const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [responseMessage, setResponseMessage] = useState('');
-  const [showPopup, setShowPopup] = useState(false); // For popup visibility
+  const [showPopup, setShowPopup] = useState(false);
 
   // Fetch regions and categories when the component loads
   useEffect(() => {
     const fetchData = async () => {
       try {
         const [regionsResponse, categoriesResponse] = await Promise.all([
-          api.get('/api/regions'), // Fetch regions
-          api.get('/api/categories'), // Fetch categories
+          api.get('/api/regions'),
+          api.get('/api/categories'),
         ]);
 
         setRegions(regionsResponse.data);
@@ -44,18 +45,49 @@ function ContactUs() {
       ...prevData,
       [name]: value,
     }));
+    setErrors((prevErrors) => ({
+      ...prevErrors,
+      [name]: '', // Clear error for the field being updated
+    }));
+  };
+
+  const validateForm = () => {
+    const newErrors = {};
+
+    if (!formData.email || !/^[\w-.]+@[\w-]+\.[a-z]{2,}$/i.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address.';
+    }
+
+    if (!formData.region) {
+      newErrors.region = 'Please select a region.';
+    }
+
+    if (!formData.category) {
+      newErrors.category = 'Please select a category.';
+    }
+
+    if (!formData.description || formData.description.trim().length < 10) {
+      newErrors.description = 'Description must be at least 10 characters long.';
+    }
+
+    setErrors(newErrors);
+
+    return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
+
     setIsSubmitting(true);
-  
+
     try {
       const response = await api.post('/api/contacts', formData);
-  
-      console.log('Response:', response); // Debugging response
-  
-      if (response.status >= 200 && response.status < 300) { // Handling all 2xx success codes
+
+      if (response.status >= 200 && response.status < 300) {
         setResponseMessage('Thank you for contacting us. We will get back to you soon!');
         setFormData({
           firstName: '',
@@ -65,7 +97,7 @@ function ContactUs() {
           category: '',
           description: '',
         });
-        setShowPopup(true); // Show the popup
+        setShowPopup(true);
       } else {
         setResponseMessage('Failed to submit the form. Please try again.');
       }
@@ -76,7 +108,6 @@ function ContactUs() {
       setIsSubmitting(false);
     }
   };
-  
 
   const closePopup = () => {
     setShowPopup(false);
@@ -125,6 +156,7 @@ function ContactUs() {
               onChange={handleChange}
               className="contact-us-form-box-title-input"
             />
+            {errors.email && <p className="error-message">{errors.email}</p>}
           </div>
           <div className="contact-us-region-container">
             <h4 className="contact-us-form-box-title">Region</h4>
@@ -141,12 +173,13 @@ function ContactUs() {
                 </option>
               ))}
             </select>
+            {errors.region && <p className="error-message">{errors.region}</p>}
           </div>
         </div>
 
         {/* Category Section */}
         <div className="contact-us-category-container">
-          <h4 className="contact-us-form-box-title contact-us-form-box-title-h4 ">Category</h4>
+          <h4 className="contact-us-form-box-title contact-us-form-box-title-h4">Category</h4>
           <select
             name="category"
             value={formData.category}
@@ -160,6 +193,7 @@ function ContactUs() {
               </option>
             ))}
           </select>
+          {errors.category && <p className="error-message">{errors.category}</p>}
         </div>
 
         {/* Description Section */}
@@ -172,6 +206,7 @@ function ContactUs() {
             className="contact-us-form-box-title-input contact-us-description-container-input"
             rows="4"
           ></textarea>
+          {errors.description && <p className="error-message">{errors.description}</p>}
         </div>
 
         {/* Submit Button */}
