@@ -10,21 +10,23 @@ const InstagramFeed = () => {
 
   // Access token for API calls
   const url_id ='';
-  const ACCESS_TOKEN = 'EAAWADqZBELDIBO5hD1bKZCW3bwiAN6ZB4aP31sZCNnXXkH73ZCLMv6GxgUaphTJStz6ZCA9V8dfU0W7pDhP6DxY6t2dW8nKvjWWh3EOAzaSMgrZC5k5RBeRuoiVXWJVcXnhZBIFrCleaOy6WTWrwQ8IzsNvSC5nNhZAFGaGQoShU3Dh0DLHHD1fibZCS6S';
+  const ACCESS_TOKEN1 = 'EAAWADqZBELDIBO5hD1bKZCW3bwiAN6ZB4aP31sZCNnXXkH73ZCLMv6GxgUaphTJStz6ZCA9V8dfU0W7pDhP6DxY6t2dW8nKvjWWh3EOAzaSMgrZC5k5RBeRuoiVXWJVcXnhZBIFrCleaOy6WTWrwQ8IzsNvSC5nNhZAFGaGQoShU3Dh0DLHHD1fibZCS6S';
+  const ACCESS_TOKEN = 'EAANDAUSzk8sBOZBdPBFuDFbphuYFZBGEgRibuBRy74gRtM3UVtjmXqHdS3WTHuNe5vJQvAkrSYJlx45DKPAD7MFZB0GjuoSC1mVISRebDc5gfb2D42JETyupnIkFW1ZAXndUVtxcS3lt0vmCDcXXDrlr0rSMRxKu8m88VsViyI3ldESznfjDzHho';
+  const instaidkjm='17841469707141020';
 
   useEffect(() => {
     const fetchInstagramData = async () => {
       try {
         // Fetch account information (username and profile picture)
         const accountResponse = await fetch(
-          `https://graph.facebook.com/v12.0/17841413939426541?fields=username,profile_picture_url&access_token=${ACCESS_TOKEN}`
+          `https://graph.facebook.com/v12.0/17841469707141020?fields=username,profile_picture_url&access_token=${ACCESS_TOKEN}`
         );
         const accountData = await accountResponse.json();
         setAccountInfo(accountData);
 
         // Fetch posts
         const postsResponse = await fetch(
-          `https://graph.facebook.com/v12.0/17841413939426541/media?fields=id,caption,media_type,media_url,permalink,like_count,comments_count&access_token=${ACCESS_TOKEN}`
+          `https://graph.facebook.com/v12.0/17841469707141020/media?fields=id,caption,media_type,media_url,permalink,like_count,comments_count&access_token=${ACCESS_TOKEN}`
         );
         const postsData = await postsResponse.json();
         setPosts(postsData.data || []);
