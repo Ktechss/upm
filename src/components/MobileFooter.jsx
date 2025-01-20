@@ -43,6 +43,8 @@ const MobileFooter = () => {
             <span>
               <strong>North America, Australia, London:</strong> +1 604 704 1157
               <br />
+              <span style={{ fontWeight: '520' }}> Eurpoe:</span>  +39-3455257046
+              <br />
               <strong>Asia:</strong> +91-7696013691
             </span>
           </div>

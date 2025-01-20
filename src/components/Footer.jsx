@@ -46,6 +46,8 @@ const Footer = () => {
             <span className="company-location">
               <span style={{ fontWeight: '520' }}> North America, Australia, London:</span>  +1 604 704 1157
               <br />
+              <span style={{ fontWeight: '520' }}> Eurpoe:</span>  +39-3455257046
+              <br />
               <span style={{ fontWeight: '520' }}> Asia:</span>  +91-7696013691
             </span>
           </div>

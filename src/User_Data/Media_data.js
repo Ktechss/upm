@@ -15,16 +15,15 @@ const content = [
   },
   {
     title: "Marketing Services",
-    description:
-    "Maximize your brand's potential with our exceptional marketing services. From strategic planning to innovative campaigns, we help you connect with your target audience and drive measurable results. Our team leverages cutting-edge tools and creative approaches to build your brand presence, boost engagement, and achieve your business goals. Whether it’s digital marketing, social media, or content strategy, we deliver tailored solutions that make your brand stand out in today’s competitive landscape.",
-      videoUrl: Marketing_footage,
+    description:"Maximize your brand's potential with our expert marketing services. From strategic planning to innovative campaigns, we help you connect with your audience and achieve measurable results. Using cutting-edge tools and creative strategies, we build your brand presence and boost engagement. Let us help you stand out in today’s competitive landscape.",
+          videoUrl: Marketing_footage,
       cta:<CallToAction buttonText="Let’s your brand do the talking" 
       link="/marketing" 
     />,
   },
   {
     title: "Consultancy Services",
-    description:"Unlock your business's full potential with our premier consultancy services. Whether you're navigating complex challenges or planning your next big move, our experts provide tailored solutions to help you succeed. From strategy development to operational excellence, we work closely with you to analyze, optimize, and transform your business. With deep industry insights and a commitment to your growth, we empower you to make informed decisions and achieve sustainable success.",  
+    description:"Unlock your business’s potential with our premier consultancy services. We offer tailored solutions for strategy, operations, and growth, ensuring sustainable success. Our experts work closely with you to analyze, optimize, and transform your business. With deep industry insights, we empower informed decisions and drive impactful results.",  
     videoUrl: Consultancy_Footage,
     cta:<CallToAction buttonText="Schedule Your Consultation Today" 
       link="/consulting" 
