@@ -8,11 +8,11 @@ import PageServices from './components/PageServices';
 import WhyUS from './components/WhyUs';
 import Footer from './components/Footer';
 import MobileFooter from './components/MobileFooter';
-import Loader from './components/Loader/Loader'; // Import the Loader
+import Loader from './components/Loader/Loader';
 import Consulting_Page from './components/Consulting/Consulting_Page';
 import MarketingPage from './components/Marketing/MarketingPage';
 import AboutUsPage from './components/About_US/AboutUsPage';
-import useIsMobile from './hooks/useIsMobile'; // Import the custom hook
+import useIsMobile from './hooks/useIsMobile';
 import './App.css';
 import MobileHeader from './components/MobileHeader';
 import Header from './components/Header';
@@ -22,7 +22,7 @@ import twitter_icon from './assets/twitter.svg';
 import instagram_icon from './assets/instagram.png';
 import logo from './assets/upm_logo/UPM_W4.png';
 
-import { navigationLinks, socialLinks } from './links'; // Import centralized links
+import { navigationLinks, socialLinks } from './links';
 import TeamSection from './components/Teams/TeamSection';
 import UpmContact from './components/ContactUs/UpmContact';
 
@@ -34,19 +34,16 @@ const socialIcons = [
 
 const AppContent = () => {
   const location = useLocation();
-  const isMobile = useIsMobile(); // Check if the user is on a mobile device
+  const isMobile = useIsMobile();
 
-  // Determine the background color based on the path
   const rootStyle = {
     background: location.pathname === '/' ? 'black' : 'white',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: '100vh', // Ensure full height
+    minHeight: '100vh',
   };
-
-  
 
   return (
     <div style={rootStyle}>
@@ -64,7 +61,7 @@ const AppContent = () => {
               <Services />
               <PageServices />
               <WhyUS />
-              <TeamSection/>
+              <TeamSection />
               <AboutUs />
             </>
           }
@@ -73,9 +70,8 @@ const AppContent = () => {
         <Route path="/marketing" element={<MarketingPage />} />
         <Route path="/consulting" element={<Consulting_Page />} />
         <Route path="/about_us" element={<AboutUsPage />} />
-        <Route path="/contact_us" element={<UpmContact/>}/>
+        <Route path="/contact_us" element={<UpmContact />} />
       </Routes>
-      {/* Dynamically render the footer */}
       {isMobile ? <MobileFooter /> : <Footer />}
     </div>
   );
@@ -84,28 +80,13 @@ const AppContent = () => {
 const App = () => {
   const [loading, setLoading] = useState(true);
 
-  const handlePageLoad = () => {
-    setLoading(false); // Stop showing the loader when the page is fully loaded
-  };
   useEffect(() => {
-
-    // if (document.readyState === 'complete') {
-    //   // If the page is already loaded
-    // } else {
-    //   // Otherwise, wait for the "load" event
-    //   window.addEventListener('load', handlePageLoad);
-    // }
-    
-    // // Cleanup the event listener when the component unmounts
-    // return () => {
-    //   window.removeEventListener('load', handlePageLoad);
-    // };
-    handlePageLoad();
+    setLoading(false);
   }, []);
 
   return (
     <>
-      {loading && <Loader />} {/* Show the loader while loading */}
+      {loading && <Loader />}
       <Router>
         <AppContent />
       </Router>

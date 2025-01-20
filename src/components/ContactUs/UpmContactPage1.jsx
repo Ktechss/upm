@@ -59,7 +59,7 @@ function UpmContactPage1() {
           <InlineWidget url="https://calendly.com/unknownpixelmedia/30min" />
         </div>
         <div className="UpmContactPage1-social-media">
-            <h4>Follow our social media:</h4>
+            {/* <h4>Follow our social media:</h4>
             <div className="UpmContactPage1-social-media-icons">
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin"></i>
@@ -73,7 +73,7 @@ function UpmContactPage1() {
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-facebook"></i>
               </a>
-            </div>
+            </div> */}
           </div>
       </div>
     </div>

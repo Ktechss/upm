@@ -10,7 +10,7 @@ function TeamSection() {
   };
 
   return (
-    <div className="team-section">
+    <div className="team-section" id="#teams">
       <h2 className="team-section-title">Meet Our Team</h2>
       <h3 className="team-section-sub-title">Get to Know the Forces Behind Our Success</h3>
       <div className="team-grid">

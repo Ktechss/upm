@@ -101,6 +101,10 @@
       background-color: #0056b3; /* Slightly darker on hover */
     }
   
+    .swiper-pagination{
+      position: relative !important;
+      visibility: hidden !important;
+    }
     /* Navigation Buttons */
     .swiper-button-prev,
     .swiper-button-next {
