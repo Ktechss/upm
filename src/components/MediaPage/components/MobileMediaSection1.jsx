@@ -5,6 +5,12 @@ import { Button } from '../../moving-border/moving-border';
 import { MobileButton } from '../../moving-border/MobileMovingBorder';
 
 function MobileMediaSection1() {
+  const handleScroll = () => {
+    const nextSection = document.getElementById("media-services");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="mobile-media-section">
       {/* Heading */}
@@ -26,6 +32,7 @@ function MobileMediaSection1() {
       <MobileButton
         borderRadius="1.75rem"
         className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800 mobile-cta-button"
+        onClick={handleScroll}
       >
         Explore Media Services!
       </MobileButton>

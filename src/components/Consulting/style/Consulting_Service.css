@@ -134,6 +134,9 @@
     background-color: #3d84e2;
     transform: scale(1.05);
 }
+.feature-icon{
+   height: 3rem; 
+}
 @media (max-width: 768px) {
   .Consulting_Section_3_Service {
     margin-bottom: 2rem;

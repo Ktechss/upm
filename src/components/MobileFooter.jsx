@@ -33,8 +33,8 @@ const MobileFooter = () => {
           <div className="contact-item">
             <img src={mail_logo} alt="Email" />
             <span>
-              <a href="mailto:unknownpixelmedia@gmail.com" style={{ textDecoration: "none", color: "inherit" }}>
-                unknownpixelmedia@gmail.com
+              <a href="mailto:info@unknownpixelmedia.com" style={{ textDecoration: "none", color: "inherit" }}>
+              info@unknownpixelmedia.com
               </a>
             </span>
           </div>

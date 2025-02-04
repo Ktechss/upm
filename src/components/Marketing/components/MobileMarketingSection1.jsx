@@ -4,6 +4,12 @@ import { Button } from '../../moving-border/moving-border';
 import marketingImage from '../assets/Marketing_Image.jpg'; // Replace with your image path
 
 const MobileMarketingSection1 = () => {
+  const handleScroll = () => {
+    const nextSection = document.getElementById("marketing-services");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className="mobile-marketing-section-1">
       <h2 className="mobile-marketing-heading">
@@ -29,6 +35,7 @@ const MobileMarketingSection1 = () => {
         <Button
           borderRadius="1.75rem"
           className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+          onClick={handleScroll}
         >
           Explore Marketing Services!
         </Button>
