@@ -3,6 +3,7 @@ import member_1 from '../assets/team_member_images/Kamaljeet_k.png';
 import member_3 from '../assets/team_member_images/teja_pic.png';
 
 import baljit from '../assets/team_member_images/Baljit.jpg';
+import kartik_image from '../assets/team_member_images/Kartik_Image.png';
 import facebook_icon from '../assets/social_link_icons/facebook.png';
 import instagram_icon from '../assets/social_link_icons/instagram.png';
 import linkedin_icon from '../assets/social_link_icons/linkedin.png';
@@ -16,7 +17,7 @@ const team_info = [
     src: baljit,
     socialLinks: [
       { url: "https://www.linkedin.com/in/baljit-singh-6aba76192/", iconPath: linkedin_icon },
-      { url: "mailto:unknownpixelmedia@gmail.com", iconPath: gmail_icon },
+      { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
     ],
   },
 
@@ -29,7 +30,7 @@ const team_info = [
 
       { url: "https://www.linkedin.com/in/kamaljeetkainth/", iconPath: linkedin_icon },
       { url: "https://www.instagram.com/kamaljeet.kainth/", iconPath: instagram_icon },
-      { url: "mailto:unknownpixelmedia@gmail.com", iconPath: gmail_icon },
+      { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
       { url: "https://www.youtube.com/@podcastbykk", iconPath: youtube_icon },
     ],
   },
@@ -41,9 +42,20 @@ const team_info = [
     src: member_3,
     socialLinks: [
       { url: "https://www.linkedin.com/in/vanjarapusaiteja/", iconPath: linkedin_icon },
-      { url: "mailto:unknownpixelmedia@gmail.com", iconPath: gmail_icon },
+      { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
     ],
   },
+  {
+    quote: "",
+    name: "Kartik Naik",
+    designation: "UI/UX Designer",
+    src: kartik_image,
+    socialLinks: [
+      { url: "https://www.linkedin.com/in/kartiknaik/", iconPath: linkedin_icon },
+      { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
+    ],
+  },
+  
   
 ];
 export default team_info;

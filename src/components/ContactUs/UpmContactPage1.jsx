@@ -31,14 +31,16 @@ function UpmContactPage1() {
               <i className="fas fa-phone"></i>
               <div>
                 <h4>Phone</h4>
-                <p>Toll Free - 877-553-0763<br />+1 (604) 217-6503</p>
+                <p>North America, Australia, London : +1 604 704 1157</p>
+                <p>Eurpoe: +39-3455257046</p>
+                <p>Asia: +91-7696013691</p>
               </div>
             </div>
             <div className="UpmContactPage1-contact-info-item">
               <i className="fas fa-envelope"></i>
               <div>
                 <h4>Email</h4>
-                <p>info@s3mortgages.ca</p>
+                <p>info@unknownpixelmedia.com</p>
               </div>
             </div>
             <div className="UpmContactPage1-contact-info-item">

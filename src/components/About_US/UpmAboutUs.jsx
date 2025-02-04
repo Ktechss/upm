@@ -1,6 +1,6 @@
 import React from 'react';
 import './UpmAboutUs.css';
-import back_video from './assets/video/abvsw.mp4';
+import back_video from './assets/video/mountain-back.mp4';
 import image1 from './assets/images/vision_leader_ship.jpg';
 import image2 from './assets/images/Mission_image.jpg';
 import image3 from './assets/images/core_value.jpg';
@@ -19,7 +19,7 @@ const UpmAboutUs = () => {
                 </video>
                 <div className="About-Us-content">
                     <h1 className="About-Us-text-reveal" style={{ animationDelay: '1.5s' }}>Unknown Pixel Media</h1>
-                    <h1 className="About-Us-text-reveal About-Us-another-text">""</h1>
+                    <h1 className="About-Us-text-reveal About-Us-another-text"></h1>
                 </div>
             </div>
             <div className="About-Us-sections">

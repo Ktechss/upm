@@ -5,6 +5,12 @@ import Iamge1 from '../assets/media-service-image3.png';
 import { Button } from '../../moving-border/moving-border';
 
 function LogoDesigning() {
+  const handleScroll = () => {
+    const nextSection = document.getElementById("media-services");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className='logo-design'>
       <div className='logo-design-text'>
@@ -16,6 +22,7 @@ function LogoDesigning() {
         <Button
         borderRadius="1.75rem"
         className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+        onClick={handleScroll}
         >
           Explore Media Services!
         </Button>

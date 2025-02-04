@@ -34,8 +34,8 @@ const Footer = () => {
               <img className="footer_icons" src={mail_logo} alt="Mail Icon" />
             </i>
             <span>
-              <a href="mailto:unknownpixelmedia@gmail.com" style={{ textDecoration: 'none', color: 'inherit' }}>
-                unknownpixelmedia@gmail.com
+              <a href="mailto:info@unknownpixelmedia.com" style={{ textDecoration: 'none', color: 'inherit' }}>
+              info@unknownpixelmedia.com
               </a>
             </span>
           </div>

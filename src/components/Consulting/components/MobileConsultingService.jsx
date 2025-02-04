@@ -8,14 +8,8 @@ const serviceData = {
     subtitle: "Assessing the Foundation",
     description:
       "We start with a comprehensive evaluation of your current strategies, operations, and performance metrics to identify opportunities and gaps. Our audit services include:",
-    deliverables: [
-      "Comprehensive Business Assessment",
-      "Digital Presence Analysis",
-      "Customer Journey Mapping",
-      "Competitive Benchmarking",
-      "Technology & Tools Evaluation",
-      "Brand Identity Review",
-    ],
+    deliverables: ["Comprehensive Business Assessment", "Digital Presence Analysis", "Customer Journey Mapping", "Competitive Benchmarking", "Technology & Tools Evaluation", "Brand Identity Review"],
+
     timing: "3-4 weeks",
     outcome:
       "A comprehensive strategic analysis report of your brand (SWOT) with actionable insights.",
@@ -25,7 +19,7 @@ const serviceData = {
     subtitle: "Creating Scalable Solutions",
     description:
       "We help you develop robust strategies and frameworks tailored to your goals, focusing on both the creative and operational aspects.",
-    deliverables: ["Item A", "Item B", "Item C"],
+    deliverables: ["Scalable Ecosystem", "Enhanced Brand Identity", "Audience Engagement", "Empowered Teams"],
     timing: "2-3 weeks",
     outcome: "A fully functional and scalable ecosystem ready for implementation.",
   },
@@ -34,7 +28,7 @@ const serviceData = {
     subtitle: "Driving Growth and Innovation",
     description:
       "Once your foundation is built, we help you scale through advanced strategies and cutting-edge technology.",
-    deliverables: ["Item X", "Item Y", "Item Z"],
+    deliverables: ["Sustained Growth", "Higher ROI", "Expanded Reach", "Data-Driven Decisions", "Competitive Advantage", "Future-Ready Teams"],
     timing: "3-4 weeks",
     outcome:
       "Sustained growth, improved market presence, and a roadmap for future innovation.",

@@ -3,6 +3,12 @@ import '../styles/MarketingSection1.css';
 import { Button } from '../../moving-border/moving-border';
 
 function MarketingSection1() {
+  const handleScroll = () => {
+    const nextSection = document.getElementById("marketing-services");
+    if (nextSection) {
+      nextSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <section className='marketing-section-1'>
       <div className='marketing-section-1-text'>
@@ -14,12 +20,12 @@ function MarketingSection1() {
         <Button
                 borderRadius="1.75rem"
                 className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+                onClick={handleScroll}
                 >
                   Explore Marketing Services!
                 </Button>
       </div>
       <div className='marketing-section-1-content-box'>
-        {/* <iframe src={Image1} className='marketing-section-1-images'></iframe> */}
       </div>
     </section>
   );
