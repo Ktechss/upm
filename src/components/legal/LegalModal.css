@@ -1,0 +1,115 @@
+/* Modal Overlay (Dark Background) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+/* Modal Content Box */
+.modal-content {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%; /* Default width for mobile */
+    max-width: 600px; /* Prevents it from getting too big */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 80vh; /* Ensures it fits within the screen */
+    border: 0.02rem solid white;
+}
+
+/* Modal Title */
+.modal-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Modal Text */
+.modal-content p {
+    font-size: 1rem;
+    color: #ffffff;
+    line-height: 1.6;
+    max-height: 60vh;
+    overflow-y: auto;
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Close Button */
+.close-button {
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+    width: 50%;
+}
+
+.close-button:hover {
+    background: #d73838;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .modal-content {
+        width: 85%;
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        max-width: 450px;
+        padding: 15px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .modal-content p {
+        font-size: 0.9rem;
+    }
+
+    .close-button {
+        padding: 8px 8px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 80%;
+        max-width: 400px;
+        padding: 12px;
+    }
+
+    .modal-content h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-content p {
+        font-size: 0.85rem;
+    }
+
+    .close-button {
+        padding: 7px 6px;
+        font-size: 0.85rem;
+    }
+}

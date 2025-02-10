@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useLocation } from "react-router-dom"; // Import useLocation
 import "./TeamSection.css";
 import team_info from "../../User_Data/Team_Data"; // Import the dynamic team data
 
 function TeamSection() {
   const [activeCard, setActiveCard] = useState(null);
+  const location = useLocation(); // Get current location
 
   const handleCardClick = (index) => {
     setActiveCard(activeCard === index ? null : index);
@@ -11,7 +13,12 @@ function TeamSection() {
 
   return (
     <div className="team-section" id="teams">
-      <h2 className="team-section-title">Meet Our Team</h2>
+      <h2
+        className="team-section-title"
+        style={{ color: location.pathname === "/" ? "white" : "black" }}
+      >
+        Meet Our Team
+      </h2>
       <h3 className="team-section-sub-title">Get to Know the Forces Behind Our Success</h3>
       <div className="team-grid">
         {team_info.map((member, index) => (

@@ -12,8 +12,6 @@ function WhyUs() {
       </h1>
       <h5 className='why-description'>
       At Unknown Pixel Media, our vision is to lead the global digital space by leveraging cutting-edge technology and creative strategies, empowering businesses to reach their full potential. Guided by our mission, we deliver innovative, data-driven solutions tailored to our clients’ goals, foster a global network of forward-thinking professionals, and adapt to the evolving digital landscape with a team dedicated to excellence.</h5>
-      
-      
       <AnimatedFlexCards />
     </div>
   )

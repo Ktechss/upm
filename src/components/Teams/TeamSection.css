@@ -1,7 +1,7 @@
 /* General Section Styling */
 .team-section {
     padding: 40px;
-    background-color: #000;
+    background-color: transparent;
     color: white;
     text-align: center;
     width: 80%;
@@ -108,7 +108,7 @@
 {
     .team-section {
         padding: 40px;
-        background-color: #000;
+        background-color: transparent;
         color: white;
         text-align: center;
       }

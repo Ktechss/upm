@@ -28,7 +28,7 @@ body::-webkit-scrollbar{
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: linear-gradient(to bottom,rgb(0, 0, 0), rgba(0, 0, 0, 0.214), rgb(0, 0, 0)), url('../assets/camera_lense-2.jpg');
+  background: linear-gradient(to bottom,rgb(0, 0, 0), rgba(0, 0, 0, 0.214), rgb(0, 0, 0)), url('../assets/camera_lense-2.webp');
   background-position: center;
   background-size: 100%; /* Start with a zoomed-in background */
   background-repeat: no-repeat;

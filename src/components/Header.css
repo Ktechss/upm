@@ -10,14 +10,11 @@
   position: relative; /* Needed for positioning hamburger */
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
+
 
 .upm_logo {
   width: 8vw;
-  height: 6vh;
+  height: auto !important;
 }
 
 .navigation ul {
@@ -73,3 +70,12 @@
   opacity: 0.7;
 }
 
+@media screen and (min-width: 1500px) {
+  .navigation ul li a {
+    font-size: 1.35rem; /* Increase font size for large screens */
+  }
+
+  .nav-buttons {
+    font-size: 1.4rem;
+  }
+}

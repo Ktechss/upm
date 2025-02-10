@@ -22,24 +22,21 @@ const HomePage = () => {
   
 
   const techCard1Options = [
-    { techImage: photoshop, techName: 'Adobe Photoshop' },
-    { techImage: premierpro, techName: 'Adobe Premiere Pro' },
-    { techImage: affter_effect, techName: 'Adobe After Effects' },
     { techImage: googleads, techName: 'Google Ads' },
+    { techImage: meta, techName: 'Meta' },
+    { techImage: mailchimp, techName: 'Mailchimp' },
   ];
 
   const techCard2Options = [
-    { techImage: photoshop, techName: 'Adobe Photoshop' },
+    { techImage: googleads, techName: 'Google Ads' },
     { techImage: meta, techName: 'Meta' },
     { techImage: mailchimp, techName: 'Mailchimp' },
-    { techImage: acrobat, techName: 'Adobe Acrobat' },
+
   ];
 
   const techCard3Options = [
     { techImage: autodesk, techName: 'Autodesk Maya' },
     { techImage: figma, techName: 'Figma' },
-    { techImage: affter_effect, techName: 'Adobe After Effects' },
-    { techImage: acrobat, techName: 'Adobe Acrobat' },
   ];
 
   const [techCard1, setTechCard1] = useState(techCard1Options[0]);

@@ -132,6 +132,20 @@
   /* transform:rotate(35deg) ; */
 }
 
+@media (min-width: 1500px)
+{
+  .marketing-services-cards-container {
+    width: 80%;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .all-in-one-card{
+    width: 60%;
+  }
+}
+
 @media (max-width: 768px) {
   .marketing-services-cards-container {
     flex-direction: column; /* Stack cards vertically */

@@ -131,3 +131,15 @@ h2 {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow for smaller devices */
   }
 }
+
+@media(min-width:1900px)
+{
+  .post-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns for laptops and larger screens */
+  }
+  .instagram-feed {
+
+    max-width: 1900px; /* Adjust max-width for larger screens */
+
+  }
+}

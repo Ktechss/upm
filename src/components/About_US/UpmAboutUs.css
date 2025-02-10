@@ -42,12 +42,12 @@
   opacity: 0;
   transform: translateY(50px);
   animation: About-Us-reveal-text 2.5s ease-out forwards;
-  animation-delay: 1.5s;
+  animation-delay: 0.2s;
 }
 
 .About-Us-another-text {
   font-size: 3rem;
-  animation-delay: 2s;
+  animation-delay: 0.2s;
 }
 
 @keyframes About-Us-reveal-text {

@@ -45,16 +45,16 @@ const team_info = [
       { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
     ],
   },
-  {
-    quote: "",
-    name: "Kartik Naik",
-    designation: "UI/UX Designer",
-    src: kartik_image,
-    socialLinks: [
-      { url: "https://www.linkedin.com/in/kartiknaik/", iconPath: linkedin_icon },
-      { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
-    ],
-  },
+  // {
+  //   quote: "",
+  //   name: "Kartik Naik",
+  //   designation: "UI/UX Designer",
+  //   src: kartik_image,
+  //   socialLinks: [
+  //     { url: "https://www.linkedin.com/in/kartiknaik/", iconPath: linkedin_icon },
+  //     { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
+  //   ],
+  // },
   
   
 ];

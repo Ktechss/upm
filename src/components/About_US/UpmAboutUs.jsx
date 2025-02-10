@@ -5,6 +5,7 @@ import image1 from './assets/images/vision_leader_ship.jpg';
 import image2 from './assets/images/Mission_image.jpg';
 import image3 from './assets/images/core_value.jpg';
 import InstagramFeed from '../Instagram_Component/InstagramFeed';
+import TeamSection from '../Teams/TeamSection';
 
 const UpmAboutUs = () => {
     return (
@@ -62,14 +63,14 @@ const UpmAboutUs = () => {
                     </div>
                     <img src={image3} alt="Values" className="About-Us-section-image" />
                 </section>
-
-                <section className="About-Us-cta-section">
+                <TeamSection style={{background:'white !important'}}/>
+                {/* <section className="About-Us-cta-section">
                     <p className="About-Us-cta-text">
                         Unknown Pixel Media isn’t just about solutions—it’s about realizing dreams, helping businesses achieve unique goals, and creating strategies that stand out in a crowded world. We’re here to make your vision a reality.
                     </p>
                     <p className="About-Us-cta-highlight">Let’s Create Something Remarkable Together</p>
                     <a href="#contactus" className="About-Us-cta-button">Connect With Us Today</a>
-                </section>
+                </section> */}
             </div>
             <InstagramFeed/>
         </>

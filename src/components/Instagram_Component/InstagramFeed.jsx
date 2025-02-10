@@ -7,6 +7,7 @@ const InstagramFeed = () => {
   const [accountInfo, setAccountInfo] = useState({}); // To store username and profile picture
   const [loading, setLoading] = useState(true);
   const [visiblePosts, setVisiblePosts] = useState(3); // Number of posts initially visible
+  const [postsToAdd, setPostsToAdd] = useState(3);
 
   // Access token for API calls
   const url_id ='';
@@ -40,8 +41,26 @@ const InstagramFeed = () => {
     fetchInstagramData();
   }, []);
 
+  useEffect(() => {
+    const updatePostsToAdd = () => {
+      if (window.innerWidth >= 1900) {
+        setPostsToAdd(4); // Show 4 more posts on large screens
+        setVisiblePosts(4);
+      } else {
+        setPostsToAdd(3); // Show 3 more posts on smaller screens
+      }
+    };
+  
+    // Set initial value based on screen size
+    updatePostsToAdd();
+  
+    // Listen for window resize
+    window.addEventListener("resize", updatePostsToAdd);
+    return () => window.removeEventListener("resize", updatePostsToAdd);
+  }, []);
+
   const handleLoadMore = () => {
-    setVisiblePosts((prevVisiblePosts) => Math.min(prevVisiblePosts + 3, posts.length));
+    setVisiblePosts((prevVisiblePosts) => Math.min(prevVisiblePosts + postsToAdd, posts.length));
   };
 
   if (loading) {

@@ -24,7 +24,7 @@ function UpmContactPage1() {
               <i className="fas fa-map-marker-alt"></i>
               <div>
                 <h4>Address</h4>
-                <p>#2005-7495 132 St Surrey, BC V3W 1J8</p>
+                <p>Toronto</p>
               </div>
             </div>
             <div className="UpmContactPage1-contact-info-item">
