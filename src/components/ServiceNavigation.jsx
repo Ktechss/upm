@@ -9,7 +9,7 @@ const ServiceNavigation = ({ currentService, services }) => {
   return (
     <div className="service-navigation">
       <h3 className={isHomePage ? "white-text" : "black-text"}>
-        {isHomePage ? "Services" : "Explore Our Other Services"}
+        {isHomePage ? "Service Portfolio" : "Explore Our Other Services"}
       </h3>
       <ul>
         {services

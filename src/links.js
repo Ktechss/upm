@@ -4,6 +4,7 @@ export const socialLinks = {
     Facebook: 'https://www.facebook.com/profile.php?id=61566675155483',
     Twitter: 'https://x.com/unknownpixelmed',
     Instagram: 'https://www.instagram.com/unknownpixelmedia/',
+    Linkedin:'https://www.linkedin.com/company/unkownpixelmedia/'
   };
   
   export const navigationLinks = [

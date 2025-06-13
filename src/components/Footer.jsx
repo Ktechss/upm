@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import "./Footer.css"; // Ensure you have a CSS file for styles
 import LegalModal from "./legal/LegalModal"; // Import modal for Terms & Privacy Policy
+import { socialLinks } from "../links";
 import logo from "../assets/upm_logo/UPM_W4.png";
+import linkedin from '../assets/linkedin-in-brands.svg';
 import facebook from "../assets/facbook_Icon.png";
-import instagram from "../assets/footer_icons/footer_Instagram.png";
+import instagram from "../assets/instagram.png";
 import twitter_logo from "../assets/twitter.svg";
 import location_logo from "../assets/footer_icons/location_footer_icon.png";
 import mail_logo from "../assets/footer_icons/circle_mail_logo.png";
@@ -65,7 +67,8 @@ const Footer = () => {
             <span className="company-location">
               <strong>North America, Australia, London:</strong> +1 604 704 1157 <br />
               <strong>Europe:</strong> +39-3455257046 <br />
-              <strong>Asia:</strong> +91-7696013691
+              {/* <strong>Asia:</strong> +91-7696013691 */}
+              <strong>Asia:</strong> +91-7071166000
             </span>
           </div>
 
@@ -84,13 +87,16 @@ const Footer = () => {
           <div className="social-links-footer">
             <h4>Follow Us</h4>
             <div className="social-icons">
-              <a href="https://www.instagram.com/unknownpixelmedia/" target="_blank" rel="noopener noreferrer">
+              <a href={socialLinks.Instagram} target="_blank" rel="noopener noreferrer">
                 <img src={instagram} alt="Instagram Icon" className="social-icon" />
               </a>
-              <a href="https://x.com/unknownpixelmed" target="_blank" rel="noopener noreferrer">
+              <a href={socialLinks.Linkedin} target="_blank" rel="noopener noreferrer">
+                <img src={linkedin} alt="Linkedin Icon" className="social-icon" />
+              </a>
+              <a href={socialLinks.Twitter} target="_blank" rel="noopener noreferrer">
                 <img src={twitter_logo} alt="Twitter Icon" className="social-icon" />
               </a>
-              <a href="https://www.facebook.com/profile.php?id=61566675155483" target="_blank" rel="noopener noreferrer">
+              <a href={socialLinks.Facebook} target="_blank" rel="noopener noreferrer">
                 <img src={facebook} alt="Facebook Icon" className="social-icon" />
               </a>
             </div>

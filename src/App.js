@@ -20,16 +20,20 @@ import Header from './components/Header';
 import facebook_icon from './assets/facbook_Icon.png';
 import twitter_icon from './assets/twitter.svg';
 import instagram_icon from './assets/instagram.png';
+import linkedin_icon from './assets/linkedin-in-brands.svg';
 import logo from './assets/upm_logo/UPM_W4.png';
 
 import { navigationLinks, socialLinks } from './links';
 import TeamSection from './components/Teams/TeamSection';
 import UpmContact from './components/ContactUs/UpmContact';
+import { label } from 'framer-motion/client';
 
 const socialIcons = [
-  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
-  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
   { label: 'Instagram', icon: instagram_icon, href: socialLinks.Instagram },
+  { label:'Linkedin',icon:linkedin_icon,href:socialLinks.Linkedin},
+  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
+  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
+  
 ];
 
 const AppContent = () => {
