@@ -32,8 +32,9 @@ function UpmContactPage1() {
               <div>
                 <h4>Phone</h4>
                 <p>North America, Australia, London : +1 604 704 1157</p>
-                <p>Eurpoe: +39-3455257046</p>
-                <p>Asia: +91-7696013691</p>
+                <p>Europe: +39-3455257046</p>
+                {/* <p>Asia: +91-7696013691</p> */}
+                <p>Asia: +91 - 7071166000</p>
               </div>
             </div>
             <div className="UpmContactPage1-contact-info-item">

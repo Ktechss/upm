@@ -1,14 +1,14 @@
 
-import member_1 from '../assets/team_member_images/Kamaljeet_k.png';
-import member_3 from '../assets/team_member_images/teja_pic.png';
+import member_1 from '../assets/team_member_images/Kamaljeet_k.jpg';
+import member_3 from '../assets/team_member_images/teja_pic.jpg';
 
 import baljit from '../assets/team_member_images/Baljit.jpg';
-import kartik_image from '../assets/team_member_images/Kartik_Image.png';
 import facebook_icon from '../assets/social_link_icons/facebook.png';
 import instagram_icon from '../assets/social_link_icons/instagram.png';
 import linkedin_icon from '../assets/social_link_icons/linkedin.png';
 import gmail_icon from '../assets/social_link_icons/gmail.png';
 import youtube_icon from '../assets/social_link_icons/youtube.png';
+import personal_website from '../assets/social_link_icons/konnect (Animated Logo).png'
 const team_info = [
   {
     quote: "",
@@ -29,9 +29,9 @@ const team_info = [
     socialLinks: [
 
       { url: "https://www.linkedin.com/in/kamaljeetkainth/", iconPath: linkedin_icon },
-      { url: "https://www.instagram.com/kamaljeet.kainth/", iconPath: instagram_icon },
+     // { url: "https://www.instagram.com/kamaljeet.kainth/", iconPath: instagram_icon },
       { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
-      { url: "https://www.youtube.com/@podcastbykk", iconPath: youtube_icon },
+      { url: "https://kamaljeetkainth.com", iconPath: personal_website },
     ],
   },
 

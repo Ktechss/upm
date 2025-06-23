@@ -7,31 +7,26 @@ import premierpro from '../assets/premiere-pro.png';
 import affter_effect from '../assets/after-effects.png';
 import acrobat from '../assets/illustrator.png';
 import googleads from '../assets/tech_card_Icons/adwords.png';
+import business_card from '../assets/tech_card_Icons/address-card-solid.svg';
 import figma from '../assets/tech_card_Icons/figma.png';
 import autodesk from '../assets/tech_card_Icons/Autodesk_maya.png';
 import meta from '../assets/tech_card_Icons/meta.png';
 import mailchimp from '../assets/tech_card_Icons/mailchimp.jpg';
+import wix from "../assets/tech_card_Icons/wix-brands.svg";
 
 import { Highlight } from './ui/HeroHighLight-Component/HeroHighlight';
 import TextGenerateEffect from './ui/TextGenerateEffect';
-import TeamSection from './Teams/TeamSection';
 
 const HomePage = () => {
-  
-
-  
-
   const techCard1Options = [
-    { techImage: googleads, techName: 'Google Ads' },
-    { techImage: meta, techName: 'Meta' },
-    { techImage: mailchimp, techName: 'Mailchimp' },
+    { techImage: business_card, techName: 'Business Card' },
+    { techImage: wix, techName: 'Wix Web Builder' },
   ];
 
   const techCard2Options = [
     { techImage: googleads, techName: 'Google Ads' },
     { techImage: meta, techName: 'Meta' },
     { techImage: mailchimp, techName: 'Mailchimp' },
-
   ];
 
   const techCard3Options = [
@@ -42,42 +37,40 @@ const HomePage = () => {
   const [techCard1, setTechCard1] = useState(techCard1Options[0]);
   const [techCard2, setTechCard2] = useState(techCard2Options[0]);
   const [techCard3, setTechCard3] = useState(techCard3Options[0]);
-  const [isMobile, setIsMobile] = useState(false); // State to track if the view is mobile
+  const [isMobile, setIsMobile] = useState(false);
 
   const getRandomTech = (options) => {
-    const randomIndex = Math.floor(Math.random() * options.length);
-    return options[randomIndex];
+    return options[Math.floor(Math.random() * options.length)];
   };
 
   const updateCardsRandomly = () => {
-    setTechCard1(getRandomTech(techCard1Options));
-    setTechCard2(getRandomTech(techCard2Options));
-    setTechCard3(getRandomTech(techCard3Options));
+    const new1 = getRandomTech(techCard1Options);
+    const new2 = getRandomTech(techCard2Options);
+    const new3 = getRandomTech(techCard3Options);
+
+    if (new1.techName !== techCard1.techName) setTechCard1(new1);
+    if (new2.techName !== techCard2.techName) setTechCard2(new2);
+    if (new3.techName !== techCard3.techName) setTechCard3(new3);
   };
 
-  const words = 'Building Brands';
-
   useEffect(() => {
-    const interval = setInterval(updateCardsRandomly, 1500);
+    const interval = setInterval(updateCardsRandomly, 2500);
     return () => clearInterval(interval);
-  }, []);
+  }, [techCard1, techCard2, techCard3]);
 
   useEffect(() => {
-    // Function to update `isMobile` based on screen width
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
-
-    handleResize(); // Set initial value
+    handleResize();
     window.addEventListener('resize', handleResize);
-
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
+  const words = 'Building Brands';
+
   return (
-    <div className="home-page">
-      {/* Dynamically render MobileHeader or Header */}
-     
+    <div className="home-page zoom-container">
       <main className="landing-content">
         <div className="headline">
           <h1 className="Sloagan-line">
@@ -85,7 +78,7 @@ const HomePage = () => {
           </h1>
           <h1 className="line">
             <span style={{ color: 'white' }} className="for-mobile-line">One</span>
-            <span style={{ color: '#3d84e2' }} className="for-mobile-line">Pixel</span>
+            <span style={{ color: '#3d84e2' }} className="for-mobile-line"> Pixel</span>
           </h1>
           <h1 className="line">
             <span style={{ color: '#3d84e2' }} className="for-mobile-line">At</span> a Time
