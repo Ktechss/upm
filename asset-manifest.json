@@ -1,17 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.f912816d.css",
-    "main.js": "/static/js/main.a96471b1.js",
+    "main.js": "/static/js/main.7922bb88.js",
     "static/js/488.5236db50.chunk.js": "/static/js/488.5236db50.chunk.js",
     "static/media/mountain-back.mp4": "/static/media/mountain-back.6dc045106f2a9890fa2a.mp4",
-    "static/media/UPM-REQ-PIC-TEJA.png": "/static/media/UPM-REQ-PIC-TEJA.35994b5045928ab7800f.png",
-    "static/media/UPM-REQ-PIC-KAMALJEET.png": "/static/media/UPM-REQ-PIC-KAMALJEET.c26a8854e7435da7f6c2.png",
     "static/media/Consultancy_Footage.mp4": "/static/media/Consultancy_Footage.41b384af8804e4dd247f.mp4",
-    "static/media/UPM-REQ-PIC-BALJIT.png": "/static/media/UPM-REQ-PIC-BALJIT.b14db2241901ef391950.png",
     "static/media/Designing_Footage.mp4": "/static/media/Designing_Footage.e3564cf0dd1e249e593b.mp4",
     "static/media/3d_Model.gif": "/static/media/3d_Model.f39f9f8234477885bfaf.gif",
     "static/media/Consult_Video_1.mp4": "/static/media/Consult_Video_1.ef1e4aecbc582491414e.mp4",
-    "static/media/UPM-REQ-PIC-KARTIK.png": "/static/media/UPM-REQ-PIC-KARTIK.326d847d9f7327b3f1c1.png",
     "static/media/Marketing_Footage.mp4": "/static/media/Marketing_Footage.186201354795fa4773bb.mp4",
     "static/media/media-service-image3.png": "/static/media/media-service-image3.6827d2c4a122a0e0ad55.png",
     "static/media/Flex_Banner.gif": "/static/media/Flex_Banner.dd989bb347a10a8ad863.gif",
@@ -34,10 +30,14 @@
     "static/media/3d_Walkthrough.gif": "/static/media/3d_Walkthrough.fef89b42bdab784a7535.gif",
     "static/media/vision_leader_ship.jpg": "/static/media/vision_leader_ship.0bbb66bc287245517e5b.jpg",
     "static/media/Mission_image.jpg": "/static/media/Mission_image.f2647c2e35fc79d95619.jpg",
+    "static/media/UPM-REQ-PIC-TEJA.webp": "/static/media/UPM-REQ-PIC-TEJA.c29995e5289c19ad78e0.webp",
     "static/media/Long_Video_Formate.gif": "/static/media/Long_Video_Formate.a31066ca67c66135d829.gif",
     "static/media/E_News_Letter.gif": "/static/media/E_News_Letter.0ad5a15b23d7ce1f0591.gif",
+    "static/media/UPM-REQ-PIC-KAMALJEET.webp": "/static/media/UPM-REQ-PIC-KAMALJEET.e982eb4a4393b5cda41c.webp",
     "static/media/image1.jpg": "/static/media/image1.dc826663173da4f54d11.jpg",
+    "static/media/UPM-REQ-PIC-BALJIT.webp": "/static/media/UPM-REQ-PIC-BALJIT.e3712ac68509b54b5402.webp",
     "static/media/Digital_Banner.gif": "/static/media/Digital_Banner.9262c68c05cbce965540.gif",
+    "static/media/UPM-REQ-PIC-KARTIK.webp": "/static/media/UPM-REQ-PIC-KARTIK.d2e493486608bf9faa34.webp",
     "static/media/core_value.jpg": "/static/media/core_value.662ad0dbbe2c81b72e4d.jpg",
     "static/media/mailchimp.jpg": "/static/media/mailchimp.b44f16d2789a217b07b5.jpg",
     "static/media/UPM_B5.jpg": "/static/media/UPM_B5.c8a1fbae411171367d12.jpg",
@@ -68,11 +68,11 @@
     "static/media/linkedin-in-brands.svg": "/static/media/linkedin-in-brands.3dc0f34039764882b675cb56701f2bf3.svg",
     "static/media/twitter.svg": "/static/media/twitter.6cf6d8302744296dcd5b14bea1f95ea5.svg",
     "main.f912816d.css.map": "/static/css/main.f912816d.css.map",
-    "main.a96471b1.js.map": "/static/js/main.a96471b1.js.map",
+    "main.7922bb88.js.map": "/static/js/main.7922bb88.js.map",
     "488.5236db50.chunk.js.map": "/static/js/488.5236db50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f912816d.css",
-    "static/js/main.a96471b1.js"
+    "static/js/main.7922bb88.js"
   ]
 }
