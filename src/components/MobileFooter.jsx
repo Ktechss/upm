@@ -3,13 +3,16 @@ import "./MobileFooter.css";
 import LegalModal from "./legal/LegalModal"; // Import modal for Terms & Privacy Policy
 import logo from "../assets/upm_logo/UPM_W4.png";
 import facebook from "../assets/facbook_Icon.png";
-import instagram from "../assets/footer_icons/footer_Instagram.png";
+import instagram from "../assets/instagram.png";
+import linkedin from "../assets/linkedin-in-brands.svg";
+import twitter_logo from "../assets/twitter.svg";
+
 import location_logo from "../assets/footer_icons/location_footer_icon.png";
 import mail_logo from "../assets/footer_icons/circle_mail_logo.png";
 import phone_logo from "../assets/footer_icons/Phone_footer_icon.png";
 import service_icon from "../assets/footer_icons/Service_footer_icon.png";
-import twitter_logo from "../assets/twitter.svg";
 
+import { socialLinks } from "../links";
 const MobileFooter = () => {
   const [modalContent, setModalContent] = useState(null);
 
@@ -37,13 +40,16 @@ const MobileFooter = () => {
       <div className="mobile-footer-follow-us">
         <h4>Follow Us</h4>
         <div className="mobile-footer-social-icons">
-          <a href="https://www.instagram.com/unknownpixelmedia/">
+          <a href={socialLinks.Instagram}>
             <img src={instagram} alt="Instagram" />
           </a>
-          <a href="https://x.com/unknownpixelmed" className="inverted-icon">
+          <a href={socialLinks.Linkedin}>
+            <img src={linkedin} alt="Instagram" />
+          </a>
+          <a href={socialLinks.Twitter} className="inverted-icon">
             <img src={twitter_logo} alt="Twitter" />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61566675155483">
+          <a href={socialLinks.Facebook}>
             <img src={facebook} alt="Facebook" />
           </a>
         </div>

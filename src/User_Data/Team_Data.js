@@ -1,8 +1,8 @@
 
-import kamaljeet_image from '../assets/team_member_images/UPM-REQ-PIC-KAMALJEET.png';
-import teja_pic from '../assets/team_member_images/UPM-REQ-PIC-TEJA.png';
-import kartik_image from '../assets/team_member_images/UPM-REQ-PIC-KARTIK.png'
-import baljit from '../assets/team_member_images/UPM-REQ-PIC-BALJIT.png';
+import kamaljeet_image from '../assets/team_member_images/UPM-REQ-PIC-KAMALJEET.webp';
+import teja_pic from '../assets/team_member_images/UPM-REQ-PIC-TEJA.webp';
+import kartik_image from '../assets/team_member_images/UPM-REQ-PIC-KARTIK.webp'
+import baljit from '../assets/team_member_images/UPM-REQ-PIC-BALJIT.webp';
 import facebook_icon from '../assets/social_link_icons/facebook.png';
 import instagram_icon from '../assets/social_link_icons/instagram.png';
 import linkedin_icon from '../assets/social_link_icons/linkedin.png';
