@@ -1,8 +1,8 @@
 
-import member_1 from '../assets/team_member_images/Kamaljeet_k.jpg';
-import member_3 from '../assets/team_member_images/teja_pic.jpg';
-
-import baljit from '../assets/team_member_images/Baljit.jpg';
+import kamaljeet_image from '../assets/team_member_images/UPM-REQ-PIC-KAMALJEET.png';
+import teja_pic from '../assets/team_member_images/UPM-REQ-PIC-TEJA.png';
+import kartik_image from '../assets/team_member_images/UPM-REQ-PIC-KARTIK.png'
+import baljit from '../assets/team_member_images/UPM-REQ-PIC-BALJIT.png';
 import facebook_icon from '../assets/social_link_icons/facebook.png';
 import instagram_icon from '../assets/social_link_icons/instagram.png';
 import linkedin_icon from '../assets/social_link_icons/linkedin.png';
@@ -25,7 +25,7 @@ const team_info = [
     quote: "",
     name: "Kamaljeet Kainth",
     designation: "Founder & Growth Strategist",
-    src: member_1,
+    src: kamaljeet_image,
     socialLinks: [
 
       { url: "https://www.linkedin.com/in/kamaljeetkainth/", iconPath: linkedin_icon },
@@ -39,22 +39,22 @@ const team_info = [
     quote: "",
     name: "S. Teja",
     designation: "Chief Marketing Officer",
-    src: member_3,
+    src: teja_pic,
     socialLinks: [
       { url: "https://www.linkedin.com/in/vanjarapusaiteja/", iconPath: linkedin_icon },
       { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
     ],
   },
-  // {
-  //   quote: "",
-  //   name: "Kartik Naik",
-  //   designation: "UI/UX Designer",
-  //   src: kartik_image,
-  //   socialLinks: [
-  //     { url: "https://www.linkedin.com/in/kartiknaik/", iconPath: linkedin_icon },
-  //     { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
-  //   ],
-  // },
+  {
+    quote: "",
+    name: "Kartik Naik",
+    designation: "UI/UX Designer",
+    src: kartik_image,
+    socialLinks: [
+      { url: "https://www.linkedin.com/in/kartiknaik/", iconPath: linkedin_icon },
+      { url: "mailto:info@unknownpixelmedia.com", iconPath: gmail_icon },
+    ],
+  },
   
   
 ];
