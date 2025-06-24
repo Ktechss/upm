@@ -9,7 +9,7 @@
     margin-bottom: 20px;
     height: 30rem;
     background-color: #1b67f4;
-    background: linear-gradient(180deg,white,rgba(0, 0, 0, 0),white) ,url('./assets/image1.jpg');
+    background: linear-gradient(180deg,white,rgba(0, 0, 0, 0),white) ,url('./assets/Contact-US.webp');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,7 +179,7 @@
       margin-bottom: 20px;
       height: 20rem;
       background-color: #1b67f4;
-      background: linear-gradient(180deg,white,rgba(0, 0, 0, 0),white) ,url('./assets/team_images.jpg');
+      background: linear-gradient(180deg,white,rgba(0, 0, 0, 0),white) ,url('./assets/Contact-US.webp');
       background-position: center !important;
       background-size: cover;
       display: flex;

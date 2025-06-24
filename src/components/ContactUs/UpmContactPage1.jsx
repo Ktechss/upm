@@ -12,7 +12,7 @@ function UpmContactPage1() {
       <div className="UpmContactPage1-forms-details">
         {/* Left Section */}
         <div className="UpmContactPage1-forms-details-left">
-          <h3 className='UpmContactPage1-forms-details-left-normal-heading'>get in touch</h3>
+          <h3 className='UpmContactPage1-forms-details-left-normal-heading'>Get in touch</h3>
           <h2 className="UpmContactPage1-forms-details-left-heading">
             Don't hesitate to contact us for more information
           </h2>
