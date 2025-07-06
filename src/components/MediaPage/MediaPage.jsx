@@ -9,6 +9,7 @@ import ServiceNavigation from '../ServiceNavigation';
 import ContactUs from '../ContactUs';
 
 import facebook_icon from '../../assets/facbook_Icon.png';
+import linkedin_icon from '../../assets/linkedin-in-brands.svg'
 import twitter_icon from '../../assets/twitter.svg';
 import instagram_icon from '../../assets/instagram.png';
 import ContactUsCtaButton from '../Button_Ui/ContactUsCtaButton';
@@ -18,9 +19,10 @@ import { navigationLinks, socialLinks } from '../../links'; // Import centralize
 
 
 const socialIcons = [
-  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
-  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
   { label: 'Instagram', icon: instagram_icon, href: socialLinks.Instagram },
+  { label: 'Linkedin', icon: linkedin_icon, href: socialLinks.Linkedin },
+  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
+  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
 ];
 
 const services = [

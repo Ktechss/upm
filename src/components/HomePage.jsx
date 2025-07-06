@@ -24,13 +24,13 @@ const HomePage = () => {
   ];
 
   const techCard2Options = [
-    { techImage: googleads, techName: 'Google Ads' },
+    
     { techImage: meta, techName: 'Meta' },
     { techImage: mailchimp, techName: 'Mailchimp' },
   ];
 
   const techCard3Options = [
-    { techImage: autodesk, techName: 'Autodesk Maya' },
+    { techImage: googleads, techName: 'Google Ads' },
     { techImage: figma, techName: 'Figma' },
   ];
 

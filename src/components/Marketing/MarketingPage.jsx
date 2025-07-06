@@ -13,6 +13,7 @@ import ContactUs from '../ContactUs';
 import facebook_icon from '../../assets/facbook_Icon.png';
 import twitter_icon from '../../assets/twitter.svg';
 import instagram_icon from '../../assets/instagram.png';
+import linkedin_icon from '../../assets/linkedin-in-brands.svg'
 
 import ContactUsCtaButton from '../Button_Ui/ContactUsCtaButton';
 import MobileMarketingSection1 from './components/MobileMarketingSection1';
@@ -20,9 +21,10 @@ import MobileMarketingSection1 from './components/MobileMarketingSection1';
 import { navigationLinks, socialLinks } from '../../links'; // Import centralized links
 
 const socialIcons = [
-  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
-  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
   { label: 'Instagram', icon: instagram_icon, href: socialLinks.Instagram },
+  { label: 'Linkedin', icon: linkedin_icon, href: socialLinks.Linkedin },
+  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
+  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
 ];
 
 const services = [

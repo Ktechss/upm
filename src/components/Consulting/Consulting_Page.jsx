@@ -11,6 +11,7 @@ import MobileHeader from '../MobileHeader'; // Import MobileHeader
 import facebook_icon from '../../assets/facbook_Icon.png';
 import twitter_icon from '../../assets/twitter.svg';
 import instagram_icon from '../../assets/instagram.png';
+import linkedin_icon from '../../assets/linkedin-in-brands.svg'
 
 import logo from '../../assets/upm_logo/UPM_B5.jpg';
 import MobileConsultingService from './components/MobileConsultingService';
@@ -18,9 +19,10 @@ import MobileConsultingService from './components/MobileConsultingService';
 import { navigationLinks, socialLinks } from '../../links'; // Import centralized links
 
 const socialIcons = [
-  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
-  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
   { label: 'Instagram', icon: instagram_icon, href: socialLinks.Instagram },
+  { label: 'Linkedin', icon: linkedin_icon, href: socialLinks.Linkedin },
+  { label: 'Twitter', icon: twitter_icon, href: socialLinks.Twitter },
+  { label: 'Facebook', icon: facebook_icon, href: socialLinks.Facebook },
 ];
 
 // List of services
