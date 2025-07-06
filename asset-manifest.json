@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ab1bd161.css",
-    "main.js": "/static/js/main.679f8ac3.js",
+    "main.js": "/static/js/main.95256bec.js",
     "static/js/488.5236db50.chunk.js": "/static/js/488.5236db50.chunk.js",
     "static/media/mountain-back.mp4": "/static/media/mountain-back.6dc045106f2a9890fa2a.mp4",
     "static/media/Consultancy_Footage.mp4": "/static/media/Consultancy_Footage.41b384af8804e4dd247f.mp4",
@@ -66,13 +66,13 @@
     "index.html": "/index.html",
     "static/media/address-card-solid.svg": "/static/media/address-card-solid.1bec7ec085854cc25141f1a072f8147f.svg",
     "static/media/linkedin-in-brands.svg": "/static/media/linkedin-in-brands.3dc0f34039764882b675cb56701f2bf3.svg",
-    "static/media/twitter.svg": "/static/media/twitter.6cf6d8302744296dcd5b14bea1f95ea5.svg",
+    "static/media/twitter.svg": "/static/media/twitter.8bc3f9e112bfbeaf317089d4e2aa665f.svg",
     "main.ab1bd161.css.map": "/static/css/main.ab1bd161.css.map",
-    "main.679f8ac3.js.map": "/static/js/main.679f8ac3.js.map",
+    "main.95256bec.js.map": "/static/js/main.95256bec.js.map",
     "488.5236db50.chunk.js.map": "/static/js/488.5236db50.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ab1bd161.css",
-    "static/js/main.679f8ac3.js"
+    "static/js/main.95256bec.js"
   ]
 }
